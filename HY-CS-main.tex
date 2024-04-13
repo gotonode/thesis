@@ -52,6 +52,23 @@
 % remove the punctuation between author names in Bibliography 
 %\renewcommand{\revsdnamepunct}{ }
 
+% Asked chat.openai.com: I'm using biblatex package, but it prints odd format volume.number in reference list, while this should be volume (number). How to fix this?
+%Answer (shortened):
+% Redefine the volume and number format
+%\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+%\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+% Please remove the boldface from the volume and number fields:
+\DeclareFieldFormat[article]{volume}{#1}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+% Now this generated format volume.(number). How to remove the dot? (and so on with some adjustments):
+\renewbibmacro*{volume+number+eid}{%
+  \setunit{\addcomma\space}% 
+  \printfield{volume}%
+  %\setunit*{\addnbspace\addthinspace}% <-- Adjust spacing here
+  \printfield{number}%
+  \setunit{\addcomma\space}%
+  \printfield{eid}}
+
 
 %% Block of definitions for fonts and packages for picture management.
 %% In some systems, the figure packages may not be happy together.
@@ -87,16 +104,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Set up personal information for the title page and the abstract form.
 %% Replace parameters with your information.
-\title{Weakest Link Analysis - \\Attacking (and Defending) the User}
+\title{A Novel Threat: AI in Social Engineering}
 
 \author{Riku Talvisto}
 \date{\today}
 
 % Set supervisors, use the titles according to the thesis language
 % in English Prof. or Dr., or in Finnish toht. or tri or FT, TkT, Ph.D. or in Swedish... 
-\supervisors{Lea Kutvonen}
+\supervisors{Dr. Lea Kutvonen}
 
-\keywords{social engineering, cybersecurity, security, hacking, cracking, psychology, manipulation}
+\keywords{social engineering, artificial intelligence, cybersecurity, security, hacking, psychology}
 \additionalinformation{\translate{\track}}
 
 %% For seminar reports:
@@ -200,8 +217,8 @@
 \include{instructions/instructions_finnish}
 
 % BSc instructions
-\include{instructions/bsc_finnish_contents}
-\include{instructions/bsc_english_contents}
+%\include{instructions/bsc_finnish_contents}
+%\include{instructions/bsc_english_contents}
 
 
 \end{appendices}
