@@ -1,3 +1,9 @@
+%% 
+%% Author's note:
+%% This was a template package which contains a lot of comments and code that were not written by me.
+%%
+
+
 %% Follow comments to support use.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -21,6 +27,7 @@
 \documentclass[english,twoside,censored,tkt,null]{HYthesisML} 
 
 
+%% TODO: Check which is better (openright or openany).
 % If wanted, open new chapters only at right page.
 % By default, "openany".
 %\PassOptionsToClass{openright,twoside,a4paper}{report}
@@ -104,7 +111,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Set up personal information for the title page and the abstract form.
 %% Replace parameters with your information.
-\title{A Novel Threat: AI in Social Engineering}
+\title{A Novel Cybersecurity Threat: Artificial Intelligence in Social Engineering}
 
 \author{Riku Talvisto}
 \date{\today}
@@ -125,14 +132,19 @@
 %% in computer science. Use 1-3 paths, and use right arrows between the
 %% about three levels in the path; each path requires a new line.
 
+%% TODO: Which are most suitable? Should I include one, 2 or 3? Should I include the document type (surveys and overviews) and is that correct?
 \classification{\protect{\ \\
-\  General and reference $\rightarrow$ Document types  $\rightarrow$ Surveys and overviews\  \\
-\  Applied computing  $\rightarrow$ Document management and text processing  $\rightarrow$ Document management $\rightarrow$ Text editing
+\  General and reference $\rightarrow$ Document types  $\rightarrow$ Surveys and overviews\ \\
+\  Social and professional topics $\rightarrow$ Computing / technology policy  $\rightarrow$ Computer crime \\ $\rightarrow$ Social engineering attacks \\
+%%\  Human-centered computing $\rightarrow$ Collaborative and social computing  $\rightarrow$ Collaborative and social computing theory, concepts and paradigms $\rightarrow$ Social engineering (social sciences) \\
+\  Security and privacy $\rightarrow$ Intrusion/anomaly detection and malware mitigation \\ $\rightarrow$ Social engineering attacks
 }}
 
 %% If you want to quote someone special. You can comment this line out and there will be nothing on the document.
 %\quoting{Bachelor's degrees make pretty good placemats if you get them laminated.}{Jeph Jacques}
 
+
+%% TODO: Remember to make the final PDF a PDF/A compliant version for archival purposes!
 
 %% OPTIONAL STEP: Set up properties and metadata for the pdf file that pdfLaTeX makes.
 %% Your name, work title, and keywords are recommended.
@@ -217,8 +229,8 @@
 \include{instructions/instructions_finnish}
 
 % BSc instructions
-%\include{instructions/bsc_finnish_contents}
-%\include{instructions/bsc_english_contents}
+\include{instructions/bsc_finnish_contents}
+\include{instructions/bsc_english_contents}
 
 
 \end{appendices}
