@@ -12,22 +12,34 @@ Some attacks that are discussed here are not always considered a type of SE atta
 
 \section{Phishing, Spear Phishing and Whaling}
 
-\textbf{Phishing} is the quintessial social engineering attack. It is characterized by malicious attemps to gain sensitive information from unsuspecting users, usually via email and by using spoofed websites that look like their authentic counterparts. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from unsuspecting users. However, the concept of tricking people goes a lot further than that, with people doing such deeds being called confidence men or "con artists". 
+\textbf{Phishing} is the quintessential SE attack. It is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from gullible users \citep{wang_defining_2020}.
 
-\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attemps, this type of phishing involves gathering detailed information about the victim, such as their name, position and contacts to craft a convincing and personalized message. This tailored approach increases the likelyhood of the victim falling for the scam.
+\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdine_social_2019}. This tailored approach increases the likelihood of the victim falling for the scam.
 
-Last on our list of phishing attacks is \textbf{whaling}. Whaling, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management. The attackers careflly research their targets to create convinving and often urgent messages that appear to come from trusted sources, often impersonating colleagues, business partners, or government agencies. The goal is often to authorize large financial transactions or to leverage the target's authority and access within the company.
+Last on the list of phishing attacks is \textbf{whaling}. Whaling, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management, "the big whales" \citep{abraham_overview_2010}. The attackers carefully research their targets to create convincing and typically urgent messages that appear to come from trusted sources, often impersonating colleagues, business partners, or government agencies. The goal is often to authorize large financial transactions or to leverage the target's authority and access within the company.
+
+\section{Vishing (Voice Phishing) \& Smishing (SMS Phishing)}
+
+Two additional types of phishing need to be addressed, and they are \textbf{vishing} or voice phishing and \textbf{smishing} or SMS phishing. Despite having complicated names, the idea behind them are quite simple.
 
 \section{Baiting}
 
 Baiting is a similar attack method to phishing, discussed above, but emphasizes luring the victim via enticement strategies \citep{conteh_cybersecurityrisks_2016, salahdine_social_2019}. This technique exploits the target's curiosity or greed to gain unauthorized access to resources or premises or to obtain sensitive information.
 
-A common type of a baiting attack is what's known as a "USB drop" where the attacker loads malware or Trojan software into USB drives that are often tagged with an enticing title such as "Layoff Plans 2024" or "Sarah's private photos" and which are subsequently dropped at convenient locations for employees of the target company to find. A USB baiting experiment showed that 15 out of 20 USB drives were found by employees and all were plugged in to the company's computers \citep{wang_social_2021}.
+A common type of a baiting attack is what's known as a "USB drop" where the attacker loads malware or Trojan software into USB drives that are often tagged with an enticing title such as "Layoff Plans 2024" or "Sarah's private photos" and which are subsequently dropped at convenient locations for employees of the target company to find. These locations could be easily accessed, such as the company's vicinities, or more hard-to-reach places such as a protected parking lot or even employee restrooms or dining areas. A famous experiment in which 297 flash drives were dropped on university campuses concluded that the success rate (drives connected) was between 45 \% -- 98 \%, with the first drive connected within less than six minutes \cite{tischer_users_2016}.
+
+%%A USB baiting experiment showed that 15 out of 20 USB drives were found by employees and all were plugged in to the company's computers \citep{wang_social_2021}.
+
+OSINT can be useful here as well, with a bit of searching the tag that is attached to the thumbdrive could have a more interesting and suitable title. Attackers can also easily order USB thumbdrives, as an example, with custom logos printed on them from various online retailers for increased effect. The logo could even be from a competing company's one, if there's been heated rivalry between the two.
 
 %% https://www.darkreading.com/perimeter/social-engineering-the-usb-way
 
 %% online offers, free downloads, gifts, fake job posting
+%% plays on human trust, safe looking items, greed, curiosity
+%% fake software updates, malicious ads
 
+%% seuraukset: malware, trojan, data breach, financial loss, identity theft
+%% red flags? unsolicitied offers, too good to be true deals, unfamiliar sources
 
 
 \section{Pretexting}
