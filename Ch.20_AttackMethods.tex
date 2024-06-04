@@ -1,13 +1,16 @@
 
-\chapter{Methods\label{methods}}
+\chapter{Attack Methods\label{methods}}
 
-It's crucial for any professional working in any industry to be aware of the different social engineering (SE) attacks. In this chapter, we'll go through the most common ones.
+It's crucial for any professional working in any industry to be aware of the different SE attacks, not just for the cybersecurity professional. In this chapter, we'll go through the most common ones.
 
 In a later chapter, we'll go through and analyze how modern AI augments these attacks, and how users of information systems need to be trained to counter these new, advanced threats.
 
-As described by \cite{abiteboul}, the term \textit{social engineering} is perhaps overused and is certainly misused. What exactly constitutes social engineering? In this paper, we'll use the defition of X by Y, "social engineering is the deliberate act of convincing a victim, usually though the use of technology, to perform an action that may or may not be in their best interest". Some have included acts like shoulder shurfing and dumpster diving as social engineering attacks, but since these do not rely on the manipulation of people we'll leave them outside the scope of this paper.
+SE attacks can be roughly taxonomized in the following way.
 
-\section{Phishing, Spear Phishing and Whailing}
+
+Some attacks that are discussed here are not always considered a type of SE attack, specifically shoulder surfing and dumpster diving, as these do not require the co-operation of the victim \citep{wang_defining_2020}. However, since they are often used in conjunction with other SE attacks, and since training for against them is often included in SE training and awareness programs, they are explained here.
+
+\section{Phishing, Spear Phishing and Whaling}
 
 \textbf{Phishing} is the quintessial social engineering attack. It is characterized by malicious attemps to gain sensitive information from unsuspecting users, usually via email and by using spoofed websites that look like their authentic counterparts. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from unsuspecting users. However, the concept of tricking people goes a lot further than that, with people doing such deeds being called confidence men or "con artists". 
 
@@ -17,12 +20,41 @@ Last on our list of phishing attacks is \textbf{whaling}. Whaling, also known as
 
 \section{Pretexting}
 
-Pretexting, a term first used by FBI in YYY to descibe a situation where a fabricated story (a pretext) is used to  lure
+Pretexting involves fabricating a story or a scenario, a \textit{pretext}, that is plausible but fraudulent, to engage the target and extract information with \citep{conteh_cybersecurityrisks_2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story.
+
+Situations can change quickly, and the attacker must be quick on their feet to respond to these changes. Training in multiple possible ways the target might respond or react is highly beneficial, such as threatening to call the police or the IT support.
+
+A high level of confidence in the pretext and the pretexted role is often cited to be a necessity, however, someone may very well engage a pretext as a novice, nervous new employee, which suggests that rather than stating a high level of (outwardly visible) confidence as a neceissty, the better wording would be a suitable level of confidence. In all cases, the attacker must believe their own pretext and act out the attack like an actor in a movie, to "become the pretext".
+
+%% obtain sensitive info, access to systems or locations
+%% must be believable and relevant, should fit with the target's environment and expected interactions
+%% kerro kuinka exploitatataan luottamusta
+%% kommunikaatiotaidot, professionalism, itsevarmuus (sopiva taso, jos esim. pretextaa aloittelijaa itsevarmuus voikin olla alhaisempi)
+%% tyypillisiä skenaarioita: co-worker, kuljetushtiö, security audit, IT tuki, law enforcement, 
+%% mitä dataa haetaan: henk koht tiedot, pankkitiedot, kirjautumistiedot, joka päivä vaihtuva "PIN" koodi, insider info
+%% suojautuminen: soittajan id vahvistus (varsinkin tuntemattomien soittajien), caller spoofing vahvistus, mitä tietoja saa antaa, kenelle ja millä edellytyksillä, 
+%% pretexting on laitonta monessa paikkakunnassa, paikassa, SE white hat audit
+%% oikean maailman incidentit
 
 \section{Tailgating}
 
-Tailgating refers to the act of "tailing" someone through a access-controlled passage, such as a security gate. The social engineer may hold something that looks heavy in their hands and ask for a person going in to let them through, thus bypassing the need to have a valid access authority
+Tailgating refers to the act of "tailing" someone through a access-controlled passage, such as a security gate. The social engineer may hold something that looks heavy in their hands and ask for a person going in to let them through, thus bypassing the need to have valid access authority \citep{conteh_cybersecurityrisks_2016}. This type of attack exploits those who already have access rights for temporary access, such as for the fabricated scenario of delivering new hardware to the server rooms. The attacker may have found out through OSINT that the company is expecting a delivery, and then don the suit of a delivery company and escort people going in from their smoking/coffee breaks outside.
 
+\section{Baiting}
+
+Baiting is a similar attack method to phishing, discussed above, but emphasizes luring the victim via enticement strategies \citep{conteh_cybersecurityrisks_2016}. This technique exploits the target's curiosity or greed to gain unauthorized access to resources or premises or to obtain sensitive information.
+
+A common type of a baiting attack is what's known as a "USB drop" where the attacker loads malware or Trojan software into USB drives that are often labeled with an enticing title such as "layoff plans 2024" and which are subsequently dropped at convenient locations for employees of the target company to find. A USB baiting experiment showed that 15 out of 20 USB drives were found by employees and all were plugged in to the company's computers \citep{}.
+
+%% https://www.darkreading.com/perimeter/social-engineering-the-usb-way
+
+\section{Shoulder Surfing}
+
+Two common attack methods, namely \textbf{dumpster diving} and \textbf{shoulder surfing}, are often categorized as social engineering attacks, but do not necessarily fall under the SE category, as they do not include direct social interaction with the victim \citep{wang_defining_2020}. In other words, the compliance of the victim is not necessary in these two types of attacks. However, since they are non-technical in that no devices or technologies need to be used, they fall in a "gray area". They require neither the use of devices or technologies nor the psychological manipulation of the user. Thus, it has been easy to refer to them as SE attacks. In this paper, they are still discussed because SE training and awareness programs should include mentioning about these.
+
+\section{Dumpster Diving}
+
+As the name implies, \textbf{dumpster diving} refers to going through an organization's or an individual's trash, usually paper trash only but sometimes all trash, in order find sensitive information that really should've been disposed of properly. Since dumpster diving doesn't include manipulation of people in its purest form, rather relying on the improper care of documents and other material, it's sometimes not classified as a social engineering attack.
 
 
 %% Käsittelylukujen työnjako määräytyy käsiteltävän asian luonteen mukaisesti. Lukijan oh￾jailemiseksi kukin pääluku kannattaa aloittaa lyhyellä kappaleella, joka paljastaa mikä kyseisen luvun keskeisin sisältö on ja kuinka aliluvuissa asiaa kehitellään eteenpäin. Er￾ityisesti kannattaa kiinnittää huomiota siihen, että lukijalle ilmaistaan selkeästi miksi kutakin asiaa käsitellään ja miten käsiteltävät asiat suhtautuvat toisiinsa. Jäsentelyongelmista kielivät tilanteet, joissa alilukuja on vain yksi, tai joissa käytetään useampaa kuin kahta tasoa (pääluku ja sen aliluvut). Kolmitasoisia otsikointeja saate￾taan tarvita joissakin teknisissä dokumenteissa perustellusti, mutta nämä muodostavat poikkeuksen.
