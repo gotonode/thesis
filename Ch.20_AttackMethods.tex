@@ -1,26 +1,46 @@
 
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% ATTACK METHODS                            %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Attack Methods\label{methods}}
 
-It's crucial for any professional working in any industry to be aware of the different SE attacks, not just for the cybersecurity professional. In this chapter, we'll go through the most common ones.
+Awareness of various social engineering (SE) attacks is crucial for professionals across all industries, not just those in cybersecurity. This chapter provides an overview of the most common SE attack methods.
 
 In a later chapter, we'll go through and analyze how modern AI augments these attacks, and how users of information systems need to be trained to counter these new, advanced threats.
 
-SE attacks can be roughly taxonomized in the following way.
+Some attacks that are discussed here are not always considered a type of SE attack, specifically shoulder surfing and dumpster diving, as these do not require the co-operation of the victim \citep{wang_defining_2020}. However, since they are often used in conjunction with other SE attacks, and since training for against them is often included in SE training and awareness programs, they are explained here, and because attackers are constantly improvising their attack methods, some manipulation used in conjunction with these methods, such as convincing employees that the company will destroy any documents put in the general waste in a safe way, may be used.
+
+To better understand the threat posed by SE, it is essential to examine the diverse strategies employed by attackers. The following are some of the most common and effective SE attack methods.
 
 
-Some attacks that are discussed here are not always considered a type of SE attack, specifically shoulder surfing and dumpster diving, as these do not require the co-operation of the victim \citep{wang_defining_2020}. However, since they are often used in conjunction with other SE attacks, and since training for against them is often included in SE training and awareness programs, they are explained here.
 
-\section{Phishing, Spear Phishing and Whaling}
 
-\textbf{Phishing} is the quintessential SE attack. It is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from gullible users \citep{wang_defining_2020}.
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Phishing                                  %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Phishing}
+
+As the quintessential SE attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from gullible users \citep{wang_defining_2020}.
 
 \textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdine_social_2019}. This tailored approach increases the likelihood of the victim falling for the scam.
 
 Last on the list of phishing attacks is \textbf{whaling}. Whaling, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management, "the big whales" \citep{abraham_overview_2010}. The attackers carefully research their targets to create convincing and typically urgent messages that appear to come from trusted sources, often impersonating colleagues, business partners, or government agencies. The goal is often to authorize large financial transactions or to leverage the target's authority and access within the company.
 
-\section{Vishing (Voice Phishing) \& Smishing (SMS Phishing)}
-
 Two additional types of phishing need to be addressed, and they are \textbf{vishing} or voice phishing and \textbf{smishing} or SMS phishing. Despite having complicated names, the idea behind them are quite simple.
+
+
+
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Bating                                    %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Baiting}
 
@@ -42,6 +62,14 @@ OSINT can be useful here as well, with a bit of searching the tag that is attach
 %% red flags? unsolicitied offers, too good to be true deals, unfamiliar sources
 
 
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Pretexting                                %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Pretexting}
 
 Pretexting involves fabricating a story or a scenario, a \textit{pretext}, that is plausible but fraudulent, to engage the target and extract information with \citep{conteh_cybersecurityrisks_2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story.
@@ -60,9 +88,17 @@ A high level of confidence in the pretext and the pretexted role is often cited 
 %% pretexting on laitonta monessa paikkakunnassa, paikassa, SE white hat audit
 %% oikean maailman incidentit
 
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Tailgating                                %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Tailgating}
 
-\textbf{Tailgating}, also known as \textbf{piggybacking}, refers to the act of "tailing" someone through an access-controlled passage, such as a security gate. The social engineer may hold something that looks heavy in their hands and ask for a person going in to let them through, thus bypassing the need to have valid access authority \citep{conteh_cybersecurityrisks_2016}. This type of attack exploits those who already have access rights for temporary access, such as for the fabricated scenario of delivering new hardware to the server rooms.
+\textbf{Tailgating}, also known as \textbf{piggybacking} and sometimes \textbf{trailing \& pretending}, refers to the act of "tailing" someone through an access-controlled passage, such as a security gate. This type of attack exploits those who already have access rights for temporary access, such as for the fabricated scenario of delivering new hardware to the server rooms \citep{conteh_cybersecurityrisks_2016}. The social engineer may hold something that looks heavy in their hands and ask for a person going in to let them through, thus bypassing the need to have valid access authority.
 
 The attacker may have found out through OSINT that the company is expecting a delivery and then don the suit of a delivery company and escort people going in from their smoking/coffee breaks outside. Another type is where the attacker has forged a pretext where he explains that he had "forgotten" his security ID inside and his boss is already very angry with him and that he's afraid he's going to lose his job if he keeps messing up like this, playing on people's sympathy.
 
@@ -71,13 +107,48 @@ This type of attack exploits people's natural tendency to want to help and be po
 
 
 
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Shoulder Surfing                          %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Shoulder Surfing}
 
-Two common attack methods, namely \textbf{dumpster diving} and \textbf{shoulder surfing}, are often categorized as social engineering attacks, but do not necessarily fall under the SE category, as they do not include direct social interaction with the victim \citep{wang_defining_2020}. In other words, the compliance of the victim is not necessary in these two types of attacks. However, since they are non-technical in that no devices or technologies need to be used, they fall in a "gray area". They require neither the use of devices or technologies nor the psychological manipulation of the user. Thus, it has been easy to refer to them as SE attacks. In this paper, they are still discussed because SE training and awareness programs should include mentioning about these.
+Observing people enter sensitive information, such as login details or financial data, without their knowledge or approval is called \textbf{shoulder surfing}. The name implies a person watching over the shoulder of someone else what they are typing or viewing sensitive data, but the attack AREA is actually far larger. The attacker could use cameras, either hacked, or those placed there by the attacker for this purpose, or even everyday objects such as binoculars. The proliferation of high-resolution cameras, such as those with HD or even 4K resolution, has magnified the issue of malicious or even accidentally viewing information they're not supposed to have seen.
+
+%% vigilance in public places
+%% HD and 4K cameras
+%% social norms, vigilance
+%% pankkiautomaatti
+%% kohteet PIN, salasanat, turvakoodit, henk koht tiedot
+%% puhelimet, draw a symbol to access, halvat vakoilulaitteet aliexpress
+%% privacy screens, HP SureView
+%% toimiston layout joka hankaloittaa shoulder surfing
+%% etätyö
+
+
+
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Dumpster Diving                           %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Dumpster Diving}
 
-As the name implies, \textbf{dumpster diving} refers to going through an organization's or an individual's trash, usually paper trash only but sometimes all trash, in order find sensitive information that really should've been disposed of properly. Since dumpster diving doesn't include manipulation of people in its purest form, rather relying on the improper care of documents and other material, it's sometimes not classified as a social engineering attack.
+As the name implies, \textbf{dumpster diving} refers to going through an organization's or an individual's trash, usually paper trash only but sometimes all trash, in order find sensitive information that really should've been disposed of properly \citep{syafitri_social_2022}. Rummaged content may yield interesting results, typically in the form of documents such as papers but also media devices such as optical discs, hard drives or USB thumbdrives, to be used as-is or as part of a future SE attack. Since dumpster diving does not include manipulation of people in its purest form, rather relying on the improper care of documents and other material, it is sometimes not classified as a social engineering attack \citep{wang_defining_2020}. However, one could imagine scenarios where manipulation of people is used as part of a dumpster diving attack, for example convincing people that documents put into regular waste bins will be shredded as part of a new company policy, or that all discs and USB drives are constantly being encrypted and thus they can be safely discarded in the regular trash.
+
+
+
+
+
+
+
 
 
 %% Käsittelylukujen työnjako määräytyy käsiteltävän asian luonteen mukaisesti. Lukijan oh￾jailemiseksi kukin pääluku kannattaa aloittaa lyhyellä kappaleella, joka paljastaa mikä kyseisen luvun keskeisin sisältö on ja kuinka aliluvuissa asiaa kehitellään eteenpäin. Er￾ityisesti kannattaa kiinnittää huomiota siihen, että lukijalle ilmaistaan selkeästi miksi kutakin asiaa käsitellään ja miten käsiteltävät asiat suhtautuvat toisiinsa. Jäsentelyongelmista kielivät tilanteet, joissa alilukuja on vain yksi, tai joissa käytetään useampaa kuin kahta tasoa (pääluku ja sen aliluvut). Kolmitasoisia otsikointeja saate￾taan tarvita joissakin teknisissä dokumenteissa perustellusti, mutta nämä muodostavat poikkeuksen.
