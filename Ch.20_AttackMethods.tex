@@ -4,15 +4,23 @@
     %% ATTACK METHODS                            %%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Attack Methods\label{methods}}
+\chapter{AI-Powered Attacks\label{methods}}
 
 Awareness of various social engineering (SE) attacks is crucial for professionals across all industries, not just those in cybersecurity. This chapter provides an overview of the most common SE attack methods.
 
-A later chapter will examine how modern AI augments these attacks, and how users of information systems need to be trained to counter these new, advanced threats.
+%%A later chapter will examine how modern AI augments these attacks, and how users of information systems need to be trained to counter these new, advanced threats.
 
-Some attacks that are discussed here are not always considered a type of SE attack, specifically shoulder surfing and dumpster diving, as these do not require the co-operation of the victim \citep{wang_defining_2020}. However, since they are often used in conjunction with other SE attacks, and since training for against them is often included in SE training and awareness programs, they are explained here, and because attackers are constantly improvising their attack methods, some manipulation used in conjunction with these methods, such as convincing employees that the company will destroy any documents put in the general waste in a safe way, may be used.
+Some attacks that are discussed here are not always considered a type of SE attack, specifically shoulder surfing and dumpster diving, as these do not require the co-operation of the victim \citep{wang_defining_2020}. However, since they are often used in conjunction with other SE attacks, and since training for against them is often included in SE training and awareness programs, they are explained here
 
-To better understand the threat posed by SE, it is essential to examine the diverse strategies employed by attackers. The following are some of the most common and effective SE attack methods.
+%%and because attackers are constantly improvising their attack methods, some manipulation used in conjunction with these methods, such as convincing employees that the company will destroy any documents put in the general waste in a safe way, may be used.
+
+To better understand the threat posed by SE, it is essential to examine the diverse strategies employed by attackers. The following are some of the most common and effective SE attack methods. We'll also analyze how the emergence of modern AI technologies might, or already has, powered up these types of attacks.
+
+Countermeasures against these attacks are examined in a later chapter.
+
+
+
+
 
 
 
@@ -32,6 +40,12 @@ Last on the list of phishing attacks is \textbf{whaling}. Whaling, also known as
 
 Two additional types of phishing need to be addressed, and they are \textbf{vishing} or voice phishing and \textbf{smishing} or SMS phishing. Despite having complicated names, the idea behind them are quite simple.
 
+Regular phishing doesn't usually require OSINT but spear phishing does.
+
+
+
+
+
 
 
 
@@ -46,11 +60,11 @@ Two additional types of phishing need to be addressed, and they are \textbf{vish
 
 Baiting is a similar attack method to phishing, discussed above, but emphasizes luring the victim via enticement strategies \citep{conteh_cybersecurityrisks_2016, salahdine_social_2019}. This technique exploits the target's curiosity or greed to gain unauthorized access to resources or premises or to obtain sensitive information.
 
-A common type of a baiting attack is what's known as a "USB drop" where the attacker loads malware or Trojan software into USB drives that are often tagged with an enticing title such as "Layoff Plans 2024" or "Sarah's private photos" and which are subsequently dropped at convenient locations for employees of the target company to find. These locations could be easily accessed, such as the company's vicinities, or more hard-to-reach places such as a protected parking lot or even employee restrooms or dining areas. A famous experiment in which 297 flash drives were dropped on university campuses concluded that the success rate (drives connected) was between 45 \% -- 98 \%, with the first drive connected within less than six minutes \cite{tischer_users_2016}.
+%%A common type of a baiting attack is what's known as a "USB drop" where the attacker loads malware or Trojan software into USB drives that are often tagged with an enticing title such as "Layoff Plans 2024" or "Sarah's private photos" and which are subsequently dropped at convenient locations for employees of the target company to find. These locations could be easily accessed, such as the company's vicinities, or more hard-to-reach places such as a protected parking lot or even employee restrooms or dining areas. A famous experiment in which 297 flash drives were dropped on university campuses concluded that the success rate (drives connected) was between 45 \% -- 98 \%, with the first drive connected within less than six minutes \cite{tischer_users_2016}.
 
 %%A USB baiting experiment showed that 15 out of 20 USB drives were found by employees and all were plugged in to the company's computers \citep{wang_social_2021}.
 
-OSINT can be useful here as well, with a bit of searching the tag that is attached to the thumbdrive could have a more interesting and suitable title. Attackers can also easily order USB thumbdrives, as an example, with custom logos printed on them from various online retailers for increased effect. The logo could even be from a competing company's one, if there's been heated rivalry between the two.
+%%OSINT can be useful here as well, with a bit of searching the tag that is attached to the thumbdrive could have a more interesting and suitable title. Attackers can also easily order USB thumbdrives, as an example, with custom logos printed on them from various online retailers for increased effect. The logo could even be from a competing company's one, if there's been heated rivalry between the two.
 
 %% https://www.darkreading.com/perimeter/social-engineering-the-usb-way
 
@@ -66,17 +80,24 @@ OSINT can be useful here as well, with a bit of searching the tag that is attach
 
 
 
+
+
+
+
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %% Pretexting                                %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Pretexting}
 
-Pretexting involves fabricating a story or a scenario, a \textit{pretext}, that is plausible but fraudulent, to engage the target and extract information with \citep{conteh_cybersecurityrisks_2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story.
+Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target and extract information with \citep{conteh_cybersecurityrisks_2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story.
 
-Situations can change quickly, and the attacker must be quick on their feet to respond to these changes. Training in multiple possible ways the target might respond or react is highly beneficial, such as threatening to call the police or the IT support.
+Modern AI can assist with the deployment of the pretext by being a sparring partner to the attacker, giving a safe "sandbox" to try out potential attacks and find ways in which the target might react.
 
-A high level of confidence in the pretext and the pretexted role is often cited to be a necessity, however, someone may very well engage a pretext as a novice, nervous new employee, which suggests that rather than stating a high level of (outwardly visible) confidence as a neceissty, the better wording would be a suitable level of confidence. In all cases, the attacker must believe their own pretext and act out the attack like an actor in a movie, to "become the pretext".
+%%Situations can change quickly, and the attacker must be quick on their feet to respond to these changes. Training in multiple possible ways the target might respond or react is highly beneficial, such as threatening to call the police or the IT support.
+
+%%A high level of confidence in the pretext and the pretexted role is often cited to be a necessity, however, someone may very well engage a pretext as a novice, nervous new employee, which suggests that rather than stating a high level of (outwardly visible) confidence as a neceissty, the better wording would be a suitable level of confidence. In all cases, the attacker must believe their own pretext and act out the attack like an actor in a movie, to "become the pretext".
 
 %% obtain sensitive info, access to systems or locations
 %% must be believable and relevant, should fit with the target's environment and expected interactions
@@ -92,17 +113,34 @@ A high level of confidence in the pretext and the pretexted role is often cited 
 
 
 
+
+
+
+
+
+
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %% Tailgating                                %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Tailgating}
 
-\textbf{Tailgating}, also known as \textbf{piggybacking} and sometimes \textbf{trailing \& pretending}, refers to the act of "tailing" someone through an access-controlled passage, such as a security gate. This type of attack exploits those who already have access rights for temporary access, such as for the fabricated scenario of delivering new hardware to the server rooms \citep{conteh_cybersecurityrisks_2016}. The social engineer may hold something that looks heavy in their hands and ask for a person going in to let them through, thus bypassing the need to have valid access authority.
+%% STATUS: kesken
 
-The attacker may have found out through OSINT that the company is expecting a delivery and then don the suit of a delivery company and escort people going in from their smoking/coffee breaks outside. Another type is where the attacker has forged a pretext where he explains that he had "forgotten" his security ID inside and his boss is already very angry with him and that he's afraid he's going to lose his job if he keeps messing up like this, playing on people's sympathy.
+\textbf{Tailgating}, also known as \textbf{piggybacking}, is a social engineering tactic that involves following an authorized person through an access-controlled passage, such as a security gate. This type of attack exploits individuals with temporary access rights, such as delivery personnel or maintenance workers \citep{conteh_cybersecurityrisks_2016}. The attacker may use manipulation to gain access, for instance, by carrying a heavy object and asking for assistance or pretending to be a delivery person with a forged pretext.
 
-This type of attack exploits people's natural tendency to want to help and be polite. Going in through security gates is a daily chore for many, which due to having become a mundane activity, has lessened the individual's vigilance.
+%%The attacker may have found out through OSINT that the company is expecting a delivery and then don the suit of a delivery company and escort people going in from their smoking/coffee breaks outside. Another type is where the attacker has forged a pretext where he explains that he had "forgotten" his security ID inside and his boss is already very angry with him and that he's afraid he's going to lose his job if he keeps messing up like this, playing on people's sympathy.
+
+In another scenario, the attasacker may use psychological manipulation to evoke sympathy, claiming to have forgotten their security ID and worrying about losing their job. This tactic preys on people's natural instinct to help and be polite. The mundane routine of passing through security gates can also lead to a false sense of security, making individuals less vigilant.
+
+%%This type of attack exploits people's natural tendency to want to help and be polite. Going in through security gates is a daily chore for many, which due to having become a mundane activity, has lessened the individual's vigilance.
+
+%% may use machine learning algorithms to identify vulnerabilites in access control systems, making tailgating attacks even more dangerous
+
+
+
+
 
 
 
@@ -117,7 +155,11 @@ This type of attack exploits people's natural tendency to want to help and be po
 
 \section{Shoulder Surfing}
 
-Observing people enter sensitive information, such as login details or financial data, without their knowledge or approval is called \textbf{shoulder surfing}. The name implies a person watching over the shoulder of someone else what they are typing or viewing sensitive data, but the attack AREA is actually far larger. The attacker could use cameras, either hacked, or those placed there by the attacker for this purpose, or even everyday objects such as binoculars. The proliferation of high-resolution cameras, such as those with HD or even 4K resolution, has magnified the issue of malicious or even accidentally viewing information they're not supposed to have seen.
+%% STATUS: almost complete, need sources
+
+Observing people enter sensitive information, such as login details or financial data, without their knowledge or approval is called \textbf{shoulder surfing}. The name implies a person watching over the shoulder of someone when they are typing or viewing sensitive data, but the attack surface is actually far larger. The attacker could use cameras, either hacked, or those placed there by the attacker for this purpose, or even everyday objects such as binoculars.
+
+The proliferation of high-resolution cameras, such as those with HD or 4K resolution, has exacerbated the issue of unauthorized information gathering since security cameras of the past didn't have the resolution necessary to show what's being viewed on a screen. Going through tens or even hundreds of hours of video material where sensitive information might be visible on an individual's or an employee's screen is time-consuming and tedious, but with the help of AI this job can be carried out with more ease. AI can not only turn words in a video into text, but it can also summarize the found text and search for anything that could be exploited.
 
 %% vigilance in public places
 %% HD and 4K cameras
@@ -135,13 +177,25 @@ Observing people enter sensitive information, such as login details or financial
 
 
 
+
+
+
+
+
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %% Dumpster Diving                           %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Dumpster Diving}
 
-As the name implies, \textbf{dumpster diving} refers to going through an organization's or an individual's trash, usually paper trash only but sometimes all trash, in order find sensitive information that really should've been disposed of properly \citep{syafitri_social_2022}. Rummaged content may yield interesting results, typically in the form of documents such as papers but also media devices such as optical discs, hard drives or USB thumbdrives, to be used as-is or as part of a future SE attack. Since dumpster diving does not include manipulation of people in its purest form, rather relying on the improper care of documents and other material, it is sometimes not classified as a social engineering attack \citep{wang_defining_2020}. However, one could imagine scenarios where manipulation of people is used as part of a dumpster diving attack, for example convincing people that documents put into regular waste bins will be shredded as part of a new company policy, or that all discs and USB drives are constantly being encrypted and thus they can be safely discarded in the regular trash.
+%% STATUS: lähes valmis
+
+As the name implies, \textbf{dumpster diving} refers to the practice of going through an organization's or an individual's trash in order find sensitive information that should have been disposed of properly \citep{syafitri_social_2022}. Rummaged content may yield interesting results, typically in the form of documents such as papers but also media devices such as optical discs, hard drives or USB thumbdrives, to be used as-is or as part of a future SE attack.
+
+Since dumpster diving does not include manipulation of people in its purest form, rather relying on the improper care of documents and other material, it is sometimes not classified as a social engineering attack \citep{wang_defining_2020}. However, it is often considered a precursor or supplementary tactic in broader social engineering schemes, as the information gathered can be used to craft more convincing and targeted attacks.
+
+%% However, one could imagine scenarios where manipulation of people is used as part of a dumpster diving attack, for example convincing people that documents put into regular waste bins will be shredded as part of a new company policy, or that all discs and USB drives are constantly being encrypted and thus they can be safely discarded in the regular trash.
 
 
 
