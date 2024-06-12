@@ -1,1 +1,0 @@
-# This is my work plan for my thesis
