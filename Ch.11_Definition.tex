@@ -42,3 +42,34 @@ Two common attack methods, namely \textbf{dumpster diving} and \textbf{shoulder 
 OSINT, sometimes written as OS-INT, means open-source intelligence. Like the name implies, it involves gathering of intelligence data from publicly locatable sources, such as from the target company's website, or from the social networking profiles of an individual or from other public records.
 
 As people have adopted to using social media as sometimes their primary means of communication, a lot of exploitable data is shared on these platforms as well.
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Pretexting                                %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Pretexting}
+
+Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target and extract information with \citep{conteh_cybersecurityrisks_2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story.
+
+Modern AI can assist with the deployment of the pretext by being a sparring partner to the attacker, giving a safe "sandbox" to try out potential attacks and find ways in which the target might react.
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Attacks & countermeasures overview        %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Attacks \& countermeasures overview}
+
+To get a better understand on the landscape of potential social engineering attacks, some of the most common attack methods are analyzed here. Later chapters will go into more depth regarding those attacks and countermeasures that were chosen for their high affinity for AI-poweredness. Attacks that are examined are phishing and its various forms, baiting, tailgating, shoulder surfing and dumpster diving.
+
+The quintessential SE attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, usually via email where it's just called phishing, but sometimes using voice (\textbf{vishing}) or SMS-messaging (\textbf{smishing}). \textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Lastly, \textbf{whaling}, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management.
+
+\textbf{Baiting} is a similar attack method to phishing but emphasizes luring the victim via enticement strategies \citep{conteh_cybersecurityrisks_2016, salahdine_social_2019}. This technique exploits the target's curiosity or greed to gain unauthorized access to resources or premises or to obtain sensitive information. A common type of a baiting attack is what's known as a "USB drop" where the attacker loads malware or Trojan software into USB drives that are often tagged with an enticing title such as "Layoff Plans 2024" or "Sarah's private photos" and which are subsequently dropped at convenient locations for employees of the target company to find.
+
+\textbf{Tailgating}, also known as \textbf{piggybacking}, is a social engineering tactic that involves following an authorized person through an access-controlled passage, such as a security gate. This type of attack exploits individuals with temporary access rights, such as delivery personnel or maintenance workers \citep{conteh_cybersecurityrisks_2016}. The attacker may use manipulation to gain access, for instance, by carrying a heavy object and asking for assistance or pretending to be a delivery person with a forged pretext.
+
+The remaining two attacks are not always considered as forms of social engineering attacks.
+
+Observing people enter sensitive information, such as login details or financial data, without their knowledge or approval is called \textbf{shoulder surfing}. The name implies a person watching over the shoulder of someone when they are typing or viewing sensitive data, but the attack surface is actually far larger. The attacker could use cameras, either hacked, or those placed there by the attacker for this purpose, or even everyday objects such as binoculars.
+
+As the name implies, \textbf{dumpster diving} refers to the practice of going through an organization's or an individual's trash in order find sensitive information that should have been disposed of properly \citep{syafitri_social_2022}. Rummaged content may yield interesting results, typically in the form of documents such as papers but also media devices such as optical discs, hard drives or USB thumbdrives, to be used as-is or as part of a future SE attack.
