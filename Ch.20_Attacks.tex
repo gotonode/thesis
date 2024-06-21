@@ -16,6 +16,8 @@ Some attacks that are discussed here are not always considered a type of SE atta
 
 To better understand the threat posed by SE, it is essential to examine the diverse strategies employed by attackers. The following are some of the most common and effective SE attack methods. We'll also analyze how the emergence of modern AI technologies might, or already has, powered up these types of attacks.
 
+The field of social engineering contains a plethora of attacks, and for the purposes of this thesis this selection had to be narrowed down. Due to their relevance, phishing it its various forms, deepfake-generated content and automated OSINT were chosen for a more in-depth analysis.
+
 Countermeasures against these attacks are examined in a later chapter.
 
 
@@ -46,12 +48,18 @@ Regular phishing doesn't usually require OSINT but spear phishing does.
         %% Deepfake-augmented                        %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Deepfake-aided}
+\section{Deepfake-augmented attacks }
 
 
+\section{Automated OSINT}
 
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Other attack methods                      %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Other methods}
 
+This section covers other social engineering attacks that were not chosen for more in-depth analysis due to their weaker affinity to be amplified by modern AI. These attacks include baiting, shoulder surfing and dumpster diving. However, advancements in fields such as robotics could make these attacks more relevant in the future. All of them can be used as part of a social engineering attack chain, even if their use wouldn't rely on AI, and this is why it's important that they get mentioned in this thesis.
 
 
 
@@ -60,9 +68,9 @@ Regular phishing doesn't usually require OSINT but spear phishing does.
         %% Bating                                    %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Baiting}
+%%\section{Baiting}
 
-Baiting is a similar attack method to phishing, discussed above, but emphasizes luring the victim via enticement strategies \citep{conteh_cybersecurityrisks_2016, salahdine_social_2019}. This technique exploits the target's curiosity or greed to gain unauthorized access to resources or premises or to obtain sensitive information.
+\textbf{Baiting} is a similar attack method to phishing, discussed above, but emphasizes luring the victim via enticement strategies \citep{conteh_cybersecurityrisks_2016, salahdine_social_2019}. This technique exploits the target's curiosity or greed to gain unauthorized access to resources or premises or to obtain sensitive information.
 
 %%A common type of a baiting attack is what's known as a "USB drop" where the attacker loads malware or Trojan software into USB drives that are often tagged with an enticing title such as "Layoff Plans 2024" or "Sarah's private photos" and which are subsequently dropped at convenient locations for employees of the target company to find. These locations could be easily accessed, such as the company's vicinities, or more hard-to-reach places such as a protected parking lot or even employee restrooms or dining areas. A famous experiment in which 297 flash drives were dropped on university campuses concluded that the success rate (drives connected) was between 45 \% -- 98 \%, with the first drive connected within less than six minutes \cite{tischer_users_2016}.
 
@@ -120,7 +128,7 @@ Baiting is a similar attack method to phishing, discussed above, but emphasizes 
         %% Tailgating                                %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Tailgating}
+%%\section{Tailgating}
 
 %% STATUS: kesken
 
@@ -128,7 +136,7 @@ Baiting is a similar attack method to phishing, discussed above, but emphasizes 
 
 %%The attacker may have found out through OSINT that the company is expecting a delivery and then don the suit of a delivery company and escort people going in from their smoking/coffee breaks outside. Another type is where the attacker has forged a pretext where he explains that he had "forgotten" his security ID inside and his boss is already very angry with him and that he's afraid he's going to lose his job if he keeps messing up like this, playing on people's sympathy.
 
-In another scenario, the attasacker may use psychological manipulation to evoke sympathy, claiming to have forgotten their security ID and worrying about losing their job. This tactic preys on people's natural instinct to help and be polite. The mundane routine of passing through security gates can also lead to a false sense of security, making individuals less vigilant.
+%%In another scenario, the attasacker may use psychological manipulation to evoke sympathy, claiming to have forgotten their security ID and worrying about losing their job. This tactic preys on people's natural instinct to help and be polite. The mundane routine of passing through security gates can also lead to a false sense of security, making individuals less vigilant.
 
 %%This type of attack exploits people's natural tendency to want to help and be polite. Going in through security gates is a daily chore for many, which due to having become a mundane activity, has lessened the individual's vigilance.
 
@@ -149,13 +157,13 @@ In another scenario, the attasacker may use psychological manipulation to evoke 
         %% Shoulder Surfing                          %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Shoulder Surfing}
+%%\section{Shoulder Surfing}
 
 %% STATUS: almost complete, need sources
 
 Observing people enter sensitive information, such as login details or financial data, without their knowledge or approval is called \textbf{shoulder surfing}. The name implies a person watching over the shoulder of someone when they are typing or viewing sensitive data, but the attack surface is actually far larger. The attacker could use cameras, either hacked, or those placed there by the attacker for this purpose, or even everyday objects such as binoculars.
 
-The proliferation of high-resolution cameras, such as those with HD or 4K resolution, has exacerbated the issue of unauthorized information gathering since security cameras of the past didn't have the resolution necessary to show what's being viewed on a screen. Going through tens or even hundreds of hours of video material where sensitive information might be visible on an individual's or an employee's screen is time-consuming and tedious, but with the help of AI this job can be carried out with more ease. AI can not only turn words in a video into text, but it can also summarize the found text and search for anything that could be exploited.
+%%The proliferation of high-resolution cameras, such as those with HD or 4K resolution, has exacerbated the issue of unauthorized information gathering since security cameras of the past didn't have the resolution necessary to show what's being viewed on a screen. Going through tens or even hundreds of hours of video material where sensitive information might be visible on an individual's or an employee's screen is time-consuming and tedious, but with the help of AI this job can be carried out with more ease. AI can not only turn words in a video into text, but it can also summarize the found text and search for anything that could be exploited.
 
 %% vigilance in public places
 %% HD and 4K cameras
@@ -183,13 +191,13 @@ The proliferation of high-resolution cameras, such as those with HD or 4K resolu
         %% Dumpster Diving                           %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Dumpster Diving}
+%%\section{Dumpster Diving}
 
 %% STATUS: lähes valmis
 
 As the name implies, \textbf{dumpster diving} refers to the practice of going through an organization's or an individual's trash in order find sensitive information that should have been disposed of properly \citep{syafitri_social_2022}. Rummaged content may yield interesting results, typically in the form of documents such as papers but also media devices such as optical discs, hard drives or USB thumbdrives, to be used as-is or as part of a future SE attack.
 
-Since dumpster diving does not include manipulation of people in its purest form, rather relying on the improper care of documents and other material, it is sometimes not classified as a social engineering attack \citep{wang_defining_2020}. However, it is often considered a precursor or supplementary tactic in broader social engineering schemes, as the information gathered can be used to craft more convincing and targeted attacks.
+%%Since dumpster diving does not include manipulation of people in its purest form, rather relying on the improper care of documents and other material, it is sometimes not classified as a social engineering attack \citep{wang_defining_2020}. However, it is often considered a precursor or supplementary tactic in broader social engineering schemes, as the information gathered can be used to craft more convincing and targeted attacks.
 
 %% However, one could imagine scenarios where manipulation of people is used as part of a dumpster diving attack, for example convincing people that documents put into regular waste bins will be shredded as part of a new company policy, or that all discs and USB drives are constantly being encrypted and thus they can be safely discarded in the regular trash.
 
