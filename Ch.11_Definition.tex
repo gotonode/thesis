@@ -5,16 +5,46 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
 
-\chapter{History and Definition of Social Engineering\label{definition}}
+\chapter{Definition of Social Engineering\label{definition}}
+\begin{comment}
+
+Guides:
+    - Page limit 1-2 pages
+
+TODO:
+    [ ] Who is this thesis for
+    [ ] Why should you read my thesis
+    [ ] What is the research question and how it is answered
+    [ ] How is this thesis organized, what is covered and what is deliberaly not covered and in what chapters (outline)
+
+What to cover:
+    - What is cybersecurity and why it's of paramount importance
+    - What is social engineering
+        - Brief history of social engineering
+            - Phishing in 1996 via AOL
+    - Attacks, classical social engineering attacks
+        - Phishing, vishing, smishing
+        - Tailgating
+        - Baiting (not always considered SE)
+        - Dumpster diving (not always considered SE)
+    - Countermeasures, classical
+        - User awareness & training programs
+        - Company policy & company culture
+        - Real-time threat detection
+        - Vulnerability detection
+    - Typical challenges
+    - Motives for cybercrimes
+        - Hard(er) to detect?
+        - "Easy" wins?
+
+Literature:
+    - Defining Social Engineering in Cybersecurity
+
+\end{comment}
 
 The term \textit{social engineering} is perhaps overused and is certainly misused, and for clarity, in this chapter a clearer definition is formed and some history reviewed. For the purpose of this thesis, we'll use the definition for SE given by \cite{wang_defining_2020}: "social engineeing is a type of attack wherein the attacker(s) exploit human vulnerabilities by means of social interaction to breach cybersecurity, with or without the use of techincal means and technical vulnerabilities."
 
 The term \textit{social engineering} seems to have first appeared in an article titled "More on Trashing", which was published in September, 1984 on one of the earliest hacker magazines, The Hacker's Quarterly \citep{wang_defining_2020}, but the broader concepts of human exploitation date back much farther than this \citep{qin_investigation_2007}. For as long as humans have partaken in communication and trade, there have been those that have tried to exploit the system in their own favor, in an unethical and selfish way.
-
-% impersonation
-% phishing
-% baiting
-% tailgating
 
 For as long as there has been social contracts, both written and oral or implied, there have been those that try to get away with cheating. Social engineering, thus, is not a new concept. In 19xx people who partook in actions akin to SE were called confidence men or con artists. They manipulated their victim to be complacent in the act.
 
@@ -40,24 +70,65 @@ Two common attack methods, namely \textbf{dumpster diving} and \textbf{shoulder 
 
 
 
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %% Open-Source Intelligence (OSINT)          %%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Open-Source Intelligence (OSINT)          %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Open-Source Intelligence, OSINT}
+\begin{comment}
+
+    - OSINT, sometimes written as OS-INT?
+    - Data from publicly available resources
+        - Company website
+        - Social networking sites
+        - Sites like archive.org and Google archives
+        - Observing people in real life
+    - Does not include calling the company and asking for information or any other forms of engagement
+    - How modern AI augments OSINT gathering is analyzed in the last chapter
+        - Exploration of how AI tools and techniques used for the automation and enhancement of OSINT processes
+    - Stress the importance of OSINT within SE
+    - Ethical considerations when it comes to OSINT
+    - Some case studies highlighting the use of OSINT in real-world social engineering incidents?
+    - Countermeasures will also be covered later
+        - Strategies for companies to mitigate the risks associated with OSINT-based attacks
+        - Integration of AI algorithms for analyzing and extracting valuable insights from OSINT data
+        - Impact of AI-powered intelligence gathering of SE attacks
+        
+\end{comment}
 
 OSINT, sometimes written as OS-INT, means open-source intelligence. Like the name implies, it involves gathering of intelligence data from publicly locatable sources, such as from the target company's website, or from the social networking profiles of an individual or from other public records.
 
 As people have adopted to using social media as sometimes their primary means of communication, a lot of exploitable data is shared on these platforms as well.
 
-How these and other related terms relate to modern AI will be discussed later. This section provides a general overview of them , as part of the greater social engineering whole.
 
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %% Pretexting                                %%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Pretexting                                %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Pretexting}
+\begin{comment}
+
+    - General info about what is pretexting
+    - Fabricated scenario that is plausible but fraudulent
+    - Originally used by FBI
+    - Impersonation
+    - Discussion about how modern AI can aid with pretexting is in the final chapter
+    - Role in the deception-based SE attacks
+    - Common pretexting tactics will be covered later
+    - How AI powers up pretexting will be discussed later
+        - How AI tech can be utilized to create more sophisticated and convincing pretexts
+        - Examples of succesful pretexting attacks and their impacts
+        - AI and automated pretexting attacks and their effectiveness
+        - Analysis on pretexting evolving landscape with AI
+    - Ethical considerations?
+    - Countermeasures will be covered later also
+        - How to identify and mitigate attempts
+        - Recommendations for organiations to enhance their defenses against pretexting attacks
+        
+\end{comment}
 
 Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target and extract information with \citep{conteh_cybersecurityrisks_2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story. Modern AI can assist in the OSINT process.
-
-Modern AI can assist with the deployment of the pretext by being a sparring partner to the attacker, giving a safe "sandbox" to try out potential attacks and find ways in which the target might react.
