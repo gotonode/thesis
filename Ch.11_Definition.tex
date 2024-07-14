@@ -44,11 +44,20 @@ Literature:
 
 \end{comment}
 
-The term \textit{social engineering} is perhaps overused and is certainly misused, and for clarity, in this chapter a clearer definition is formed and some history reviewed. For the purpose of this thesis, we'll use the definition for SE given by \cite{wang_defining_2020}: "social engineeing is a type of attack wherein the attacker(s) exploit human vulnerabilities by means of social interaction to breach cybersecurity, with or without the use of techincal means and technical vulnerabilities."
+This chapter gives an overview of what social engineering (SE) constitutes, provides brief historical and psychological context and describes some key terminology that is necessary for further analysis. Chapter \ref{chapter:anatomy} dissects the anatomy of a typical SE attack.
 
-The term \textit{social engineering} seems to have first appeared in an article titled "More on Trashing", which was published in September, 1984 on one of the earliest hacker magazines, The Hacker's Quarterly \citep{wang_defining_2020}, but the broader concepts of human exploitation date back much farther than this \citep{qin_investigation_2007}. For as long as humans have partaken in communication and trade, there have been those that have tried to exploit the system in their own favor, in an unethical and selfish way.
 
-For as long as there has been social contracts, both written and oral or implied, there have been those that try to get away with cheating. Social engineering, thus, is not a new concept. In 19xx people who partook in actions akin to SE were called confidence men or con artists. They manipulated their victim to be complacent in the act.
+The term \textit{social engineering} dates back to 1842, when it was used to describe the application of centralized planning to attempt to manage social change and the regulation of the future development and behavior of a society \citep{hatfieldSocialEngineeringCybersecurity2018a}. Since then, its use has shifted to the field of cybersecurity through the phone phreaking phase (late 1950s to early 1970s) and through to the contemporary hacker culture \citep{wangDefiningSocialEngineering2020}.
+
+As one of the earliest hackers, the phreakers, used impersonation to call the Bell Telephone company in order to gain insider information about the telephone system in order to carry out further attacks without the need for social manipulation \citep{hatfieldSocialEngineeringCybersecurity2018a}, modern hackers view social engineering not as something to be replaced but a key part of any hacker's toolkit, in fact perhaps the most important one \citep{mitnickArtDeceptionControlling2003}.
+
+The Oxford English Dictionary defines SE, as it relates to cybersecurity, as "the use of deception in order to induce a person to divulge private info or especially unwittingly provide unauthorized access to a computer system or network". This definition seems limiting, and the term is perhaps overused and is certainly misused, even in academic literature \citep{wangDefiningSocialEngineering2020}, with well over 130 different definitions \citep{hatfieldSocialEngineeringCybersecurity2018a}.
+
+For the purpose of this thesis, we'll use the definition for SE given by \cite{wangDefiningSocialEngineering2020}: "social engineering is a type of attack wherein the attacker(s) exploit human vulnerabilities by means of social interaction to breach cybersecurity, with or without the use of technical means and technical vulnerabilities."
+
+%The term \textit{social engineering} seems to have first appeared in an article titled "More on Trashing", which was published in September, 1984 on one of the earliest hacker magazines, The Hacker's Quarterly \citep{wang_defining_2020}, but the broader concepts of human exploitation date back much farther than this \citep{qin_investigation_2007}. For as long as humans have partaken in communication and trade, there have been those that have tried to exploit the system in their own favor, in an unethical and selfish way.
+
+%For as long as social contracts have existed, whether in written or spoken form, explicit or implicit, there have always been individuals attempting to deceive others. Therefore, social engineering is not a novel idea. In 19xx, individuals engaged in activities similar to social engineering were known as confidence men or con artists. They tricked their victims into unwittingly participating in their schemes.
 
 In this thesis, social engineering as a field is divided into two categories:
 
@@ -57,15 +66,72 @@ In this thesis, social engineering as a field is divided into two categories:
     \item AI-powered social engineering, where modern AI is used to augment, or fully execute, the attacks and countermeasures
 \end{itemize}
 
-As described by \cite{abiteboul}, the term \textit{social engineering} is perhaps overused and is certainly misused. What exactly constitutes social engineering? In this thesis, SE is defined as "social engineering is the deliberate act of convincing a victim, usually though the use of technology, to perform an action that may or may not be in their best interest". A definition of social engineering by Hadnagy has become quite popular "may or may not be in their best interest". HADNAGY
+Next, general SE terminology and other key concepts are reviewed. In Chapter \ref{chapter:anatomy}, the anatomy of a typical SE attack is dissected before moving on to the actual attacks in Chapter \ref{chapter:attacks}.
 
-Some scholars have included acts like shoulder shurfing and dumpster diving as social engineering attacks \citep{abiteboul}, even though they do not rely on the manipulation of individuals.  However, since they don't fall neatly into the typical category of "hacking attacks", they fall into a gray area in between. Since user education and awareness programs should include training the user against discarding important documents without shredding them first or by putting them into boxes designated "secure documents", and people need to be on the lookout for people gazing over their shoulders, especially when entering sensitive information such as usernames, passwords and other access codes, they are included in this thesis.
+%Some scholars have included acts like shoulder shurfing and dumpster diving as social engineering attacks \citep{abiteboul}, even though they do not rely on the manipulation of individuals.  However, since they don't fall neatly into the typical category of "hacking attacks", they fall into a gray area in between. Since user education and awareness programs should include training the user against discarding important documents without shredding them first or by putting them into boxes designated "secure documents", and people need to be on the lookout for people gazing over their shoulders, especially when entering sensitive information such as usernames, passwords and other access codes, they are included in this thesis.
 
-It's also necessary to go over some basic terminology related to the field of SE.
+%It's also necessary to go over some basic terminology related to the field of SE.
 
-Two common attack methods, namely \textbf{dumpster diving} and \textbf{shoulder surfing}, are often categorized as social engineering attacks, but do not necessarily fall under the SE category, as they do not include direct social interaction with the victim \citep{wang_defining_2020}. In other words, the compliance of the victim is not necessary in these two types of attacks. However, since they are non-technical in that no devices or technologies need to be used, they fall in a "gray area". They require neither the use of devices or technologies nor the psychological manipulation of the user. Thus, it has been easy to refer to them as SE attacks. In this paper, they are still discussed because SE training and awareness programs should include mentioning about these.
+%Two common attack methods, namely \textbf{dumpster diving} and \textbf{shoulder surfing}, are often categorized as social engineering attacks, but do not necessarily fall under the SE category, as they do not include direct social interaction with the victim \citep{wang_defining_2020}. In other words, the compliance of the victim is not necessary in these two types of attacks. However, since they are non-technical in that no devices or technologies need to be used, they fall in a "gray area". They require neither the use of devices or technologies nor the psychological manipulation of the user. Thus, it has been easy to refer to them as SE attacks. In this paper, they are still discussed because SE training and awareness programs should include mentioning about these.
 
 
+
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Influence                                 %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Psychological aspects}
+\begin{comment}
+
+    - Influence
+        - Six Weapons of Influence
+            - Reciprocity
+            - Commitment and consistency
+            - Social proof
+            - Liking
+            - Authority
+            - Scarcity
+        - Cialdini Influence Science and Practice 1993
+    - Hatfield's three concepts
+        - Epistemic asymmetry
+        - Technocratic dominance
+        - Teleological replacement
+        
+\end{comment}
+
+This section goes over some basic psychological aspects related to social engineering, such as influence and its six core elements as well as more specifically SE-related concepts.
+
+Influence, a key concept and technique in social engineering, is the ability or power of a person, thing, or phenomenon to have an effect on someone or something \citep{cialdiniInfluenceSciencePractice1993}. It refers to the ability to produce an effect, change opinions, behaviors, decisions, or outcomes. Influence can be positive or negative, intentional or unintentional, and can result from several factors. When influence is negative, it can be referred to as manipulation or deception, which in the case of social engineering is an intentional act \citep{mitnickArtDeceptionControlling2003}.
+
+\cite{cialdiniInfluenceSciencePractice1993}, has identified six key principles of influence, known as the "six weapons of influence": reciprocity, commitment and consistency, social proof, liking, authority and scarcity.
+
+\begin{itemize}
+    \item \textit{Reciprocity}: People, by nature, feel obligated to return favors or gestures. By giving something to someone, the attacker can create a sense of indebtedness that can lead to reciprocity.
+
+    \item \textit{Commitment and Consistency}: People have a strong desire to be consistent with their past behavior and commitments, either consciously or subconsciously. Once the victim makes a small commitment or takes a stand, they are more likely to follow through with similar actions. %An attacker may make a small, insignificant request to the victim and once complied, future compliances may be more likely.
+
+    \item \textit{Social Proff}: People do tend to follow the actions of others, especially in uncertain situations ("herd mentality"). Social proof thus suggests that individuals look to others to determine what is correct or appropriate behavior.% When someone else, such as the attacker's partner, is witnessed giving away their PIN code, the likelyhood of the witnessing parties to do the same may increase.
+
+    \item \textit{Liking}: People are more easily persuaded by those they like. Building rapport, similarities and connections with others can increase the attacker's influence over them. %The attacker may, for example, pretend to be a smoker and join other employees on their smoke break to build a relationship.
+
+    \item \textit{Authority}: People are more likely to comply with requests from those they deem as authority figures or individuals who are perceived as experts. Demonstrating authority or expertise can increase the attacker's persuasive power.
+
+    \item \textit{Scarcity}: People assign more value to opportunities that are scarce or limited. Create a sense of urgency (time-limiting) or scarcity can motivate people to take action.
+\end{itemize}
+
+Further, \cite{hatfieldSocialEngineeringCybersecurity2018a}, defines three terms as a type of "extension" to the previous that are specifically related to the field of social engineering, which are epistemic asymmetry, technocratic dominance, and teleological replacement.
+
+\begin{itemize}
+
+    \item When a person or a group has a knowledge-based advantage over another person or a group within a domain, for example, information technology, to which that knowledge applies, it is called \textit{epistemic asymmetry}.
+
+    \item Building on epistemic asymmetry, \textit{technocratic dominance} occurs when a person or a group that has a high level of technical knowledge uses that knowledge to affect the behavior or actions of others in a way that places those affected under a position of diminished power or authority in relation to the former within the specific domain.
+
+    \item Finally, \textit{teleological replacement} describes a situation where a person or a group is successful in substituting in others their own original purpose with that of the social engineer's.
+    
+\end{itemize}
 
 
 
@@ -98,12 +164,9 @@ Two common attack methods, namely \textbf{dumpster diving} and \textbf{shoulder 
         
 \end{comment}
 
-OSINT, sometimes written as OS-INT, means open-source intelligence. Like the name implies, it involves gathering of intelligence data from publicly locatable sources, such as from the target company's website, or from the social networking profiles of an individual or from other public records.
+\textit{OSINT}, sometimes written as OS-INT, means open-source intelligence. Like the name implies, it involves gathering of intelligence data from publicly locatable sources, such as from the target company's website, or from the social networking profiles of an individual or from other public records.
 
 As people have adopted to using social media as sometimes their primary means of communication, a lot of exploitable data is shared on these platforms as well.
-
-
-
 
 
 
@@ -133,7 +196,7 @@ As people have adopted to using social media as sometimes their primary means of
         
 \end{comment}
 
-Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target and extract information with \citep{conteh_cybersecurityrisks_2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story. Modern AI can assist in the OSINT process.
+Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target and extract information with \citep{contehCybersecurityRisksVulnerabilities2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story. Modern AI can assist in the OSINT process.
 
 Pretexting is examined here and not in the attacks section since it's a precursor to the attacks, used as the "background" of other attack methods, even though some literature lists pretexting as an attack method itself.
 
