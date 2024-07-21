@@ -30,7 +30,7 @@ Awareness of various social engineering (SE) attacks is crucial for professional
 
 %A later chapter will examine how modern AI augments these attacks, and how users of information systems need to be trained to counter these new, advanced threats.
 
-Some attacks that are discussed here are not always considered a type of SE attack, specifically shoulder surfing and dumpster diving, as these do not require the co-operation of the victim \citep{wang_defining_2020}. However, since they are often used in conjunction with other SE attacks, and since training for against them is often included in SE training and awareness programs, they are explained here
+Some attacks that are discussed here are not always considered a type of SE attack, specifically shoulder surfing and dumpster diving, as these do not require the co-operation of the victim \citep{wangDefiningSocialEngineering2020}. However, since they are often used in conjunction with other SE attacks, and since training for against them is often included in SE training and awareness programs, they are explained here
 
 %and because attackers are constantly improvising their attack methods, some manipulation used in conjunction with these methods, such as convincing employees that the company will destroy any documents put in the general waste in a safe way, may be used.
 
@@ -60,13 +60,13 @@ Countermeasures against these attacks are examined in a later chapter.
 \end{comment}
 
 
-As the quintessential SE attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from gullible users \citep{wang_defining_2020}.\footnote{This is a footnote tehajthaewkjthjkawethjwkehhuawheflauifhaliewfhiuwef}
+As the quintessential SE attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from gullible users \citep{wang_defining_2020}.
 
 \textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdine_social_2019}. This tailored approach increases the likelihood of the victim falling for the scam.
 
 Last on the list of phishing attacks is \textbf{whaling}. Whaling, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management, "the big whales" \citep{abraham_overview_2010}. The attackers carefully research their targets to create convincing and typically urgent messages that appear to come from trusted sources, often impersonating colleagues, business partners, or government agencies. The goal is often to authorize large financial transactions or to leverage the target's authority and access within the company.
 
-Two additional types of phishing need to be addressed, and they are \textbf{vishing} or voice phishing and \textbf{smishing} or SMS phishing. Despite having complicated names, the idea behind them are quite simple.
+Two additional types of phishing need to be addressed, and they are \textbf{vishing} or voice phishing and \textbf{smishing} or SMS (simple message system) phishing. Despite having complicated names, the idea behind them are quite simple.
 
 Regular phishing doesn't usually require OSINT but spear phishing does.
 
@@ -74,7 +74,7 @@ Regular phishing doesn't usually require OSINT but spear phishing does.
         %% Deepfake-augmented                        %%
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Deepfake-augmented attacks }
+\section{Deepfake-augmented attacks}
 \begin{comment}
     
     -
@@ -258,6 +258,8 @@ As the name implies, \textbf{dumpster diving} refers to the practice of going th
 
 %% Kullakin kirjoittajalla on oma temponsa, joka välittyy lukijalle tekstikappaleiden pitu￾udessa ja niihin sisällytettyjen ajatuskulkujen mutkikkuudessa. Kussakin tekstikappaleessa pitäisi pitäytyä vain yhdessä informaatioaskelessa tai olennaisessa päättelyaskelessa, muuten juonen seuraaminen käy raskaaksi olennaisten lauseiden etsiskelyksi. Yksivirkkeisiä tek￾stikappaleita on syytä varoa.
 
+\textbf{Reverse social engineering} is a special attack vector wherein the attacker advertises himself as providing a solution to problems within a certain domain, usually in the IT/tech sphere, then artificially creates a problem and waits for the victim to contact them.
+
 Table \ref{tab:attacks} lists some of the most common SE attacks, both in their old-school, pre-AI era and as AI-powered to give a clear overview.
 
 \begin{table}[ht]
@@ -268,7 +270,7 @@ Table \ref{tab:attacks} lists some of the most common SE attacks, both in their 
         \toprule
         \textbf{Attack Type} & \textbf{Pre-AI} & \textbf{AI-Powered} \\
         \midrule
-        Phishing & Generic emails, low personalization, easily detectable &  Highly personalized, uses NLP, adaptive, real-time learning from responses \\
+        Phishing \& Smishing & Generic messages, low personalization, easily detectable &  Highly personalized, uses NLP, adaptive, real-time learning from responses \\
         \midrule
         Spear Phishing & Manual research for personalization, time consuming & Automated, deep-learning based personalization, rapid deployment \\
         \midrule
@@ -278,6 +280,7 @@ Table \ref{tab:attacks} lists some of the most common SE attacks, both in their 
         \midrule
         Impersonation & Human-driven calls, script based & AI-generated voice, dynamic script adjustments based on real-time conversation analysis \\
         \bottomrule
+        
     \end{tabularx}
     %\end{tabular}
     \caption{Comparison of Social Engineering Attack Methods (Pre and Post-AI)}
