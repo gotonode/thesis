@@ -62,6 +62,19 @@ Countermeasures against these attacks are examined in Chapter \ref{chapter:count
 
 As the quintessential SE attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from gullible users \citep{wangDefiningSocialEngineering2020}.
 
+Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-functional URL used for phishing purposes. The target user is hoped by the attacker to be unaware of the different domains these seemingly similar URL's redirect the user. The phishing URL is taken from a dataset of known phishing websites but its domain is changed to IANA's example.com domain for security. The legitimate URL is from PayPal's website and is functional as of writing.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Legitimate & Phishing \\ \hline
+        paypal.com/us/signin &paypal.com.cgi-bin.788a5.example.com/ \\ \hline
+    \end{tabular}
+    \caption{Example of a legitimate URL and a non-working phishing URL.}
+    \label{tab:placeholder_label}
+\end{table}
+
 \textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdine_social_2019}. This tailored approach increases the likelihood of the victim falling for the scam.
 
 Last on the list of phishing attacks is \textbf{whaling}. Whaling, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management, "the big whales" \citep{abraham_overview_2010}. The attackers carefully research their targets to create convincing and typically urgent messages that appear to come from trusted sources, often impersonating colleagues, business partners, or government agencies. The goal is often to authorize large financial transactions or to leverage the target's authority and access within the company.
