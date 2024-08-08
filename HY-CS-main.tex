@@ -188,7 +188,7 @@
 %% in which case you should also define the language of the abstract,
 %% as below.
 
-\include{Ch.00_Abstract}
+\include{Ch.A_Abstract}
 
 % Place ToC
 %\newpage
@@ -210,12 +210,14 @@
 %% Alternatively, \input is a more lower level macro 
 %% which simply inputs the content of the given file like it was copy&pasted there manually.
 
-\include{Ch.10_Introduction}
-\include{Ch.11_Definition}
-\include{Ch.12_Stages}
-\include{Ch.20_Attacks}
-\include{Ch.40_Countermeasures}
-\include{Ch.50_Conclusions}
+\include{Ch.1_Introduction}
+\include{Ch.2_Definition}
+\include{Ch.3_Anatomy}
+\include{Ch.4_Vectors}
+\include{Ch.5_Countermeasures}
+\include{Ch.6_Conclusions}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\cleardoublepage                          %fixes the position of bibliography in bookmarks
@@ -224,11 +226,15 @@
 \printbibliography
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \backmatter
+\include{Ch.Z_Declaration}
 \begin{appendices}
 
 %% A sample Appendix
-\include{Ch.90_Declaration}
+%\include{Ch.90_Declaration}
 
 
 

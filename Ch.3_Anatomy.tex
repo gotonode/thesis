@@ -1,0 +1,160 @@
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% ANATOMY                                   %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Anatomy of an Attack\label{chapter:anatomy}}
+\begin{comment}
+
+Guides:
+    - About 2 pages
+
+TODO:
+    [ ] Cover how SE attacks are cyclical
+
+What to cover:
+    - The 4-Stage process of SE
+        - Gather OSINT
+        - Build relationship
+        - Exploit relationship / launch the attack
+        - Exit / cover traces
+    - Cyclical nature of SE attacks
+    
+Literature:
+    - 
+
+\end{comment}
+
+The anatomy of a typical, generic social engineering attack is dissected in this chapter. With the structure of an attack being presented, Chapter \ref{chapter:attacks} examines the different attack vectors that can be used in more detail.
+
+SE attacks usually happen in phases. Various scholars define these phases in different ways, but they generally follow a four-stage process.
+
+Attacks can be aimed at an individual or an organization, and the attack can be carried out by a single person, a team of 2 or more attackers, and can even be done by an organization or a nation (such as in cyberwarfare and cyberterrorism). In this essay, the singular form "attacker" is used to refer to the attacking party regardless of its composition.
+
+The four-stage process used on this essay is:
+
+\begin{enumerate}
+    \item Collect information about the target
+    \item Develop a relationship with the target
+    \item Exploit the target by executing attack vector(s)
+    \item Exit having cleaned any traces
+\end{enumerate}
+
+%When attacking an individual or an organization, the terms used to refer to the victim are either mark, subject or target. The term target is used in this paper for consistency reasons, much like the target of a worm is a computer, the target of a social engineering attack is a human.
+
+An attack can happen in multiple iterations, which compose all or most of the four stages with subsequent iterations building on from the information and resources (such as passwords, access badges) gathered from the previous. Thus it is vital never to burn any leads/sources but to leave people and resources open, so it pays to be kind and respectful \citep{hadnagySocialEngineering2018}.
+
+Next, each of these four stages is examined in detail. Special emphasis is placed on how the emergence of modern AI technologies could impact, or has already impacted, these stages. After this, Chapter \ref{chapter:attacks} will go over the different attack types, followed by Chapter \ref{chapter:countermeasures} which examines countermeasures against them.
+
+%In this section, each of the four stages of an attack are examined from the point of view of old school SE and as well as AI-powered SE. Further analysis about the interplay of these attacks is in the last chapter.
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Intelligence Gathering                    %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Intelligence Gathering}
+\begin{comment}
+    
+    - OSINT has been defined in a preceending chapter
+    - Cover the phase of intel gathering more broadly than just OSINT
+    - Following and observing people entering and exiting premises
+    - Calling the company for more information (after OSINT)
+    - Use of pretexting in intel gathering
+    - Gather info, understand vulnerabilities, habits, potential entry/exit points
+    - Company website, social media profiles (inlc. old), public info e.g. from corporate databases (YTJ)
+    - Physical surveillance of targets
+    - AI can augment data collection and analysis (inc big amounts of data), increases speed of intel gathering and the attack itself
+    - NLP may help in parsing the info
+
+\end{comment}
+
+
+The first stage of a social engineering attack is usually research or information gathering \citep{krombholzAdvancedSocialEngineeringAttacks2015}. This relies on OSINT, or open-source intelligence. OSINT is any information that is publicly available via the Internet or other means and that doesn't require any breach of security to be accessed.
+
+This intelligence is subsequently used to formulate an attack plan against the target individual or corporation.
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Developing the Relationship               %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Developing the Relationship}
+\begin{comment}
+    
+    - Engaging the target with the gathered info and fabricated pretext
+    - Choosing the right timing
+    - Practicing the engagement
+    - Creating the strategy for engagement
+    - Create a strategy, plan on how to exploit found weaknesses
+    - Create a persona, a pretext with a convincing message
+    - Choosing the right attack method
+    - AI can help craft highly convincing messages, including the development of the persona (pretext)
+    - Deepfake tech, chatbots etc
+    - AI can analyze and predict the most suitable times and methods for an attack based on gathered intel
+
+\end{comment}
+
+
+%Once the attacker has gained information and formulated an attack plan based on it, he 
+
+Intelligence gathering that is beyond OSINT is done here, where initial intel will be used to gather more in order to build a convincing attack. At this stage, the attacker will engage the target to gather ever more nuanced information.
+
+
+Even seemingly minor and minute details could play a pivotal role \citep{mitnickArtDeceptionControlling2003}. Name dropping and knowledge of "insider information" could convince someone that the attacker is legitimate and thus provide more information to them, which can then be used in further SE attacks or intelligence gathering operations.
+
+ 
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% Exploiting the Victim                     %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Exploiting the Victim}
+\begin{comment}
+    
+    - 
+
+\end{comment}
+
+The third stage of a social engineering attack is the exploitation phase, where the attacker leverages the information and relationships developed in the previous stages to achieve their malicious objectives by executing one or more attack vectors.
+
+
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %% The Exit                                  %%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The Exit}
+\begin{comment}
+    
+    - Not burning any bridges
+    - Using the built relationships for future SE attacks
+    - "Always leave them better off for having met you" also serves the purpose of using built relationships in the future again
+
+\end{comment}
+
+The final stage of a social engineering attack is the exit phase, where the attacker concludes their operation and attempts to cover their tracks, for example by clearing any network and system logs and restarting any crashed devices or services. This stage is crucial for ensuring that the attacker can evade detection and potentially use the compromised information or resources for future attacks.
+
+%The attacker may also contact the target even after their primary objective(s) have been achieved for these purposes, for an example by calling the target with whom the attacker had already built a relationship and used to achieve their goals and asking them to shred any papers or notes the target may have taken on the attacker's request \citep{mitnickArtDeceptionControlling2003}.
+
+
+%As a socio-technical attack methodoly, social engineering can make use of technology. In an attack, certain computer systems or even complete networks could become unuseable or experience diminished quality of service. Depending on the attackers motives, they may restart any crashed systems or services. One pivotal task is to clear the system and network logs that might be used to track the attacker's movements or even to locate them.
+
+%Since social engineers typically aim for wealth, knowledge, power or influence, they often keep their "sources open" for future attacks. An attacker may, for an example, use their contacts in company A used for a previous attack to attack company B that is a partner of company A.
+
+
+%Hadnagy et al. emphasize that in whatever you do, leave your target better off for having met with. This is in stark contrast to typical SE attacks.
+
+%The SE is an iterative process, use what was found from previous attacks with the next one
+
+%In this chapter the 4-stage social engineering attack model was examined so that the SE attack methods can be reviewed in a proper context, which is done in the next chapter.
