@@ -28,7 +28,9 @@ Literature:
 
 %Awareness of various SE attacks is crucial for professionals across all industries, not just those in cybersecurity.
 
-This chapter provides an overview of some of the most common SE attack methods, paying special attention to how modern AI technologies are or could be augmenting them. Case studies of already carried out attacks are examined where appropriate. Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
+This chapter provides an overview of some of the most common SE attack methods, paying attention to how modern AI technologies are or could be augmenting them. After that, chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
+%% add this back to the previous
+% Case studies of already carried out attacks are examined where appropriate.
 
 %A later chapter will examine how modern AI augments these attacks, and how users of information systems need to be trained to counter these new, advanced threats.
 
@@ -36,9 +38,9 @@ This chapter provides an overview of some of the most common SE attack methods, 
 
 %and because attackers are constantly improvising their attack methods, some manipulation used in conjunction with these methods, such as convincing employees that the company will destroy any documents put in the general waste in a safe way, may be used.
 
-To better understand the threat posed by SE, it is essential to examine the diverse strategies employed by attackers. The following are some of the most common and effective SE attack methods. We'll also analyze how the emergence of modern AI technologies might, or already has, powered up these types of attacks.
+%To better understand the threat posed by SE, it is essential to examine the diverse strategies employed by attackers. The following are some of the most common and effective SE attack methods. We'll also analyze how the emergence of modern AI technologies might, or already has, powered up these types of attacks.
 
-The field of social engineering contains a plethora of attacks, and for the purposes of this thesis this selection had to be narrowed down. Due to their relevance, phishing it its various forms, deepfake-generated content and automated OSINT were chosen for a more in-depth analysis.
+%The field of social engineering contains a plethora of attacks, and for the purposes of this essay, this selection had to be narrowed down. Due to their relevance, phishing it its various forms, deepfake-generated content and automated OSINT were chosen for a more in-depth analysis.
 
 
 
@@ -64,6 +66,10 @@ As the quintessential SE attack, \textbf{phishing} is characterized by malicious
 
 %Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-functional URL used for phishing purposes. The target user is hoped by the attacker to be unaware of the different domains these seemingly similar URL's redirect the user. The phishing URL is taken from a dataset of known phishing websites but its domain is changed to IANA's example.com domain for security. The legitimate URL is from PayPal's website and is functional as of writing.
 
+Since email users are used to seeing URL's of different types, some where the "login" text is used, some where it is omitted, and some where it's used as a subdomain (login.ibm.com) and some where it's used as a subfolder (paypal.com/us/signin), attackers hope they are able to deceive their targets with their fabricated URL's which are designed to look like their authentic counterparts, sometimes replacing an "i" with an "l" or using the domain name of an URL as a subdomain (paypal.com.login.example.com).
+
+\begin{comment}
+
 Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-functional URL used for phishing purposes. The target user is hoped by the attacker to be unaware of the different domains these seemingly similar URL's redirect the user. The phishing URL is taken from a dataset of known phishing websites but its domain is changed to IANA's example.com domain for security. The legitimate URL is from PayPal's website and is functional as of writing.
 
 \begin{table}[h]
@@ -79,9 +85,11 @@ Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-fu
     \label{tab:placeholder_label}
 \end{table}
 
-Since email users are used to seeing URL's of different types, some where the "login" text is used, some where it is omitted, and some where it's used as a subdomain (login.ibm.com) and some where it's used as a folder (paypal.com/us/signin), attackers hope they are able to deceive their targets with their fabricated URL's which are designed to look like their authentic counterparts, sometimes replacing an "i" with an "l" or using the domain name of an URL as a subdomain (paypal.com.login.example.com).
+\end{comment}
 
-\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdine_social_2019}. This tailored approach increases the likelihood of the victim falling for the scam.
+\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the scam.
+
+AI technologies, such as machine learning, can be employed to craft even more precise and spelling-error free scam messages.
 
 %Last on the list of phishing attacks is \textbf{whaling}. Whaling, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management, "the big whales" \citep{abraham_overview_2010}. The attackers carefully research their targets to create convincing and typically urgent messages that appear to come from trusted sources, often impersonating colleagues, business partners, or government agencies. The goal is often to authorize large financial transactions or to leverage the target's authority and access within the company.
 
@@ -100,9 +108,9 @@ Since email users are used to seeing URL's of different types, some where the "l
 
 \end{comment}
 
-Deepfake, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses artificial intelligence to create highly convincing fake media, either by altering existing media or creating them from stracth. Deepfake content can by images, audio and video.
+Deepfake, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses artificial intelligence to create highly convincing fake media, either by altering existing media or creating them from scratch. Deepfake content can by images, audio and video.
 
-The attacker could, for an example, change some text that is displayed on an image to be then used for propaganda against the target, or create a video of the target user's compayn's CEO making a demand of all employees, such that shredding papers is no longer necessary.
+%The attacker could, for an example, change some text that is displayed on an image to be then used for propaganda against the target, or create a video of the target user's compayn's CEO making a demand of all employees, such that shredding papers is no longer necessary.
 
 
 %\section{Automated OSINT}

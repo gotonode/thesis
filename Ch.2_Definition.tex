@@ -47,7 +47,7 @@ Literature:
 % TODO add psychological context
 %This chapter gives an overview of what social engineering (SE) constitutes, provides brief historical and psychological context and describes some key terminology that is necessary for further analysis. After this, Chapter \ref{chapter:anatomy} dissects the anatomy of a typical SE attack.
 
-This chapter gives an overview of what social engineering (SE) constitutes, provides brief historical context and describes some key terminology that is necessary for further analysis. After this, Chapter \ref{chapter:anatomy} dissects the anatomy of a typical SE attack.
+This chapter gives an overview of what social engineering (SE) constitutes, provides brief historical context and describes some key terminology that is necessary for further analysis. %After this, Chapter \ref{chapter:anatomy} dissects the anatomy of a typical SE attack.
 
 
 The term \textit{social engineering} dates back to 1842, when it was used to describe the application of centralized planning to attempt to manage social change and the regulation of the future development and behavior of a society \citep{hatfieldSocialEngineeringCybersecurity2018a}. Since then, its use has shifted to the field of cybersecurity through the phone phreaking phase (late 1950s to early 1970s) and through to the contemporary hacker culture \citep{wangDefiningSocialEngineering2020}.
@@ -73,7 +73,7 @@ In the literature, there isn't a strict consensus on what actually constitutes a
     %\item AI-powered social engineering, where modern AI is used to augment, or fully execute, the attacks and countermeasures
 %\end{itemize}
 
-Next, general SE terminology and other key concepts are reviewed. In Chapter \ref{chapter:anatomy}, the anatomy of a typical SE attack is dissected before moving on to the actual attacks in Chapter \ref{chapter:attacks}.
+%Next, general SE terminology and other key concepts are reviewed. In Chapter \ref{chapter:anatomy}, the anatomy of a typical SE attack is dissected before moving on to the actual attacks in Chapter \ref{chapter:attacks}.
 
 %Some scholars have included acts like shoulder shurfing and dumpster diving as social engineering attacks \citep{abiteboul}, even though they do not rely on the manipulation of individuals.  However, since they don't fall neatly into the typical category of "hacking attacks", they fall into a gray area in between. Since user education and awareness programs should include training the user against discarding important documents without shredding them first or by putting them into boxes designated "secure documents", and people need to be on the lookout for people gazing over their shoulders, especially when entering sensitive information such as usernames, passwords and other access codes, they are included in this thesis.
 
@@ -175,7 +175,9 @@ Together, the six key principles of influence along with their three social engi
 
 \textbf{OSINT}, sometimes written as OS-INT, means open-source intelligence. Like the name implies, it involves gathering of intelligence data from publicly locatable sources, such as from the target company's website, or from the social networking profiles of an individual or from other public records.
 
-As people have adopted to using social media as sometimes their primary means of communication, a lot of exploitable data is shared on these platforms as well.
+%As people have adopted to using social media as sometimes their primary means of communication, a lot of exploitable data is shared on these platforms as well \citep{bilgeAllYourContactsAreBelongToUs2009}.  Even seemingly innocent data shared by a company's employee, such as picture post indicating that they are on a company picnic right now, could be used against the target company \citep{mitnickArtDeceptionControlling2003}.
+
+Various online tools exist for the purposes of gathering intelligence on an individual or an organization, the most famous of which in 2024 is perhaps Maltego. It offers automated forensic gathering and visualizes the found data, making it easier to identify patterns and connections.
 
 
 
@@ -205,7 +207,10 @@ As people have adopted to using social media as sometimes their primary means of
         
 \end{comment}
 
-Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target  with \citep{contehCybersecurityRisksVulnerabilities2016}. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story.
+Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target  with \citep{contehCybersecurityRisksVulnerabilities2016}. With this story, the attacker hopes to gain the victim's trust by appearing legitimate. This type of attack relies heavily on OSINT, or the gathered open-source intelligence, in assisting with the creation of the story. Pretexting is discussed here and not in the chapter which discusses attack vectors because it is usually the precursor to other attacks and is heavily tied with the concept of OSINT \citep{hadnagySocialEngineering2018}.
 
-%Pretexting is examined here and not in the attacks section since it's a precursor to the attacks, used as the "background" of other attack methods, even though some literature lists pretexting as an attack method itself.
+Unlike other SE attacks that rely on technical methods or overt threats or  fabricated time pressures, pretexting uses psychological manipulation, trust and relationship-building, making it a potent tool for attackers. The attacker, often assuming the likeness and character of a legitimate entity such as a trusted colleague, an IT service worker, government official or a 3rd party service provider, creates a believable narrative story tailored to the target victim's context.
+
+%The success of pretexting is based on the attacker's ability to gather background OSINT and use it convincingly, making the pretext appear legitimate and aligned with the target victim's expectations or experiences \citep{mitnickArtDeceptionControlling2003}.
+
 
