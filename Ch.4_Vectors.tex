@@ -28,7 +28,7 @@ Literature:
 
 %Awareness of various SE attacks is crucial for professionals across all industries, not just those in cybersecurity.
 
-This chapter provides an overview of some of the most common SE attack methods, paying attention to how modern AI technologies are or could be augmenting them. After that, chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
+This chapter provides an overview of some of the most common SE attack methods, paying attention to how modern AI technologies are or could be augmenting them. After that, Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
 %% add this back to the previous
 % Case studies of already carried out attacks are examined where appropriate.
 
@@ -68,6 +68,8 @@ As the quintessential SE attack, \textbf{phishing} is characterized by malicious
 
 Since email users are used to seeing URL's of different types, some where the "login" text is used, some where it is omitted, and some where it's used as a subdomain (login.ibm.com) and some where it's used as a subfolder (paypal.com/us/signin), attackers hope they are able to deceive their targets with their fabricated URL's which are designed to look like their authentic counterparts, sometimes replacing an "i" with an "l" or using the domain name of an URL as a subdomain (paypal.com.login.example.com).
 
+These links are then placed in email messages which redirect the user to a website that looks authentic and tries to gather sensitive data from the user, such as usernames, passwords or credit card details.
+
 \begin{comment}
 
 Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-functional URL used for phishing purposes. The target user is hoped by the attacker to be unaware of the different domains these seemingly similar URL's redirect the user. The phishing URL is taken from a dataset of known phishing websites but its domain is changed to IANA's example.com domain for security. The legitimate URL is from PayPal's website and is functional as of writing.
@@ -87,9 +89,11 @@ Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-fu
 
 \end{comment}
 
-\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the scam.
+\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but is a lot more time and energy consuming.
 
-AI technologies, such as machine learning, can be employed to craft even more precise and spelling-error free scam messages.
+By employing AI-powered techniques, attackers can automate the creation of deceptive spam messages, greatly enhancing the scale and precision of phishing attacks. An advanced level of personalization is reached automatically through data mining and analysis where AI processes through vast amounts of publicly available information on social media platforms such as Facebook, X (Twitter) and Instagram, on forums and other digital resources to extract insights about potential victims. These insights, such as by expressing in an email message the hope that the victim enjoyed the private company picnic last month and the caffeine-free sodas that were on offer, is used in the generation of the spear phishing messages to increase their seeming authenticity.
+
+
 
 %Last on the list of phishing attacks is \textbf{whaling}. Whaling, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management, "the big whales" \citep{abraham_overview_2010}. The attackers carefully research their targets to create convincing and typically urgent messages that appear to come from trusted sources, often impersonating colleagues, business partners, or government agencies. The goal is often to authorize large financial transactions or to leverage the target's authority and access within the company.
 
@@ -108,7 +112,11 @@ AI technologies, such as machine learning, can be employed to craft even more pr
 
 \end{comment}
 
-Deepfake, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses artificial intelligence to create highly convincing fake media, either by altering existing media or creating them from scratch. Deepfake content can by images, audio and video.
+\textbf{Deepfake}, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses AI to create highly convincing fake media, either by altering existing content or creating them from scratch \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. Deepfake content can be images, audio, and even full-resolution video.
+
+By utilizing deepfake-generated content, deepfakes, attackers can convincingly impersonate trusted individuals or organizations, enhancing the credibility and even the emotional impact of their deceptive strategies. For example, a deepfake video of the victim's company's CEO making an urgent request for sensitive information can exploit the employee's natural tendencies to comply with authority, thus bypassing any skepticism that could've risen from a simple email message.
+
+These deepfakes are then delivered to the victim via a number of different channels, such as email, instant messaging, SMS messages or phone/VoIP (Voice over IP) along with any other relevant information pertaining to the attacker's attempt at influence and manipulation.
 
 %The attacker could, for an example, change some text that is displayed on an image to be then used for propaganda against the target, or create a video of the target user's compayn's CEO making a demand of all employees, such that shredding papers is no longer necessary.
 
