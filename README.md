@@ -1,3 +1,3 @@
 #Modern Social Engineering
 
-Work is being done on Overleaf, so this repository might sometimes be out-of-date, especially the thesis itself (PDF).
+Work is being done on Overleaf, so this repository might sometimes be out-of-date. Especially the thesis itself (PDF).
