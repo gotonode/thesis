@@ -71,6 +71,8 @@ Generative AI's (GenAI) can be used by malicious actors in their schemes, but du
 
 Regular users and scholars have found a number of ways to bypass ChatGPT's inherent ethic and behavioral guidelines, such as by using reverse psychology \citep{guptaFromChatGPTtoThreatGPT2023}. Instead of directly asking for links to the pirate websites, the user can say that because he doesn't want his computer to be infected by malware, ChatGPT should provide links to sites the user should avoid visiting, thus causing ChatGPT to reveal the content the user originally wanted.
 
+A hallmark of phishing messages has been the numerous and sometimes very obvious spelling and grammatical errors \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. ChatGPT can translate text from the attacker's native language to the victim's language without any loss of fidelity.
+
 
 
 % --------------------------------
@@ -89,9 +91,9 @@ As the quintessential SE attack, \textbf{phishing} is characterized by malicious
 
 %Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-functional URL used for phishing purposes. The target user is hoped by the attacker to be unaware of the different domains these seemingly similar URL's redirect the user. The phishing URL is taken from a dataset of known phishing websites but its domain is changed to IANA's example.com domain for security. The legitimate URL is from PayPal's website and is functional as of writing.
 
-Since email users are used to seeing URL's of different types, some where the "login" text is used, some where it is omitted, and some where it's used as a subdomain (login.ibm.com) and some where it's used as a subfolder (paypal.com/us/signin), attackers hope they are able to deceive their targets with their fabricated URL's which are designed to look like their authentic counterparts, sometimes replacing an "i" with an "l" or using the domain name of an URL as a subdomain (paypal.com.login.example.com).
+%Since email users are used to seeing URL's of different types, some where the "login" text is used, some where it is omitted, and some where it's used as a subdomain (login.ibm.com) and some where it's used as a subfolder (paypal.com/us/signin), attackers hope they are able to deceive their targets with their fabricated URL's which are designed to look like their authentic counterparts, sometimes replacing an "i" with an "l" or using the domain name of an URL as a subdomain (paypal.com.login.example.com).
 
-These links are then placed in email messages which redirect the user to a website that looks authentic and tries to gather sensitive data from the user, such as usernames, passwords or credit card details.
+%These links are then placed in email messages which redirect the user to a website that looks authentic and tries to gather sensitive data from the user, such as usernames, passwords or credit card details.
 
 \begin{comment}
 
@@ -112,7 +114,7 @@ Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-fu
 
 \end{comment}
 
-\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive emails to a target individual or organization \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but is a lot more time and energy consuming.
+\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive messages to a target individual or organization \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but has traditionally been a lot more time and energy consuming.
 
 By employing AI-powered techniques, attackers can automate the creation of deceptive spam messages, greatly enhancing the scale and precision of phishing attacks. An advanced level of personalization is reached automatically through data mining and analysis where AI processes through vast amounts of publicly available information on social media platforms such as Facebook, X (Twitter) and Instagram, on forums and other digital resources to extract insights about potential victims. These insights, such as by expressing in an email message the hope that the victim enjoyed the private company picnic last month and the caffeine-free sodas that were on offer, is used in the generation of the spear phishing messages to increase their seeming authenticity.
 
