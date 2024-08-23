@@ -1,7 +1,8 @@
 
 
+
 % --------------------------------
-% ATTACK VECTORS
+% ATTACK VECTORS AND TOOLS
 % --------------------------------
 
 \chapter{Attack Vectors and Tools \label{chapter:attacks}}
@@ -20,31 +21,36 @@ What to cover:
             - Images
             - Audio
             - Real-time voice morphing
-    
-Literature:
-    - 
+
+Sections:
+    - Attack Vectors and Tools
+        - Chatbots
+        - Automated intelligence gathering
+        - Deepfake-generated media
+        - Phishing & spear phishing
 
 \end{comment}
 
-%Awareness of various SE attacks is crucial for professionals across all industries, not just those in cybersecurity.
+This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first explores the misuse of chatbots like ChatGPT for content generation, followed by an investigation of automated intelligence gathering processes. The discussion then covers deepfake-generated media that can be used for impersonation, concluding with how to use all of this with spear phishing.
 
-This chapter provides an overview of some of the most common SE attack methods, paying attention to how modern AI technologies are or could be augmenting them. After that, Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
-%% add this back to the previous
-% Case studies of already carried out attacks are examined where appropriate.
+This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first explores the misuse of chatbots like ChatGPT for content generation, followed by automated intelligence gathering processes. The discussion then covers phishing and spear phishing, concluding with deepfake-generated media.
 
-%A later chapter will examine how modern AI augments these attacks, and how users of information systems need to be trained to counter these new, advanced threats.
+This chapter provides an overview of some of the most common social engineering attack methods, paying attention to how modern AI technologies are or could be augmenting them. After that, Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
 
-%Some attacks that are discussed here are not always considered a type of SE attack, specifically shoulder surfing and dumpster diving, as these do not require the co-operation of the victim \citep{wangDefiningSocialEngineering2020}. However, since they are often used in conjunction with other SE attacks, and since training for against them is often included in SE training and awareness programs, they are explained here
 
-%and because attackers are constantly improvising their attack methods, some manipulation used in conjunction with these methods, such as convincing employees that the company will destroy any documents put in the general waste in a safe way, may be used.
 
-%To better understand the threat posed by SE, it is essential to examine the diverse strategies employed by attackers. The following are some of the most common and effective SE attack methods. We'll also analyze how the emergence of modern AI technologies might, or already has, powered up these types of attacks.
 
-%The field of social engineering contains a plethora of attacks, and for the purposes of this thesis, this selection had to be narrowed down. Due to their relevance, phishing it its various forms, deepfake-generated content and automated OSINT were chosen for a more in-depth analysis.
+
+
+
+
+
+
+
 
 
 % --------------------------------
-% ChatGPT and LLM's 
+% Chatbots
 % --------------------------------
 
 \section{Chatbots}
@@ -64,67 +70,60 @@ What to cover:
     
 \end{comment}
 
-
 Generative AI's (GenAI) can be used by malicious actors in their schemes, but due to the manufacturer's set limits, some workarounds need to be used \citep{guptaFromChatGPTtoThreatGPT2023}. Asking ChatGPT to provide links to websites which provide pirated content such as movies results in ChatGPT denying the request, stating that downloading pirated content is unethical and may also lead the user's computer to be infected with malware.
 
 % ChatGPT reached 100 million users in 2 months https://explodingtopics.com/blog/chatgpt-users
 
 Regular users and scholars have found a number of ways to bypass ChatGPT's inherent ethic and behavioral guidelines, such as by using reverse psychology \citep{guptaFromChatGPTtoThreatGPT2023}. Instead of directly asking for links to the pirate websites, the user can say that because he doesn't want his computer to be infected by malware, ChatGPT should provide links to sites the user should avoid visiting, thus causing ChatGPT to reveal the content the user originally wanted.
 
-A hallmark of phishing messages has been the numerous and sometimes very obvious spelling and grammatical errors \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. ChatGPT can translate text from the attacker's native language to the victim's language without any loss of fidelity.
+
+
+
+
+
+
+
+
+
+
 
 
 
 % --------------------------------
-% Phishing & spear phishing
+% Automated intelligence gathering
 % --------------------------------
 
-\section{Phishing \& spear phishing}
-\begin{comment}
-    
-    - 
-
-\end{comment}
-
-
-As the quintessential SE attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from unsuspecting users \citep{wangDefiningSocialEngineering2020}.
-
-%Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-functional URL used for phishing purposes. The target user is hoped by the attacker to be unaware of the different domains these seemingly similar URL's redirect the user. The phishing URL is taken from a dataset of known phishing websites but its domain is changed to IANA's example.com domain for security. The legitimate URL is from PayPal's website and is functional as of writing.
-
-%Since email users are used to seeing URL's of different types, some where the "login" text is used, some where it is omitted, and some where it's used as a subdomain (login.ibm.com) and some where it's used as a subfolder (paypal.com/us/signin), attackers hope they are able to deceive their targets with their fabricated URL's which are designed to look like their authentic counterparts, sometimes replacing an "i" with an "l" or using the domain name of an URL as a subdomain (paypal.com.login.example.com).
-
-%These links are then placed in email messages which redirect the user to a website that looks authentic and tries to gather sensitive data from the user, such as usernames, passwords or credit card details.
+\section{Automated intelligence gathering}
 
 \begin{comment}
 
-Table \ref{tab:placeholder_label} presents a sample, legitimate URL and a non-functional URL used for phishing purposes. The target user is hoped by the attacker to be unaware of the different domains these seemingly similar URL's redirect the user. The phishing URL is taken from a dataset of known phishing websites but its domain is changed to IANA's example.com domain for security. The legitimate URL is from PayPal's website and is functional as of writing.
+Automated intelligence gathering
 
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|l|l|}
-        \hline
-        \textbf{Legitimate} & \textbf{Phishing} \\ \hline
-        paypal.com/us/signin &paypal.com.cgi-bin.788a5.example.com \\ \hline
-        login.ibm.com & login.lbm.example.com \\ \hline
-        
-    \end{tabular}
-    \caption{Examples of legitimate URL's and non-working phishing URL's.}
-    \label{tab:placeholder_label}
-\end{table}
+What to cover:
+    - What is automated intelligence gathering
+    - Työkalut kuten Maltego (etsi muitakin työkaluja jos teet listan näistä, varmista netistä et ne on top 3 työkalut)
+    - iCloner siitä yhdestä artikkelista All Your Contacts Are Blong To Us?
 
 \end{comment}
 
-\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive messages to a target individual or organization \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but has traditionally been a lot more time and energy consuming.
+Automated intelligence gathering has emerged as a pivotal elemental in contemporary information dissemination and strategic decision-making. By utilizing sophisticated algorithms and machine learning techniques, threat actors can efficiently collect, process and analyze vast amounts of data from various source, including social media, news outlets and public databases \citep{bilgeAllYourContactsAreBelongToUs2009}. This process only not streamlines the aquisition of relevant data but also enhances the accuracy and timeliness of insights derived from the data.
 
-By employing AI-powered techniques, attackers can automate the creation of deceptive spam messages, greatly enhancing the scale and precision of phishing attacks. An advanced level of personalization is reached automatically through data mining and analysis where AI processes through vast amounts of publicly available information on social media platforms such as Facebook, X (Twitter) and Instagram, on forums and other digital resources to extract insights about potential victims. These insights, such as by expressing in an email message the hope that the victim enjoyed the private company picnic last month and the caffeine-free sodas that were on offer, is used in the generation of the spear phishing messages to increase their seeming authenticity.
+This gathered data can then be used with LLMs such as ChatGPT to generated highly convincing and personalized spear phishing messages, which are discussed next.
+
+An advanced level of personalization is reached automatically through data mining and analysis where AI processes through vast amounts of publicly available information on social media platforms such as Facebook, X (Twitter) and Instagram, on forums and other digital resources to extract insights about potential victims. 
 
 
 
-%Last on the list of phishing attacks is \textbf{whaling}. Whaling, also known as CEO fraud, is a highly targeted phishing attack aimed at high-profile individuals within an organization, such as executives or senior management, "the big whales" \citep{abraham_overview_2010}. The attackers carefully research their targets to create convincing and typically urgent messages that appear to come from trusted sources, often impersonating colleagues, business partners, or government agencies. The goal is often to authorize large financial transactions or to leverage the target's authority and access within the company.
 
-%Two additional types of phishing need to be addressed, and they are \textbf{vishing} or voice phishing and \textbf{smishing} or SMS (simple message system) phishing. Despite having complicated names, the idea behind them are quite simple.
 
-%Regular phishing doesn't usually require OSINT but spear phishing does.
+
+
+
+
+
+
+
+
 
 % --------------------------------
 % Deepfake-generated content
@@ -132,8 +131,12 @@ By employing AI-powered techniques, attackers can automate the creation of decep
 
 \section{Deepfake-generated media}
 \begin{comment}
-    
-    -
+Deepfake-generated content
+
+What to cover:
+    - What is a deepfake
+    - Deepfakeja ei käsitely aiemmin? Generative AI kappaleessa?
+    - Seuraava section kertoo tietojenkalastelusta ja sitoo chatbotit, automated intelligence gathering ja nää deepfaket yhteen kokonaisuudeksi
 
 \end{comment}
 
@@ -143,143 +146,6 @@ By utilizing deepfake-generated content, deepfakes, attackers can convincingly i
 
 These deepfakes are then delivered to the victim via a number of different channels, such as email, instant messaging, SMS messages or phone/VoIP (Voice over IP) along with any other relevant information pertaining to the attacker's attempt at influence and manipulation.
 
-%The attacker could, for an example, change some text that is displayed on an image to be then used for propaganda against the target, or create a video of the target user's compayn's CEO making a demand of all employees, such that shredding papers is no longer necessary.
-
-
-%\section{Automated OSINT}
-\begin{comment}
-    
-    - 
-
-\end{comment}
-
-\begin{comment}
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %% Other attack methods                      %%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Other attack methods}
-
-    
-    - 
-
-
-
-
-This section covers other social engineering attacks that were not chosen for more in-depth analysis due to their weaker affinity to be amplified by modern AI. These attacks include tailgating, shoulder surfing, and dumpster diving. However, advances in related fields, such as robotics \citep{postnikoffRobotSocialEngineering2018}, could make these attacks more relevant in the future. All of them can be used as part of a social engineering attack chain, even if their use would not rely on AI directly, and this is why it is important that they be mentioned in this thesis.
-
-
-
-
-
-%%\section{Baiting}
-
-%%\textbf{Baiting} is a similar attack method to phishing, discussed above, but emphasizes luring the victim via enticement strategies \citep{conteh_cybersecurityrisks_2016, salahdine_social_2019}. This technique exploits the target's curiosity or greed to gain unauthorized access to resources or premises or to obtain sensitive information.
-
-%%A common type of a baiting attack is what's known as a "USB drop" where the attacker loads malware or Trojan software into USB drives that are often tagged with an enticing title such as "Layoff Plans 2024" or "Sarah's private photos" and which are subsequently dropped at convenient locations for employees of the target company to find. These locations could be easily accessed, such as the company's vicinities, or more hard-to-reach places such as a protected parking lot or even employee restrooms or dining areas. A famous experiment in which 297 flash drives were dropped on university campuses concluded that the success rate (drives connected) was between 45 \% -- 98 \%, with the first drive connected within less than six minutes \cite{tischer_users_2016}.
-
-%%A USB baiting experiment showed that 15 out of 20 USB drives were found by employees and all were plugged in to the company's computers \citep{wang_social_2021}.
-
-%%OSINT can be useful here as well, with a bit of searching the tag that is attached to the thumbdrive could have a more interesting and suitable title. Attackers can also easily order USB thumbdrives, as an example, with custom logos printed on them from various online retailers for increased effect. The logo could even be from a competing company's one, if there's been heated rivalry between the two.
-
-%% https://www.darkreading.com/perimeter/social-engineering-the-usb-way
-
-%% online offers, free downloads, gifts, fake job posting
-%% plays on human trust, safe looking items, greed, curiosity
-%% fake software updates, malicious ads
-
-%% seuraukset: malware, trojan, data breach, financial loss, identity theft
-%% red flags? unsolicitied offers, too good to be true deals, unfamiliar sources
-
-
-
-
-
-
-
-
-
-
-
-        
-
-%%Situations can change quickly, and the attacker must be quick on their feet to respond to these changes. Training in multiple possible ways the target might respond or react is highly beneficial, such as threatening to call the police or the IT support.
-
-%%A high level of confidence in the pretext and the pretexted role is often cited to be a necessity, however, someone may very well engage a pretext as a novice, nervous new employee, which suggests that rather than stating a high level of (outwardly visible) confidence as a neceissty, the better wording would be a suitable level of confidence. In all cases, the attacker must believe their own pretext and act out the attack like an actor in a movie, to "become the pretext".
-
-%% obtain sensitive info, access to systems or locations
-%% must be believable and relevant, should fit with the target's environment and expected interactions
-%% kerro kuinka exploitatataan luottamusta
-%% kommunikaatiotaidot, professionalism, itsevarmuus (sopiva taso, jos esim. pretextaa aloittelijaa itsevarmuus voikin olla alhaisempi)
-%% tyypillisiä skenaarioita: co-worker, kuljetushtiö, security audit, IT tuki, law enforcement, 
-%% mitä dataa haetaan: henk koht tiedot, pankkitiedot, kirjautumistiedot, joka päivä vaihtuva "PIN" koodi, insider info
-%% suojautuminen: soittajan id vahvistus (varsinkin tuntemattomien soittajien), caller spoofing vahvistus, mitä tietoja saa antaa, kenelle ja millä edellytyksillä, 
-%% pretexting on laitonta monessa paikkakunnassa, paikassa, SE white hat audit
-%% oikean maailman incidentit
-
-
-
-
-
-
-
-
-
-
-
-
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %% Tailgating                                %%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\begin{comment}
-    
-    - 
-
-%\end{comment}
-
-\textbf{Tailgating}, also known as \textbf{piggybacking}, is a social engineering tactic that involves following an authorized person through an access-controlled passage, such as a security gate. This type of attack exploits individuals with temporary access rights, such as delivery personnel or maintenance workers \citep{conteh_cybersecurityrisks_2016}. The attacker may use manipulation to gain access, for instance, by carrying a heavy object and asking for assistance or pretending to be a delivery person with a forged pretext.
-
-%%The attacker may have found out through OSINT that the company is expecting a delivery and then don the suit of a delivery company and escort people going in from their smoking/coffee breaks outside. Another type is where the attacker has forged a pretext where he explains that he had "forgotten" his security ID inside and his boss is already very angry with him and that he's afraid he's going to lose his job if he keeps messing up like this, playing on people's sympathy.
-
-%%In another scenario, the attasacker may use psychological manipulation to evoke sympathy, claiming to have forgotten their security ID and worrying about losing their job. This tactic preys on people's natural instinct to help and be polite. The mundane routine of passing through security gates can also lead to a false sense of security, making individuals less vigilant.
-
-%%This type of attack exploits people's natural tendency to want to help and be polite. Going in through security gates is a daily chore for many, which due to having become a mundane activity, has lessened the individual's vigilance.
-
-%% may use machine learning algorithms to identify vulnerabilites in access control systems, making tailgating attacks even more dangerous
-
-
-
-
-
-
-
-
-
-
-
-
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %% Shoulder Surfing                          %%
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%\section{Shoulder Surfing}
-
-%% STATUS: almost complete, need sources
-
-Observing people enter sensitive information, such as login details or financial data, without their knowledge or approval is called \textbf{shoulder surfing}. The name implies a person watching over the shoulder of someone when they are typing or viewing sensitive data, but the attack surface is actually far larger. The attacker could use cameras, either hacked, or those placed there by the attacker for this purpose, or even everyday objects such as binoculars.
-
-%%The proliferation of high-resolution cameras, such as those with HD or 4K resolution, has exacerbated the issue of unauthorized information gathering since security cameras of the past didn't have the resolution necessary to show what's being viewed on a screen. Going through tens or even hundreds of hours of video material where sensitive information might be visible on an individual's or an employee's screen is time-consuming and tedious, but with the help of AI this job can be carried out with more ease. AI can not only turn words in a video into text, but it can also summarize the found text and search for anything that could be exploited.
-
-%% vigilance in public places
-%% HD and 4K cameras
-%% social norms, vigilance
-%% pankkiautomaatti
-%% kohteet PIN, salasanat, turvakoodit, henk koht tiedot
-%% puhelimet, draw a symbol to access, halvat vakoilulaitteet aliexpress
-%% privacy screens, HP SureView
-%% toimiston layout joka hankaloittaa shoulder surfing
-%% etätyö
 
 
 
@@ -294,62 +160,25 @@ Observing people enter sensitive information, such as login details or financial
 
 
 % --------------------------------
-% Dumpster diving
+% Phishing & spear phishing
 % --------------------------------
 
-%%\section{Dumpster diving}
+\section{Phishing \& spear phishing}
+\begin{comment}
+Phishing & spear phishing
 
-%% STATUS: lähes valmis
+What to cover:
+    - What is phishing (via email and ALSO other means)
+    - Spear phishing a more targeted form of phishing
+    - How ChatGPT can be used to improve scam messages
+    - ChatGPT:n eettisten ohjeistusten ohittaminen on jo käsitelty kohdassa Chatbots
 
-As the name implies, \textbf{dumpster diving} refers to the practice of going through an organization's or an individual's trash in order find sensitive information that should have been disposed of properly \citep{syafitri_social_2022}. Rummaged content may yield interesting results, typically in the form of documents such as papers but also media devices such as optical discs, hard drives or USB thumbdrives, to be used as-is or as part of a future SE attack. Since the focus of this thesis is on AI and not robotics, dumpster diving is not examined further.
-
-%%Since dumpster diving does not include manipulation of people in its purest form, rather relying on the improper care of documents and other material, it is sometimes not classified as a social engineering attack \citep{wang_defining_2020}. However, it is often considered a precursor or supplementary tactic in broader social engineering schemes, as the information gathered can be used to craft more convincing and targeted attacks.
-
-%% However, one could imagine scenarios where manipulation of people is used as part of a dumpster diving attack, for example convincing people that documents put into regular waste bins will be shredded as part of a new company policy, or that all discs and USB drives are constantly being encrypted and thus they can be safely discarded in the regular trash.
-
-
-
-
-
-
-
-
-
-%% Käsittelylukujen työnjako määräytyy käsiteltävän asian luonteen mukaisesti. Lukijan oh￾jailemiseksi kukin pääluku kannattaa aloittaa lyhyellä kappaleella, joka paljastaa mikä kyseisen luvun keskeisin sisältö on ja kuinka aliluvuissa asiaa kehitellään eteenpäin. Er￾ityisesti kannattaa kiinnittää huomiota siihen, että lukijalle ilmaistaan selkeästi miksi kutakin asiaa käsitellään ja miten käsiteltävät asiat suhtautuvat toisiinsa. Jäsentelyongelmista kielivät tilanteet, joissa alilukuja on vain yksi, tai joissa käytetään useampaa kuin kahta tasoa (pääluku ja sen aliluvut). Kolmitasoisia otsikointeja saate￾taan tarvita joissakin teknisissä dokumenteissa perustellusti, mutta nämä muodostavat poikkeuksen.
-
-%% Perusohjeena on käyttää tekstin rakenteellisesti painokkaita paikkoja, kuten lukujen avauk￾sia ja teksikappaleiden aloitusvirkkeitä juonenkuljetukseen ja informaatioaskeleiden sito￾miseen toisiinsa. Tekstikappaleiden keskiosat, samoin kuin lukujen keskiosat selostavat asiaa vähemmän tuntevalle yksityiskohtia, kun taas aihepiirissä jo sisällä olevat lukijat voivat alkuvirkkeitä silmäilemällä edetä tekstissä tehokkaasti eksymättä tarinan juonesta.
-
-%% Kullakin kirjoittajalla on oma temponsa, joka välittyy lukijalle tekstikappaleiden pitu￾udessa ja niihin sisällytettyjen ajatuskulkujen mutkikkuudessa. Kussakin tekstikappaleessa pitäisi pitäytyä vain yhdessä informaatioaskelessa tai olennaisessa päättelyaskelessa, muuten juonen seuraaminen käy raskaaksi olennaisten lauseiden etsiskelyksi. Yksivirkkeisiä tek￾stikappaleita on syytä varoa.
-
-\textbf{Reverse social engineering} is a special attack vector wherein the attacker advertises himself as providing a solution to problems within a certain domain, usually in the IT/tech sphere, then artificially creates a problem and waits for the victim to contact them.
-
-
-
-    
-Table \ref{tab:attacks} lists some of the most common SE attacks, both in their old-school, pre-AI era and as AI-powered to give a clear overview.
-
-\begin{table}[ht]
-    \centering
-    \begin{tabularx}{\textwidth}{X X X}
-    %    \begin{tabular}{m{3cm}m{5,5cm}m{5,5cm}}
-
-        \toprule
-        \textbf{Attack Type} & \textbf{Pre-AI} & \textbf{AI-Powered} \\
-        \midrule
-        Phishing \& Smishing & Generic messages, low personalization, easily detectable &  Highly personalized, uses NLP, adaptive, real-time learning from responses \\
-        \midrule
-        Spear Phishing & Manual research for personalization, time consuming & Automated, deep-learning based personalization, rapid deployment \\
-        \midrule
-        Vishing & Human-driven calls, script based & AI-generated voice, dynamic script adjustments based on real-time conversation analysis \\
-%        \midrule
-        %Baiting & Physical media (e.g. USB drives), opportunistic & AI-driven malware distribution through personalized and enticing digital baits \\
-        \midrule
-        Impersonation & Human-driven calls, script based & AI-generated voice, dynamic script adjustments based on real-time conversation analysis \\
-        \bottomrule
-        
-    \end{tabularx}
-    %\end{tabular}
-    \caption{Comparison of Social Engineering Attack Methods (Pre and Post-AI)}
-    \label{tab:attacks}
-\end{table}
 \end{comment}
+
+As the quintessential social engineering attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from unsuspecting users \citep{wangDefiningSocialEngineering2020}.
+
+\textbf{Spear phishing} is a more targeted version of phishing, where attackers customize their deceptive messages to a target individual or organization \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. Unlike with generic phishing attempts, this type of phishing involves gathering detailed information about the victim, via OSINT or otherwise, such as their name, position and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but has traditionally been a lot more time and energy consuming.
+
+By employing AI-powered techniques, attackers can automate the creation of deceptive spam messages, greatly enhancing the scale and precision of phishing attacks. AThese insights, such as by expressing in an email message the hope that the victim enjoyed the private company picnic last month and the caffeine-free sodas that were on offer, is used in the generation of the spear phishing messages to increase their seeming authenticity.
+
+A hallmark of phishing messages has been the numerous and sometimes very obvious spelling and grammatical errors \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. ChatGPT can translate text from the attacker's native language to the victim's language without any loss of fidelity.

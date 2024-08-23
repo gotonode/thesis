@@ -24,9 +24,18 @@ Literature:
 
 \end{comment}
 
-In this chapter, countermeasures against both classic social engineering and AI-powered social engineering are examined. This chapter is divided into two parts: tech-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as training and awareness programs. Tech-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. The division is not always clear cut and is made only to simplify the reading experience.
+In this chapter, countermeasures against both classic social engineering and AI-powered social engineering are examined. This chapter is divided into two parts: tech-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as training and awareness programs. Tech-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter \ref{chapter:evaluation} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
 
-Chapter \ref{chapter:evaluation} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
+
+
+
+
+
+
+
+
+
+
 
 % --------------------------------
 % Technology oriented
@@ -43,11 +52,9 @@ Technology-oriented countermeasures can be implemented on a per end-user device 
 
 Using techniques such as natural language processing (NLP), AI systems can be trained to recognize common patterns and especially anomalies in communications to and from the network that are indicative of phishing attempts \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. These systems can flag suspicious emails or messages by analyzing factors such as unusual use of language, unexpected requests for private data or other inconsistencies.
 
-%Machine learning classification techniques such as Random Forest (RF), Support Vector Machines (SVM) and k-Nearest Neighbor (k-NN) have demonstrated vastly greater accuracies in detecting phishing attacks \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. However, these methods also come with challenges, such as high computational costs and the need for large datasets.
-
 Just as incoming and outgoing email messages are analyzed for phishing attacks, and the attachments are scanned for malware such as viruses or Trojan horses, images, audio and videos need to be scanned as well to aid the user in detecting if they are genuine or deepfakes \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}.
 
-Since there are a myriad of ways to get multimedia content to the target victim, such as via USB thumbdrives dropped at the company's premises, technological methods alone will never be enough to counter SE attacks and user training and awareness programs need to be continuously updated \citep{hadnagySocialEngineering2018}. These methods are discussed next.
+Since there are a myriad of ways to get multimedia content to the target victim, such as via USB thumbdrives dropped at the company's premises, technological methods alone will never be enough to counter social engineering attacks and user training and awareness programs need to be continuously updated \citep{hadnagySocialEngineering2018}. These methods are discussed next.
 
 \subsubsection{Generative AI (defense)}
 \begin{comment}
@@ -63,12 +70,10 @@ What to cover:
 
 ChatGPT can also be a force for good.
 
-\begin{comment}
 \subsubsection{AI-assisted phishing detection}
 
 Modern phishing attacks leverage advanced AI techniques to create highly convincing fake websites and emails that mimic legitimate entities, making it increasingly difficult for users to distinguish betweeen authentic and malicious content. To counter these sophisticated phishing attacks, researches have developed various AI-enabled detection techniques, including Machine Learning (ML), Deep Learning (DL), Hybrid Learning and Scenario-based approaches \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. These methods have shown great promise in identifying phishing attempts with high accuracy, often surpassing traditional detection methods.
 
-For instance, classification techniques such as Random Forest (RF), Support Vector Machines (SVM) and k-Nearest Neighbor (k-NN) have demonstrated over 95 \% accuracy in detecting phishing attacks. However, these methods also come with challenges, such as high computational costs and the need for large datasets.
 
 Machine learning, for instance, combats phishing by analyzing massive amounts of data to identify patterns and features typical of phishing attempts. By training models on datasets containing both legitimate and phishing emails or websites, ML algorithms can learn to distinguish between the two with some methods, such as Random Forest (RF), Support Vector Machines (SVM) and k-Nearest Neighor (k-NN) demonstrating over 95 \% accuracy compared to traditional, non-AI based methods. However, care has to be taken when choosing the datasets.
 
@@ -82,12 +87,24 @@ AI has revolutionized the field of phishing detection by introducing advanced te
 
 Building on the foundations of machine learning and other AI technologies discussed above, deepfake detection via AI methods is likewise very resource intensive.
 
-\end{comment}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 % --------------------------------
 % Human oriented
 % --------------------------------
-
 
 \section{Human oriented}
 \begin{comment}
@@ -97,19 +114,13 @@ Building on the foundations of machine learning and other AI technologies discus
 
 \end{comment}
 
-Regular and comprehensive training programs are vital to educate employees about SE tactics. Regularity is stressed by experts in the field as users tend to forget what they have learned \citep{hadnagySocialEngineering2018, mitnickArtDeceptionControlling2003}. It is thus suggested that training against SE attacks is not something that is done annually, or even bi-annually, but rather that it's something that is baked into the company's culture.
+Regular and comprehensive training programs are vital to educate employees about social engineering tactics. Regularity is stressed by experts in the field as users tend to forget what they have learned \citep{hadnagySocialEngineering2018, mitnickArtDeceptionControlling2003}. It is thus suggested that training against social engineering attacks is not something that is done annually, or even bi-annually, but rather that it's something that is baked into the company's culture.
 
-Conducting AI-assisted simulated SE and phishing attack campaigns, via numerous channels such as email, SMS and even phone/VoIP, allows organizations to assess the suspectibility of their employees to SE tactics. These exercises help identify vulnerabilities in the workforce, enabling further targeted training and reinforcing the importance of scrutinizing unsolicited communication. With the advent of deepfakes, this needs to be extended to cover any and all communication.
+Conducting AI-assisted simulated social engineering and phishing attack campaigns, via numerous channels such as email, SMS and even phone/VoIP, allows organizations to assess the suspectibility of their employees to social engineering tactics. These exercises help identify vulnerabilities in the workforce, enabling further targeted training and reinforcing the importance of scrutinizing unsolicited communication. With the advent of deepfakes, this needs to be extended to cover any and all communication.
 
 Feedback from these simulations can be a powerful tool for personnel development, but employees who fall victim to these simulated attacks should never be punished but re-educated. Along the same lines, it is important that employees should be informed beforehand that such campaigns may be intermittently run, which has the double benefit of keeping them on their guard and also not causing unnecessary bad emotions from "being tricked" by their own company \citep{hadnagySocialEngineering2018, mitnickArtDeceptionControlling2003}.
 
-A company culture that is open about sharing if any of its members fall victim to SE attacks is more robust due to employees not having to feel shame or hide the fact that they got tricked \citep{hadnagySocialEngineering2018}. This can be reinforced by executives talking openly about times when they fell victim, to what kind of an attack and why, and what they did about the incident. It's always better that employees report suspected or actualized SE attacks rather than trying to hide them for fear of ridicule or punishment \citep{mitnickArtDeceptionControlling2003}.
+A company culture that is open about sharing if any of its members fall victim to social engineering attacks is more robust due to employees not having to feel shame or hide the fact that they got tricked \citep{hadnagySocialEngineering2018}. This can be reinforced by executives talking openly about times when they fell victim, to what kind of an attack and why, and what they did about the incident. It's always better that employees report suspected or actualized social engineering attacks rather than trying to hide them for fear of ridicule or punishment \citep{mitnickArtDeceptionControlling2003}.
 
-%Regarding bating attacks, company policy should enforce antivirus scanning of attached media, such as USB thumbdrives, before they can be accessed. Personnel should be instructed to never pick up and plug in found media \citep{salahdine_social_2019}. However, if media is found that is suspected of being used as part of a baiting attack, the employee could notify the front desk or the IT services that such a media device was found within the premises, rather than just ignoring it 
 
 Finally, because AI can source social media sites and the Internet automatically for OSINT, it's imperative for people to know to be careful of what they share, with whom and when. Even seemingly private or coincidental information, such as photos indicative that the employee is now on a company picnic, could be used against them and their employer.
-
-
-
-%In this chapter, some key countermeasures against pre-AI social engineering as well as AI-powered SE were looked at. Next, Chapter \ref{chapter:conclusions} ties everything together and provides speculation about the current state of the AI SE landscape as well as future prospects.
-
