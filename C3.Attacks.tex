@@ -1,0 +1,227 @@
+
+
+
+% --------------------------------
+% ATTACK VECTORS AND TOOLS
+% --------------------------------
+
+\chapter{Attack vectors and tools \label{chapter:attacks}}
+\begin{comment}
+
+Guides:
+    - About 3-4 pages
+
+TODO:
+    [ ] 
+
+What to cover:
+    - Attacks
+        - Deepfake generated synthetic media
+            - Videos
+            - Images
+            - Audio
+            - Real-time voice morphing
+
+Sections:
+    - Attack Vectors and Tools
+        - Chatbots
+        - Automated intelligence gathering
+        - Deepfake-generated media
+        - Phishing & spear phishing
+
+\end{comment}
+
+This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first explores the misuse of chatbots like ChatGPT for malicious content generation, followed by an investigation of automated intelligence-gathering processes. The discussion then covers deepfake-generated media that can be used for impersonation, concluding with how attackers could use all of this with spear phishing. After this, Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------
+% Chatbots
+% --------------------------------
+
+\section{ChatGPT and other chatbots}
+
+\begin{comment}
+
+What to cover:
+    - Mitä ovat chatbotit kuten ChatGPT
+    - How Generative AI can be used by both cybersecurity professionals and threat actors
+    - Circumventing ChatGPT's ethical restrictions with, for example prompt injections attacks or reverse psychology (with at least 1-2 examples)
+    - How scholars and regular users have found ways to bypass ChatGPT's ethical restrictions??
+    - Tekoälyn päivitys kun löydetään uusia tapoja ohittaa sen eettiset ohjeistukset ja kehittäjien asettamat rajoitukset
+    - Pyydetään tekoälyä roolipelaamaan social engineering skenaarioita
+    - Kielioppi ja kirjoitusvirheiden korjaus scam viesteissä
+    - Generation of malware?
+    - Analysis of gathered data to find insights to be used against the victim
+    
+\end{comment}
+
+Malicious actors can use generative AI  \textbf{chatbots} such as ChatGPT in their schemes, but due to the manufacturer's set limits, some workarounds may need to be used \citep{guptaFromChatGPTtoThreatGPT2023}. For instance, when asking ChatGPT to provide links to websites that provide pirated content such as movies results in the chatbot denying the request, stating that downloading pirated content is unethical and may also lead to the user's computer being infected with malware.
+
+% ChatGPT reached 100 million users in 2 months https://explodingtopics.com/blog/chatgpt-users
+
+However, regular users and scholars have found a number of ways to bypass ChatGPT's inherent ethic and behavioral guidelines, such as by using reverse psychology\footnote{https://incidentdatabase.ai/cite/420 (accessed 2024-07-15)}. In the above example, instead of directly asking for links to the pirate websites, the user can say that because he doesn't want his computer to be infected by malware, ChatGPT should provide links to sites the user should avoid visiting, thus causing ChatGPT to reveal the content the user originally wanted.
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------
+% Automated intelligence processing
+% --------------------------------
+
+\section{Automated intelligence processing}
+
+\begin{comment}
+
+Automated intelligence gathering
+
+What to cover:
+    - What is automated intelligence gathering
+    - Työkalut kuten Maltego (etsi muitakin työkaluja jos teet listan näistä, varmista netistä et ne on top 3 työkalut)
+    - iCloner siitä yhdestä artikkelista All Your Contacts Are Blong To Us?
+
+\end{comment}
+
+\textbf{Automated intelligence processing} has emerged as a pivotal elemental in contemporary information dissemination processes and thus also in strategic decision-making. By utilizing sophisticated algorithms and machine learning techniques, threat actors can efficiently collect, process and analyze vast amounts of data from various source, including social media, news outlets and public databases \citep{bilgeAllYourContactsAreBelongToUs2009}. This process not only streamlines the acquisition of relevant data but also enhances the accuracy and timeliness of insights derived from the data.
+
+These processes and tools can be used with open-source intelligence to gather exploitable data about the victim or the organization, or to analyze data that has been gathered via previous successful social engineering attacks. Even seemingly inconsequential bits of data could prove invaluable to the attacker \citep{mitnickArtDeceptionControlling2003}, and AI can aid in the discovery of these insights \citep{blauthArtificialIntelligenceCrime2022}.
+
+One of the most prominent examples of user's data being used without their conset was the Cambridge Analytica scandal \citep{blauthArtificialIntelligenceCrime2022}. The firm used the harvested data to create detailed voter profiles and targeted political advertisements, aiming to influence voter opinions and behaviors.
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------
+% Deepfake-generated content
+% --------------------------------
+
+\section{Impersonation with deepfakes}
+\begin{comment}
+Deepfake-generated content
+
+What to cover:
+    - What is a deepfake
+    - Deepfakeja ei käsitely aiemmin? Generative AI kappaleessa?
+    - Seuraava section kertoo tietojenkalastelusta ja sitoo chatbotit, automated intelligence gathering ja nää deepfaket yhteen kokonaisuudeksi
+
+\end{comment}
+
+\textbf{Deepfake}, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses AI to create highly convincing fake media, either by altering existing content or creating them from scratch \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. Deepfake content can be images, audio, and even full-resolution video. These hyper-realistic forgeries can depict a person saying or doing things that didn't actually happen, making it difficult for people and AI systems to discern what is real and what is fake \citep{blauthArtificialIntelligenceCrime2022}.
+
+By utilizing deepfake-generated content, deepfakes, attackers can convincingly impersonate trusted individuals or organizations, enhancing the credibility and even the emotional impact of their deceptive strategies. For example, a deepfake video of the victim's company's CEO making an urgent request for sensitive information can exploit the employee's natural tendencies to comply with authority.
+
+In 2024, deepfake technology was used in a video conference\footnote{https://incidentdatabase.ai/cite/634 (accessed 2024-08-24)} to successfully scam an organization for \$25 million.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------
+% Spear phishing
+% --------------------------------
+
+\section{Spear phishing}
+\begin{comment}
+Phishing & spear phishing
+
+What to cover:
+    - What is phishing (via email and ALSO other means)
+    - Spear phishing a more targeted form of phishing
+    - How ChatGPT can be used to improve scam messages
+    - ChatGPT:n eettisten ohjeistusten ohittaminen on jo käsitelty kohdassa Chatbots
+
+\end{comment}
+
+As the quintessential social engineering attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, usually via email and by using spoofed websites that look like their authentic counterparts \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from unsuspecting users \citep{wangDefiningSocialEngineering2020}.
+
+%Verizon's 2015 Data Breach Investigation Report presents the results of a study where 150,000 phishing emails were sent, in which within an hour 50 \% of the recipients had opened the email and clicked on the phishing links, with the first user clicking the link in only 82 seconds.
+
+\textbf{Spear phishing}, on the other hand, is a more targeted version of phishing, where attackers customize their deceptive messages to a target individual or organization \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021, fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}. Spear phishing that is targeted at high-profile individuals is called \textbf{whaling}. Unlike generic phishing attempts, spear phishing involves gathering detailed information about the victim, via open-source intelligence or otherwise, such as their name, position, and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but has traditionally been a lot more time and energy consuming.
+
+Phishing messages have traditionally been marked by noticeable spelling and grammatical errors. ChatGPT can effectively translate text from the attacker’s native language to the victim’s, maintaining fidelity and even enhancing the deceptive message, provided that the models' ethical restrictions have been bypassed successfully \citep{guptaFromChatGPTtoThreatGPT2023}.
+
+Chatbots like ChatGPT can also integrate gathered intelligence into spam messages, enhancing their relevance. Additionally, incorporating deepfake content, such as a video of the company’s CEO issuing demands, can further increase the effectiveness of phishing attempts.
+
+By employing AI-powered techniques, attackers can automate the creation of deceptive spam messages, greatly enhancing the scale and precision of their spear phishing attacks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------
+% Voice phishing (vishing)
+% --------------------------------
+
+\section{Phishing with audio and video}
+\begin{comment}
+Phishing & spear phishing
+
+What to cover:
+    - What is phishing (via email and ALSO other means)
+    - Spear phishing a more targeted form of phishing
+    - How ChatGPT can be used to improve scam messages
+    - ChatGPT:n eettisten ohjeistusten ohittaminen on jo käsitelty kohdassa Chatbots
+
+\end{comment}
+
+Phishing that is done using voice is called \textbf{vishing} \citep{salahdineSocialEngineeringAttacks2019}. By utilizing traditional phone systems or VoIP (Voice-over-IP), the attacker calls the victim with a pretext to manipulate them into revealing sensitive information or performing actions that may or may not be in their best interests \citep{hadnagySocialEngineering2018}.
+
+
+
+With real-time voice morphing, a type of natural speech synthesis, the attacker can effectively and realistically impersonate someone else \citep{doanBTSEAudioDeepfakeDetectiong2023}. This technology converts the attacker's own voice (as input) to the chosen person's voice (as output) automatically during the call. It's hard for the human auditory system to distinguish between real and fake voice samples, especially through voice calls.
+
+The deepfake model has to be trained before it can be used. This is done using audio, which can be sourced from places like YouTube, a company website, or by calling the person the attacker wants to mimic the voice of and recording the conversation.
+
+Some organizations rely on automatic speaker verification technology, which can be tricked via deepfake content \citep{doanBTSEAudioDeepfakeDetectiong2023}.
+
+Back in 2019, attackers successfully used deepfake-generated voice to impersonate an authentic entity\footnote{https://incidentdatabase.ai/cite/200 (accessed 2024-05-13)} for monetary gains exceeding 200,000 €.

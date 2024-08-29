@@ -1,0 +1,134 @@
+
+
+% --------------------------------
+% EVALUATION OF COUNTERMEASURES
+% --------------------------------
+
+
+\chapter{Evaluation of countermeasures\label{chapter:evaluation}}
+\begin{comment}
+
+Guides:
+    - Rest of the thesis (thesis max of 20 - other chapters and pages)
+    - Fill the thesis with content in this chapter
+
+TODO:
+    [ ] 
+
+What to cover:
+    - OpenAI attempts to control how ChatGPT etc are used
+    - Efficacy of EU and other level regulations
+    - Instagram flagging content that might've been generated with AI (this is futile in the future?)
+    
+Literature:
+    - 
+
+\end{comment}
+
+This chapter evaluates current countermeasures and their effectiveness at detecting and preventing social engineering attacks, particularly those enhanced by AI technologies. The landscape of cybersecurity is continously evolving, and traditional countermeasures such as email filtering and user awareness programs, altought still crucial, are increasingly insffucient against the sophistication of AI-powered threats \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}. While current countermeasures provide a baseline defense against social engineering attacks, this evaluation reveals a critical gap between existing strategies and the rapidly evolving sophistication of AI-powered attacks. After this, Chapter \ref{chapter:conclusions} concludes the thesis.
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------
+% Generative AI and Deepfakes
+% --------------------------------
+
+\section{Generative AI and deepfakes}
+
+\begin{comment}    
+    - Deepfake content detection
+    - Spear phishing detection
+\end{comment}
+
+Where previously an employee could authenticate a caller by recognizing their voice, intonations, and accents \citep{mitnickArtDeceptionControlling2003}, today and especially in the near future this will not be enough due to the prevalence of deepfake-generated content. User training and awareness programs need to be updated for novel threat of AI in social engineering.
+
+
+
+If the attacker manages to get a hold of hashed passwords, AI can be used in the brute force attack, with significantly higher success chance \citep{blauthArtificialIntelligenceCrime2022}.
+
+The uncanny valley is a phenomenal feeling that something is not quite right, deepfake video looks almost real but not quite
+
+
+Just as spam filters are inclined to report false positives \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}, so too are deepfake detection systems citep{mirskyTheCreationAndDetectionOfDeepfakes2021}, filtering legitimate communications causing operational hiccups and perhaps lost engagements.
+
+Technological solutions like phishing detection systems that utilize Natural Language Processing (NLP) and Machine Learning (ML) show potential in identifying anomalous communications \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. However, these systems are being challenged by the ever-improving quality of AI-generated content such as spear phishing messages, which often mimic human interaction and presentation with hihgher and higher fidelity. Similarly, tools designed to detect deepfakes are in their early stages \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}, and face significant hurdles in keeping up with the rapid advancements in AI technologies that create such content.
+
+
+
+
+
+
+
+
+
+% --------------------------------
+% User-centric
+% --------------------------------
+
+\section{User-centric}
+
+\begin{comment}    
+    - Deepfake content detection
+    - Spear phishing detection
+\end{comment}
+
+Human-oriented measures remain pivolta in the defense against social engineering. Regular training programs are crucial for equipping end-users with the knowledge to recognize potential threats \citep{hadnagySocialEngineering2018}, and this holds true especially because AI technologies are evolving rapidly on both the offensive and defensive sides, leading to a situation where the attackers are one step ahead of the defenders and automated AI-based social engineering detection and prevention systems fail to protect the user. Thus comprehensive, regular and innovative user training and awareness programs can never be outlooked. The human is the weakest link in the cybersecurity chain \citep{mitnickArtDeceptionControlling2003}.
+
+The deployment of simulated social engineering campaigns offers substantial insights into employee vulnerability, yet these must be meticulously crafted to avoid adverse impacts on workplace morale \citep{mitnickArtDeceptionControlling2003}. Utilizing NLP to craft highly convincing but simulated phishing messages to be sent to the employees can further aid in the detection of the need for further training.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------
+% Ethics and guidelines
+% --------------------------------
+
+\section{Law and ethics}
+
+\begin{comment}    
+    - Deepfake content detection
+    - Spear phishing detection
+\end{comment}
+
+Building and maintaining guinelines for the ethical use of AI systems has been at the forefront of its development. OpenAI, the organization behind the GPT architecture and its publicly accessible frontend ChatGPT, has made strides in an attempt to prevent the misuse of their AI systems.
+
+Spreading information about deepfakes to the public faces the hurdle of the "liar's dividend", a situation where a "liar" discredits a real video claiming it to be a deepfake. The more users are aware of deepfake content and the ability of AI to doctor and create videos, the more skeptical they will be, causing them to question images and videos that are real \citep{blauthArtificialIntelligenceCrime2022}.
+
+The ethical use of AI contributes significantly to mitigating risks \citep{guptaFromChatGPTtoThreatGPT2023}, with AI developers such as OpenAI implementing guidelines\footnote{https://openai.com/policies/usage-policies (accessed 2024-08-22)} to limit the misuse of their AI systems, such as ChatGPT. Despite these efforts, as discussed earlier in this thesis, the complete prevention of AI system misuse remains elusive, particularly since older versions without the latest restrictions might still be accessible.
+
+Guidelines are also being developed on national and global levels. For instance, European Union's General Data Protection Regulation (GDPR), and its relationship with AI, including AI-powered social engineering, is a complex and evolving topic. Introduced in 2018, GDPR and its development predates the widespread emergence of technologies such as GAN's and Generative AI\citep{goodfellowGenerativeAdversarialNetworks2020}, and thus was not speficially designed to address these issues.
+
+EU's European Parliamentary Research Service (EPRS) released a study\citep{eprsTheImpactofTheGDPR2020} which eventually lead to the formal approvement by the European Parliament on Feb 13, 2024. As of the writing of this thesis, the AI Act is not yet in effect, and once it is published, there will be a transition period before the act is fully enabled. This act is considered a landmark regultaion, as it is the first comprehensive AI law in any major jurisdiction around the world, paving the wave for other jurisdictions, such as the US,  to follow suite.
+
+Naturally, restrictions set on AI systems can only be effective if the system stays within the control of its developer.  While today, the feasibility of running one's own version of LLM tools such as ChatGPT, due to prohibily high computational costs and other factors, this might not always be the case.
+
+It seems evident that the highly dynamic nature of AI technologies fuel a continous arms race between attackers and defenders, causing many countermeasures to become obsolete quickly \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}. Thus, protecting against IA-powered attacks requires not a single solution but an integrated approach that is baked in the company culture, that combines technological defenses, comprehensive and continous user education, and robuts organizational policies.
+
+To summarize the evaluation of countermeasures against AI-powered social engineering, while they currently provide a fundamental level of defense, they struggle to keep up with the rapidly evolving AI-powered social engineering tactics. The limited effectiveness of these measures is attributable to both the fast-paced dev in AI and the inherent human factor, being the weakest link \citep{mitnickArtDeceptionControlling2003}, within cybersecurity. Therefore, continous innovation in both technological solutions, such as AI-based phishing and deepfake detection algorithms \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}, and human-centric strategies, such as awareness programs and simulated spear phishing campaigns \citep{salahdineSocialEngineeringAttacks2019}, is truly imperative for an organization to adapt to and counteract the advancing AI-powered threat landscape.
+
+In 2024, the state of Tennessee enacted the ELVIS (Ensuring Likeness Voice and Image Security) Act\footnote{https://aibusiness.com/responsible-ai/tennessee-enacts-elvis-act-to-protect-artist-voices-from-ai-misuse (accessed 2024-08-24)}, protecting artists from the use of their voice via deepfake technologies. Further legislation need to address the use of deepfakes in other ways, such as in social engineering. EU's AI Act explicitly prohibits the use of AI for human  manipulation and social engineering.
+
+Because regulatory frameworks and other governance mechanisms might not be developed at the same pace of technological advancements, proactivity is vital to reduce the risks \citep{blauthArtificialIntelligenceCrime2022}.
