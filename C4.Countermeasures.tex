@@ -55,7 +55,7 @@ What to cover:
 \end{comment}
 
 
-Traditional spam detection systems are rule-based, which are ill-equipped to adapt to and idenitfy patterns in extensive data streams. AI-based spam detection foster intricate data processing capabilities, predictive modeling and pattern detection \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}, ushering an anticipatory and adaptive defensive measure.
+Traditional phishing detection systems are typically rule-based, which are ill-equipped to adapting to and idenitfying patterns in extensive data streams. AI-based phishing detection foster intricate data processing capabilities, predictive modeling and pattern detection \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}, ushering an anticipatory and adaptive defensive measure.
 
 Using techniques such as natural language processing (NLP), AI systems can be trained to recognize common patterns and especially anomalies in communications to and from the network that are indicative of phishing attempts \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. These systems can flag suspicious emails or messages by analyzing factors such as unusual use of language, unexpected requests for private data, or other inconsistencies.
 
@@ -72,6 +72,13 @@ Building on the foundations of machine learning and other AI technologies discus
 
 Where once experts in the field could recommended that a caller be authenticated by recognizing their voice, accent and intonations \citep{mitnickArtDeceptionControlling2003}, with the advent of generative AI, and especially deepfakes, this no longer holds true \citep{doanBTSEAudioDeepfakeDetectiong2023}. Technologies such as the BTS-E encoder have been proposed for detecting idiosyncrasies in speech that might not or even could not be consciously registered by human observers. BTS-E detects correlations between breathing, talking and silence to detect spoofed audio.
 
+Deepfakes often contain subtle anomalies called artifacts, just as image forgeries of the past did \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. These artifacts can be subtle, such as a strange blob of pixels, or overt such as a person having clearly warped eyes. Just as people have differing propensities for detecting phishing attempts and noticing subtle anomalies in spelling and grammar \citep{nicholsonInvestigatingTeenagersAbilityDetectPhishingMessages2020, neupaneDoSocialDisordersFacilitateSocialEngineeringAutismPhishing2018}, so too are people variously adept at spotting these anomalies in deepfakes.
+
+Deepfake detection is based on machine learning and forensic analysis, attempting to identify specific artifacts in the multimedia content \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. Seven different types of artifacts are identified in two categories. Spatial-type artifacts cover blending, environment and forensics, while temporal-type artifacts cover behavior, physiology, sychnorization and coherence.
+
+Blending artifacts occur when the generated content is integrated back into a frame (the background), which is detectable with techniques such as edge detection and frequency analysis. Environment artifacts can appear when fake facial content seems inconsistent with the surrounding background frame, often due to mismatches in warping, lighting or fidelity. Forensic-type artifacts are residues from the generative models, such as generative adversarial network fingerprints or sensor noise.
+
+Behavior-type artifacts involve monitoring anomalies in the target's mannerisms, while physiological artifacts focus on inconsistencies in natural biological cues like blinking of the eyes or head movements. Sychnorization artifacts can be observed in mismatched audio-visual elements, and coherence artifacts relate to inconsistencies in logical sequences happening over time.
 
 
 
