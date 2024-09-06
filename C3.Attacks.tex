@@ -25,13 +25,12 @@ What to cover:
 Sections:
     - Attack Vectors and Tools
         - Chatbots
-        - Automated intelligence gathering
         - Deepfake-generated media
         - Phishing & spear phishing
 
 \end{comment}
 
-This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first explores the misuse of chatbots like ChatGPT for malicious content generation, followed by an investigation of automated intelligence-gathering processes. The discussion then covers deepfake-generated media that can be used for impersonation, concluding with how attackers could use all of this with spear phishing. After this, Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
+This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first explores the misuse of chatbots like ChatGPT for malicious content generation. The discussion then covers deepfake-generated media that can be used for impersonation, concluding with how attackers could use all of this with spear phishing. After this, Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
 
 
 
@@ -61,8 +60,6 @@ What to cover:
     - Tekoälyn päivitys kun löydetään uusia tapoja ohittaa sen eettiset ohjeistukset ja kehittäjien asettamat rajoitukset
     - Pyydetään tekoälyä roolipelaamaan social engineering skenaarioita
     - Kielioppi ja kirjoitusvirheiden korjaus scam viesteissä
-    - Generation of malware?
-    - Analysis of gathered data to find insights to be used against the victim
     
 \end{comment}
 
@@ -70,41 +67,7 @@ Malicious actors can use generative AI  \textbf{chatbots} such as ChatGPT in the
 
 % ChatGPT reached 100 million users in 2 months https://explodingtopics.com/blog/chatgpt-users
 
-However, regular users and scholars have found a number of ways to bypass ChatGPT's inherent ethic and behavioral guidelines, such as by using reverse psychology\footnote{https://incidentdatabase.ai/cite/420 (accessed 2024-07-15)}. In the above example, instead of directly asking for links to the pirate websites, the user can say that because he doesn't want his computer to be infected by malware, ChatGPT should provide links to sites the user should avoid visiting, thus causing ChatGPT to reveal the content the user originally wanted.
-
-
-
-
-
-
-
-
-
-
-
-
-% --------------------------------
-% Automated intelligence processing
-% --------------------------------
-
-\section{Automated intelligence processing}
-
-\begin{comment}
-
-Automated intelligence gathering
-
-What to cover:
-    - What is automated intelligence gathering
-    - Työkalut kuten Maltego (etsi muitakin työkaluja jos teet listan näistä, varmista netistä et ne on top 3 työkalut)
-    - iCloner siitä yhdestä artikkelista All Your Contacts Are Blong To Us?
-
-\end{comment}
-
-\textbf{Automated intelligence processing} has emerged as a pivotal element in contemporary information dissemination processes and thus also in strategic decision-making. By utilizing sophisticated algorithms and machine learning techniques, threat actors can efficiently collect, process and analyze vast amounts of data from various source, including social media, news outlets and public databases \citep{bilgeAllYourContactsAreBelongToUs2009}. This process not only streamlines the acquisition of relevant data but also enhances the accuracy and timeliness of insights derived from the data.
-
-These processes and tools can be used with open-source intelligence to gather exploitable data about the victim or the organization, or to analyze data that has been gathered via previous successful social engineering attacks. Even seemingly inconsequential bits of data could prove invaluable to the attacker \citep{mitnickArtDeceptionControlling2003}, and AI can aid in the discovery of these insights \citep{blauthArtificialIntelligenceCrime2022}.
-
-One of the most prominent examples of user's data being used without their consent was the Cambridge Analytica scandal \citep{blauthArtificialIntelligenceCrime2022}. The firm used the harvested data to create detailed voter profiles and targeted political advertisements, aiming to influence voter opinions and behaviors.
+However, regular users and scholars have found a number of ways to bypass ChatGPT's inherent ethic and behavioral guidelines, such as by using reverse psychology\footnote{https://incidentdatabase.ai/cite/420 (accessed 2024-07-15)}. In the above example, instead of directly asking for links to the pirate websites, the user can say that because he does not want his computer to be infected by malware, ChatGPT should provide links to sites the user should avoid visiting, thus causing ChatGPT to reveal the content the user originally wanted.
 
 
 
@@ -134,7 +97,7 @@ What to cover:
 
 \textbf{Deepfake}, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses artificial neural networks to create highly convincing fake media, either by altering existing content or creating them from scratch \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. When existing content is being altered, it's called reenactment or replacement, and when entirely new content is created, it's called synthesis. Deepfake content can be images, audio, and even full-resolution video. These hyper-realistic forgeries can depict a person saying or doing things that didn't actually happen, making it difficult for people and AI systems to discern what is real and what is fake \citep{blauthArtificialIntelligenceCrime2022}.
 
-By utilizing deepfake-generated content, deepfakes, attackers can convincingly impersonate trusted individuals or organizations, enhancing the credibility and even the emotional impact of their deceptive strategies \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. Complete facial reenactment (pose, gaze, blinking, mouth etc) was achieved with only one minute of training video, suggesting that if a malicious actor wants to reenact an individual, they don't need to gather a lot of video material for this. If video material isn't available, attackers can resort to filming the target person exiting the company's premises.
+By utilizing deepfake-generated content, deepfakes, attackers can convincingly impersonate trusted individuals or organizations, enhancing the credibility and even the emotional impact of their deceptive strategies \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. Complete facial reenactment (pose, gaze, blinking, mouth etc) was achieved with only one minute of training video, suggesting that if a malicious actor wants to reenact an individual, they don't need to gather a lot of video material for this. If video material is not available, attackers can resort to filming the target person exiting the company's premises.
 
 In 2024, deepfake technology was used in a video conference\footnote{https://incidentdatabase.ai/cite/634 (accessed 2024-08-24)} to successfully scam an organization for \$25 million.
 
@@ -225,3 +188,15 @@ The deepfake model has to be trained before it can be used. This is done using a
 %Some organizations rely on automatic speaker verification technology, which can be tricked via deepfake content \citep{doanBTSEAudioDeepfakeDetectiong2023}.
 
 Back in 2019, attackers successfully used deepfake-generated voice to impersonate an authentic entity\footnote{https://incidentdatabase.ai/cite/200 (accessed 2024-05-13)} for monetary gains exceeding 200,000 €.
+
+
+
+
+
+
+
+
+
+
+
+
