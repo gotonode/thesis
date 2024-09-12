@@ -5,13 +5,13 @@
 % --------------------------------
     
 
-\chapter{Social Engineering and AI\label{chapter:definition}}
+\chapter{Background\label{chapter:definition}}
 \begin{comment}
 
 Guides:
     - Page limit 1-2 pages
     - Context and terminology (käsitteet), challenges and measurement criteria, values, research question analysis
-    - Second to last paragraph contains the research question (RQ) and the results
+    - Tarkentaa tavoiteet ja osakysymykset, vertailukriteerit (jotka jäsentävät muita lukuja)
 
 TODO:
     [ ] 
@@ -23,40 +23,28 @@ What to cover:
             - Phishing in 1996 via AOL
     - Attacks, classical social engineering attacks
         - Phishing, vishing, smishing
-        - Tailgating
-        - Baiting (not always considered SE)
-        - Dumpster diving (not always considered SE)
     - Countermeasures, classical
         - User awareness & training programs
         - Company policy & company culture
-        - Real-time threat detection
-        - Vulnerability detection
     - Typical challenges
-    - Motives for cybercrimes
-        - Hard(er) to detect?
-        - "Easy" wins?
-
-Literature:
-    - Defining Social Engineering in Cybersecurity
 
 \end{comment}
 
-This chapter gives an overview of what social engineering constitutes, provides brief historical context and describes some key terminology that is necessary for further analysis, including about AI. After this, Chapter \ref{chapter:attacks}  examines AI-powered attack methods and tools.
-
-
-The term \textit{social engineering} dates back to 1842, when it was used to describe centralized planning in an attempt to manage the future development and behavior of a society \citep{hatfieldSocialEngineeringCybersecurity2018a}. Since then, its use has shifted to the field of cybersecurity through the phone phreaking phase (late 1950s to early 1970s) and through to the contemporary hacker culture \citep{wangDefiningSocialEngineering2020}.
-
-
-
-The earliest hackers and social engineers, the phreakers, used impersonation to call the Bell Telephone company in order to gain insider information about the telephone networks in order to carry out further attacks without the need for social manipulation \citep{hatfieldSocialEngineeringCybersecurity2018a}. In contrast, modern hackers view social engineering not as something to be replaced but a key part of any hacker's toolkit, in fact perhaps the most important one \citep{mitnickArtDeceptionControlling2003}.
-
-
+In recent years, the integration of generative artificial intelligence (AI) into social engineering offensive practices has emerged as a significant concern within the field of cybersecurity~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022, fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}. This chapter provides an overview of the role of generative AI in social engineering, explaining key concepts and terminologies essential for understanding the evolving threat landscape. After this, Chapter \ref{chapter:attacks}  examines AI-powered attack methods and tools.
 
 A strict consensus regarding the definition of a social engineering attack is lacking in the field  \citep{hatfieldSocialEngineeringCybersecurity2018a}. For the purposes of this thesis, social engineering is defined as "\textit{a type of attack wherein the attacker(s) exploit human vulnerabilities by means of social interaction to breach cybersecurity, with or without the use of technical means and technical vulnerabilities}" \citep{wangDefiningSocialEngineering2020}.
 
-Some key concepts, namely open-source intelligence, pretexting, and generative AI, are explained next.
+Current countermeasures against social engineering attacks, while offering a baseline defense, are ill-equipped to dealing with the sophistication of AI-powered threats. As generative AI technologies advance, their application in crafting more convincing and personalized social engineering attacks becomes increasingly evident \citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. This new capability not only enhances the likelihood of success but also complicates the detection and mitigation of such threats \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}.
 
+The ability of generative AI to produce realistic text, voice, and even full-resolution video content, deepfakes, makes it an invaluable tool for cybercriminals, allowing them to impersonate trusted entities and manipulate victims into divulging sensitive information \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}.
 
+The dynamic nature of AI-driven social engineering poses a significant challenge for traditional cybersecurity frameworks, which often rely on static defenses and predefined patterns of attack~\citep{tsinganosTowardsAnAutomatedRecognitionSystem2018}. As a result, organizations must evolve their security strategies to incorporate more robust, AI-aware defenses that can identify and counteract these sophisticated methods~\citep{mirskyTheCreationAndDetectionOfDeepfakes2021}.
+
+In light of these developments, it is also crucial to foster a culture of awareness and education among users, as human factors still remain a critical element in the success of these social engineering attacks. Training programs should emphasize the importance of skepticism and verification in communications, particularly in scenarios where generative AI is likely to be employed. Additionally, organizations should invest in advanced detection systems that utilize AI to identify anomalous behaviors and potential threats in real-time, such as spear phishing attacks \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024} and impersonation with deepfakes \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}.
+
+Defense against AI-enhanced social engineering will require a multifaceted approach that combines technological innovation, user education, and a proactive stance and enforcement of cybersecurity policy \citep{blauthArtificialIntelligenceCrimeOverviewMaliciousUseAbuse2022} As the landscape continues to evolve, staying ahead of these threats will necessitate ongoing research and collaboration across the cybersecurity community to develop effective countermeasures and best practices.
+
+The rest of this chapter goes over some key concepts in more detail that will be necessary for further analysis, namely open-source intelligence, pretexting and generative AI.
 
 
 
@@ -89,11 +77,11 @@ Some key concepts, namely open-source intelligence, pretexting, and generative A
         
 \end{comment}
 
-In social engineering, publicly available information is referred to as \textbf{open-source intelligence}. Like the name implies, it involves gathering of intelligence data from publicly locatable sources, such as from the target company's website, or from the social networking profiles of an individual or from other public records.
+In social engineering, publicly available information is referred to as \textbf{open-source intelligence} \citep{hadnagySocialEngineering2018}. Like the name implies, it involves gathering of intelligence data from publicly locatable sources, such as from the target company's website, or from the social networking profiles of an individual or from other public records.
 
-Various online tools exist for the purposes of gathering intelligence on an individual or an organization. They often offer automated forensic gathering and visualizes the found data, making it easier to identify patterns and connections.
+Various online tools have been created for the purposes of gathering intelligence on an individual or an organization. They often offer automated forensic gathering and visualizes the found data, making it easier to identify patterns and connections.
 
-Social engineering attacks typically begin with the gathering of open-source intelligence, which are subsequently used in conjunction with pretexting to attack an individual or an organization.
+Social engineering attacks typically begin with the gathering of open-source intelligence, which is subsequently used in conjunction with pretexting to attack an individual or an organization.
 
 
 
@@ -132,9 +120,9 @@ Social engineering attacks typically begin with the gathering of open-source int
 
 Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target  with \citep{contehCybersecurityRisksVulnerabilities2016}. With this story, the attacker hopes to gain the victim's trust by appearing legitimate. This type of attack relies heavily on the gathered open-source intelligence in assisting with the creation of the story \citep{hadnagySocialEngineering2018}.
 
-Pretexting uses psychological manipulation, trust and relationship-building, making it a potent tool for attackers \citep{mitnickArtDeceptionControlling2003}. The attacker, often assuming the likeness and character of a legitimate entity such as a trusted colleague, an IT service worker, a government official, or a 3rd party service provider, creates a believable narrative story tailored to the target victim's context.
+Pretexting uses psychological manipulation, trust and relationship-building, making it a potent tool for attackers \citep{mitnick_The_Art_of_Deception_2003}. The attacker, often assuming the likeness and character of a legitimate entity such as a trusted colleague, an IT service worker, a government official, or a 3rd party service provider, creates a believable narrative story tailored to the target victim's context.
 
-%The success of pretexting is based on the attacker's ability to gather background OSINT and use it convincingly, making the pretext appear legitimate and aligned with the target victim's expectations or experiences \citep{mitnickArtDeceptionControlling2003}.
+%The success of pretexting is based on the attacker's ability to gather background OSINT and use it convincingly, making the pretext appear legitimate and aligned with the target victim's expectations or experiences \citep{mitnick_The_Art_of_Deception_2003}.
 
 
 
@@ -171,7 +159,9 @@ What to skip:
 
 When AI is used to generate content, it is called \textbf{generative AI} \citep{goodfellowGenerativeAdversarialNetworks2020}. Unlike traditional AI, which follows programmed rules, generative AI utilizes machine learning to learn patterns from large training datasets to produce new outputs, such as text, images, audio and video \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}.
 
-A key example of generative AI is ChatGPT\footnote{https://openai.com/index/chatgpt (accessed 2024-08-19)}, a chatbot released by OpenAI in 2022. While far from being the first \citep{weizenbaumELIZA1996}, this chatbot revolutionized how people use and interact with AI systems, reaching over 100 million users in just two months\footnote{https://explodingtopics.com/blog/chatgpt-users (accessed 2024-08-11)}. Built on the GPT (Generative Pre-trained Transformer) architecture, ChatGPT is designed to understand and generate human-like text by predicting the next word in a sequence. It utilizes natural language processing (NLP), a domain at the intersection of human language and computation. Another prominent form of generative AI is OpenAI's DALL-E project. It understands human written text and generates images based on the user's prompt.
+A key example of generative AI is ChatGPT\footnote{https://openai.com/index/chatgpt (accessed 2024-08-19)}, a chatbot released by OpenAI in 2022. While far from being the first \citep{weizenbaumELIZA1996}, this chatbot revolutionized how people use and interact with generative AI systems, reaching over 100 million users in just two months\footnote{https://explodingtopics.com/blog/chatgpt-users (accessed 2024-08-11)}. Built on the GPT (Generative Pre-trained Transformer) architecture, ChatGPT is designed to understand and generate human-like text by predicting the next word in a sequence.
+
+ChatGPT utilizes natural language processing (NLP), and leverages vast amounts of data to achieve contextually relevant responses. The underlying mechanics of ChatGPT involve a transformer model, which excels at capturing the nuances of language and context, allowing it to generate coherent and contextually appropriate text. The model learns not just from static datasets but also from continuous user interactions, improving its performance over time.
 
 
 
@@ -180,3 +170,18 @@ A key example of generative AI is ChatGPT\footnote{https://openai.com/index/chat
 
 
 
+
+
+
+
+
+
+
+
+
+
+%The term \textit{social engineering} dates back to 1842, when it was used to describe centralized planning in an attempt to manage the future development and behavior of a society \citep{hatfieldSocialEngineeringCybersecurity2018a}. Since then, its use has shifted to the field of cybersecurity through the phone phreaking phase (late 1950s to early 1970s) and through to the contemporary hacker culture \citep{wangDefiningSocialEngineering2020}.
+
+
+
+%The earliest hackers and social engineers, the phreakers, used impersonation to call the Bell Telephone company in order to gain insider information about the telephone networks in order to carry out further attacks without the need for social manipulation \citep{hatfieldSocialEngineeringCybersecurity2018a}. In contrast, modern hackers view social engineering not as something to be replaced but a key part of any hacker's toolkit, in fact perhaps the most important one \citep{mitnick_The_Art_of_Deception_2003}.

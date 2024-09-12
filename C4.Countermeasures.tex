@@ -21,7 +21,7 @@ What to cover:
 
 \end{comment}
 
-In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter is divided into two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as training and awareness programs. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter \ref{chapter:evaluation} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
+In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter is divided into two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as user training programs and company policy, and law and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter \ref{chapter:evaluation} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
 
 
 
@@ -70,7 +70,7 @@ Machine learning, for instance, combats phishing by analyzing massive amounts of
 
 Building on the foundations of machine learning and other AI technologies discussed above, deepfake detection via AI methods is likewise very resource intensive.
 
-Where once experts in the field could recommended that a caller be authenticated by recognizing their voice, accent and intonations \citep{mitnickArtDeceptionControlling2003}, with the advent of generative AI, and especially deepfakes, this no longer holds true \citep{doanBTSEAudioDeepfakeDetectiong2023}. Technologies such as the BTS-E encoder have been proposed for detecting idiosyncrasies in speech that might not or even could not be consciously registered by human observers. BTS-E detects correlations between breathing, talking and silence to detect spoofed audio.
+Where once experts in the field could recommended that a caller be authenticated by recognizing their voice, accent and intonations \citep{mitnick_The_Art_of_Deception_2003}, with the advent of generative AI, and especially deepfakes, this no longer holds true \citep{doanBTSEAudioDeepfakeDetectiong2023}. Technologies such as the BTS-E encoder have been proposed for detecting idiosyncrasies in speech that might not or even could not be consciously registered by human observers. BTS-E detects correlations between breathing, talking and silence to detect spoofed audio.
 
 Deepfakes often contain subtle anomalies called artifacts, just as image forgeries of the past did \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. These artifacts can be subtle, such as a strange blob of pixels, or overt such as a person having clearly warped eyes. Just as people have differing propensities for detecting phishing attempts and noticing subtle anomalies in spelling and grammar \citep{nicholsonInvestigatingTeenagersAbilityDetectPhishingMessages2020, neupaneDoSocialDisordersFacilitateSocialEngineeringAutismPhishing2018}, so too are people variously adept at spotting these anomalies in deepfakes.
 
@@ -87,7 +87,17 @@ Behavior-type artifacts involve monitoring anomalies in the target's mannerisms,
 
 
 
+% --------------------------------
+% Human oriented
+% --------------------------------
 
+\section{Law and use guidelines}
+\begin{comment}
+    
+    - The best defense against SE attacks is an educated, conscious user
+    - User education should be continuous and not a one-off event
+
+\end{comment}
 
 
 
@@ -107,19 +117,19 @@ Behavior-type artifacts involve monitoring anomalies in the target's mannerisms,
 
 \end{comment}
 
-Human-oriented countermeasures usually fall into four categories: simulated penetration tests with social engineering techniques, employee security awareness training programs, creation and application of corporate cybersecurity policies, and the development of a security-conscious company culture \citep{tsinganosTowardsAnAutomatedRecognitionSystem2018, mitnickArtDeceptionControlling2003}.
+Human-oriented countermeasures usually fall into four categories: simulated penetration tests with social engineering techniques, employee security awareness training programs, creation and application of corporate cybersecurity policies, and the development of a security-conscious company culture \citep{tsinganosTowardsAnAutomatedRecognitionSystem2018, mitnick_The_Art_of_Deception_2003}.
 
-Regular and comprehensive training programs are vital to educate employees about social engineering tactics. Regularity is stressed by experts in the field as users tend to forget what they have learned \citep{hadnagySocialEngineering2018, mitnickArtDeceptionControlling2003}. It is thus suggested that training against social engineering attacks is not something that is done annually, or even bi-annually, but rather that it's something that is baked into the company's culture. The inoculation theory \citep{blauthArtificialIntelligenceCrime2022} suggests that prior exposure could help protect users against future threats.
+Regular and comprehensive training programs are vital to educate employees about social engineering tactics. Regularity is stressed by experts in the field as users tend to forget what they have learned \citep{hadnagySocialEngineering2018, mitnick_The_Art_of_Deception_2003}. It is thus suggested that training against social engineering attacks is not something that is done annually, or even bi-annually, but rather that it's something that is baked into the company's culture. The inoculation theory \citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022} suggests that prior exposure could help protect users against future threats.
 
 Conducting AI-assisted simulated social engineering and phishing attack campaigns, via numerous channels such as email, SMS and even phone/VoIP, allows organizations to assess the suspectibility of their employees to social engineering tactics. These exercises help identify vulnerabilities in the workforce, enabling further targeted training and reinforcing the importance of scrutinizing unsolicited communication. With the advent of generative AI and deepfakes, this needs to be extended to cover any and all communication.
 
-Feedback from these simulations can be a powerful tool for personnel development, but employees who fall victim to these simulated attacks should never be punished but re-educated. Along the same lines, it is important that employees should be informed beforehand that such campaigns may be intermittently run, which has the double benefit of keeping them on their guard and also not causing unnecessary bad emotions from "being tricked" by their own company \citep{hadnagySocialEngineering2018, mitnickArtDeceptionControlling2003}.
+Feedback from these simulations can be a powerful tool for personnel development, but employees who fall victim to these simulated attacks should never be punished but re-educated. Along the same lines, it is important that employees should be informed beforehand that such campaigns may be intermittently run, which has the double benefit of keeping them on their guard and also not causing unnecessary bad emotions from "being tricked" by their own company \citep{hadnagySocialEngineering2018, mitnick_The_Art_of_Deception_2003}.
 
-A company culture that is open about sharing if any of its members fall victim to social engineering attacks is more robust due to employees not having to feel shame or hide the fact that they got tricked \citep{hadnagySocialEngineering2018}. This can be reinforced by executives talking openly about times when they fell victim, to what kind of an attack and why, and what they did about the incident. It's always better that employees report suspected or actualized social engineering attacks rather than trying to hide them for fear of ridicule or punishment \citep{mitnickArtDeceptionControlling2003}.
+A company culture that is open about sharing if any of its members fall victim to social engineering attacks is more robust due to employees not having to feel shame or hide the fact that they got tricked \citep{hadnagySocialEngineering2018}. This can be reinforced by executives talking openly about times when they fell victim, to what kind of an attack and why, and what they did about the incident. It's always better that employees report suspected or actualized social engineering attacks rather than trying to hide them for fear of ridicule or punishment \citep{mitnick_The_Art_of_Deception_2003}.
 
-It's imperative that every user understands that they are the weakest link in the cybersecurity chain \citep{mitnickArtDeceptionControlling2003} and that the responsibility of the organization's cybersecurity is in everyone's hands, not just the cybersecurity profesionnal's. They can't do all of the work.
+It's imperative that every user understands that they are the weakest link in the cybersecurity chain \citep{mitnick_The_Art_of_Deception_2003} and that the responsibility of the organization's cybersecurity is in everyone's hands, not just the cybersecurity profesionnal's. They can't do all of the work.
 
 
-Finally, because AI can source social media sites and the Internet automatically for open-source intelligence, it's imperative for people to know to be careful of what they share, with whom and when \citep{mitnickArtDeceptionControlling2003}. Even seemingly private or coincidental information, such as photos indicative that the employee is now on a company picnic, could be used against them and their employer.
+Finally, because AI can source social media sites and the Internet automatically for open-source intelligence, it's imperative for people to know to be careful of what they share, with whom and when \citep{mitnick_The_Art_of_Deception_2003}. Even seemingly private or coincidental information, such as photos indicative that the employee is now on a company picnic, could be used against them and their employer.
 
-Part of the solution regarding deepfake content is to raise population awareness about such technology use \citep{blauthArtificialIntelligenceCrime2022}. In 2019, the Democratic Party (USA) presented a deepfake video of their own chairman to highlight their concerns about deepfake content \footnote{https://edition.cnn.com/2019/08/09/tech/deepfake-tom-perez-dnc-defcon/index.html (accessed 2024-08-25)}.
+Part of the solution regarding deepfake content is to raise population awareness about such technology use \citep{blauthArtificialIntelligenceCrimeOverviewMaliciousUseAbuse2022}. In 2019, the Democratic Party (USA) presented a deepfake video of their own chairman to highlight their concerns about deepfake content \footnote{https://edition.cnn.com/2019/08/09/tech/deepfake-tom-perez-dnc-defcon/index.html (accessed 2024-08-25)}.

@@ -30,7 +30,7 @@ Sections:
 
 \end{comment}
 
-This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first explores the misuse of chatbots like ChatGPT for malicious content generation. The discussion then covers deepfake-generated media that can be used for impersonation, concluding with how attackers could use all of this with spear phishing. After this, Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
+This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first explores the misuse of chatbots like ChatGPT for malicious content generation. The discussion then covers deepfake-generated media that can be used for impersonation, concluding with how attackers could use all of this with spear spear phishing. After this, Chapter \ref{chapter:countermeasures} goes over the countermeasures against these attacks.
 
 
 
@@ -95,11 +95,11 @@ What to cover:
 
 \end{comment}
 
-\textbf{Deepfake}, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses artificial neural networks to create highly convincing fake media, either by altering existing content or creating them from scratch \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. When existing content is being altered, it's called reenactment or replacement, and when entirely new content is created, it's called synthesis. Deepfake content can be images, audio, and even full-resolution video. These hyper-realistic forgeries can depict a person saying or doing things that didn't actually happen, making it difficult for people and AI systems to discern what is real and what is fake \citep{blauthArtificialIntelligenceCrime2022}.
+\textbf{Deepfake}, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses artificial neural networks to create highly convincing fake media, either by altering existing content or creating them from scratch \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. When existing content is being altered, it's called reenactment or replacement, and when entirely new content is created, it's called synthesis. Deepfake content can be images, audio, and even full-resolution video. These hyper-realistic forgeries can depict a person saying or doing things that didn't actually happen, making it difficult for people and AI systems to discern what is real and what is fake \citep{blauthArtificialIntelligenceCrimeOverviewMaliciousUseAbuse2022}.
 
-By utilizing deepfake-generated content, deepfakes, attackers can convincingly impersonate trusted individuals or organizations, enhancing the credibility and even the emotional impact of their deceptive strategies \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. Complete facial reenactment (pose, gaze, blinking, mouth etc) was achieved with only one minute of training video, suggesting that if a malicious actor wants to reenact an individual, they don't need to gather a lot of video material for this. If video material is not available, attackers can resort to filming the target person exiting the company's premises.
+By utilizing deepfake-generated content, deepfakes, attackers can convincingly impersonate trusted individuals or organizations, enhancing the credibility and even the emotional impact of their deceptive strategies \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. Complete facial reenactment, such as pose, gaze, blinking, mouth, and movements, was achieved with only one minute of training video, suggesting that if a malicious actor wants to reenact an individual, they do not need to gather a lot of video material for this. If video material is not available, attackers might be able to resort to filming the target person exiting the company's premises.
 
-In 2024, deepfake technology was used in a video conference\footnote{https://incidentdatabase.ai/cite/634 (accessed 2024-08-24)} to successfully scam an organization for \$25 million.
+In 2024, deepfake technology was used in a video conference to successfully scam an organization for \$25 million\footnote{https://incidentdatabase.ai/cite/634 (accessed 2024-08-24)}.
 
 
 
@@ -137,7 +137,7 @@ As the quintessential social engineering attack, \textbf{phishing} is characteri
 
 \textbf{Spear phishing}, on the other hand, is a more targeted version of phishing, where attackers customize their deceptive messages to a target individual or organization \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021, fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}. Spear phishing that is targeted at high-profile individuals is called \textbf{whaling}. Unlike generic phishing attempts, spear phishing involves gathering detailed information about the victim, via open-source intelligence or otherwise, such as their name, position, and contacts to craft a convincing and personalized message \citep{salahdineSocialEngineeringAttacks2019}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but has traditionally been a lot more time and energy consuming.
 
-Phishing messages have traditionally been marked by noticeable spelling and grammatical errors. ChatGPT can effectively translate text from the attacker’s native language to the victim’s, maintaining fidelity and even enhancing the deceptive message, provided that the models' ethical restrictions have been bypassed successfully \citep{guptaFromChatGPTtoThreatGPT2023}.
+Phishing messages have traditionally been marked by noticeable spelling and grammatical errors \citep{herleySoLongAndNoThanksForTheExternalities2009}. ChatGPT can effectively translate text from the attacker’s native language to the victim’s, maintaining fidelity and correcting any spelling or grammatical errors. It can even enhance the deceptive message, provided that the models' ethical restrictions have been bypassed successfully \citep{guptaFromChatGPTtoThreatGPT2023}.
 
 Chatbots like ChatGPT can also integrate gathered intelligence into spam messages, enhancing their relevance. Additionally, incorporating deepfake content, such as a video of the company’s CEO issuing demands, can further increase the effectiveness of phishing attempts.
 
