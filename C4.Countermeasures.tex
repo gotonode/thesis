@@ -5,9 +5,6 @@
 
 \begin{comment}
 
-Guides:
-    - 
-
 TODO:
     [ ] 
 
@@ -18,7 +15,7 @@ What to cover:
 
 \end{comment}
 
-In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter is divided into two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as user training programs and company policy, and law and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter~\ref{chapter:evaluation} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
+In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter focuses on two two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as user training programs and company policy, and law and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter~\ref{chapter:evaluation} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
 
 
 
@@ -31,7 +28,7 @@ In this chapter, countermeasures against the attacks covered in the previous cha
 
 
 
-\section{AI-based content detection}
+\section{AI-based phishing and deepfake detection}
 \begin{comment}
 
 AI-generated content detection
@@ -45,11 +42,11 @@ What to cover:
 \end{comment}
 
 
-Early AI models were primarily rule-based systems which were designed with the help of an expert's knowledge \citep{mirsky_Threat_Offensive_AI_Organizations_2023}
+%Early AI models were primarily rule-based systems which were designed with the help of an expert's knowledge \citep{mirsky_Threat_Offensive_AI_Organizations_2023}
 
-Traditional phishing detection systems are typically rule-based, which are ill-equipped to adapting to and idenitfying patterns in extensive data streams . AI-based phishing detection foster intricate data processing capabilities, predictive modeling and pattern detection \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}, ushering an anticipatory and adaptive defensive measure.
+Traditional phishing message detection systems, i.e. those not based on machine learning and AI, are typically rule-based, which are ill-equipped to adapting to and idenitfying patterns in extensive data streams . AI-based phishing detection foster intricate data processing capabilities, predictive modeling and pattern detection \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}, ushering an anticipatory and adaptive defensive measure.
 
-Using techniques such as natural language processing (NLP), AI systems can be trained to recognize common patterns and especially anomalies in communications to and from the network that are indicative of phishing attempts \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. These systems can flag suspicious emails or messages by analyzing factors such as unusual use of language, unexpected requests for private data, or other inconsistencies.
+Using techniques such as natural language processing (NLP), AI systems can be trained to recognize common patterns and especially anomalies in communications to and from the network that are indicative of phishing attempts \citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. These systems can flag suspicious emails or messages by analyzing factors such as unusual use of language, unexpected requests for private data, or other inconsistencies.
 
 Just as incoming and outgoing email messages are analyzed for phishing attacks, and the attachments are scanned for malware such as viruses or Trojan horses, images, audio and videos need to be scanned as well to aid the user in detecting if they are genuine or deepfakes \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}.
 
