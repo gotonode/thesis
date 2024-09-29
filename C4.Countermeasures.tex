@@ -28,7 +28,7 @@ In this chapter, countermeasures against the attacks covered in the previous cha
 
 
 
-\section{AI-based phishing and deepfake detection}
+\section{AI-based phishing detection}
 \begin{comment}
 
 AI-generated content detection
@@ -36,38 +36,43 @@ AI-generated content detection
 What to cover:
     - Deepfake content detection
     - Spear phishing detection
-        - Also spear phishing that is written by humans (thus the title can't be AI-generated content detection?)
 
     
 \end{comment}
 
 
-%Early AI models were primarily rule-based systems which were designed with the help of an expert's knowledge \citep{mirsky_Threat_Offensive_AI_Organizations_2023}
+%Early AI models were primarily rule-based systems which were designed with the help of an expert's knowledge~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}
 
-Traditional phishing message detection systems, i.e. those not based on machine learning and AI, are typically rule-based, which are ill-equipped to adapting to and idenitfying patterns in extensive data streams . AI-based phishing detection foster intricate data processing capabilities, predictive modeling and pattern detection \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}, ushering an anticipatory and adaptive defensive measure.
+Traditional phishing message detection systems, i.e. those not based on machine learning and AI, are typically rule-based, which are ill-equipped to adapting to and identifying patterns in extensive data streams.\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
 
-Using techniques such as natural language processing (NLP), AI systems can be trained to recognize common patterns and especially anomalies in communications to and from the network that are indicative of phishing attempts \citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. These systems can flag suspicious emails or messages by analyzing factors such as unusual use of language, unexpected requests for private data, or other inconsistencies.
+Using techniques such as natural language processing (NLP), AI systems can be trained to recognize common patterns and especially anomalies in communications to and from the network that are indicative of phishing attempts~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. These systems can flag suspicious emails or messages by analyzing factors such as unusual use of language, unexpected requests for private data, or other inconsistencies.
 
-Just as incoming and outgoing email messages are analyzed for phishing attacks, and the attachments are scanned for malware such as viruses or Trojan horses, images, audio and videos need to be scanned as well to aid the user in detecting if they are genuine or deepfakes \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}.
+Just as incoming and outgoing email messages are analyzed for phishing attacks, and the attachments are scanned for malware such as viruses or Trojan horses, images, audio and videos need to be scanned as well to aid the user in detecting if they are genuine or deepfakes~\citep{mirsky_Creation_Detection_Deepfakes_2021}.
 
-AI enhanced mechanisms significantly improve the detection and mitigation of social engineering attacks \citep{fakhouriAIDrivenSolutionsForSocialEngineeringAttacks2024}
+    %AI enhanced mechanisms significantly improve the detection and mitigation of social engineering attacks~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
 
-Modern phishing attacks leverage advanced AI techniques to create highly convincing fake websites and emails that mimic legitimate entities, making it increasingly difficult for users to distinguish betweeen authentic and malicious content. To counter these sophisticated phishing attacks, researches have developed various AI-enabled detection techniques, including Machine Learning (ML), Deep Learning (DL), Hybrid Learning and Scenario-based approaches \citep{basitComprehensiveSurveyAIenabledPhishingAttacks2021}. These methods have shown great promise in identifying phishing attempts with high accuracy, often surpassing traditional detection methods.
+Modern phishing attacks leverage advanced AI techniques to create highly convincing fake websites and emails that mimic legitimate entities, making it increasingly difficult for users to distinguish between authentic and malicious content. To counter these sophisticated phishing attacks, researches have developed various AI-enabled detection techniques, including machine learning, deep learning, hybrid learning and scenario-based approaches~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. These methods have shown great promise in identifying phishing attempts with high accuracy, often surpassing traditional detection methods.
+
+Machine learning, for instance, combats phishing by analyzing massive amounts of data to identify patterns and features typical of phishing attempts. By training models on datasets containing both legitimate and phishing emails or websites, machine learning algorithms can learn to distinguish between the two demonstrating over 95 \% accuracy compared to traditional, non-AI based methods. However, care has to be taken when choosing the datasets.
+
+    %Building on the foundations of machine learning and other AI technologies discussed above, deepfake detection via AI methods is likewise very resource intensive.
+
+Where once experts in the field could recommended that a caller be authenticated by recognizing their voice, accent and intonations~\citep{mitnick_The_Art_of_Deception_2003}, with the advent of generative AI, and especially deepfakes, this no longer holds true~\citep{doan_BTSE_Audio_Deepfake_Detection_2023}. Technologies such as the BTS-E encoder have been proposed for detecting idiosyncrasies in speech that might not or even could not be consciously registered by human observers. BTS-E detects correlations between breathing, talking and silence to detect spoofed audio.
+
+\section{AI-based deepfake detection}
+\begin{comment}
 
 
-Machine learning, for instance, combats phishing by analyzing massive amounts of data to identify patterns and features typical of phishing attempts. By training models on datasets containing both legitimate and phishing emails or websites, ML algorithms can learn to distinguish between the two with some methods, such as Random Forest (RF), Support Vector Machines (SVM) and k-Nearest Neighor (k-NN) demonstrating over 95 \% accuracy compared to traditional, non-AI based methods. However, care has to be taken when choosing the datasets.
+    
+\end{comment}
 
-Building on the foundations of machine learning and other AI technologies discussed above, deepfake detection via AI methods is likewise very resource intensive.
+Deepfakes often contain subtle anomalies called artifacts, just as image forgeries of the past did, and deepfake detection is based on machine learning and forensic analysis, attempting to identify these specific artifacts in the multimedia content~\citep{mirsky_Creation_Detection_Deepfakes_2021}. The artifacts can be subtle, such as a strange blob of pixels, or overt such as a person having clearly warped eyes.
 
-Where once experts in the field could recommended that a caller be authenticated by recognizing their voice, accent and intonations \citep{mitnick_The_Art_of_Deception_2003}, with the advent of generative AI, and especially deepfakes, this no longer holds true \citep{doanBTSEAudioDeepfakeDetectiong2023}. Technologies such as the BTS-E encoder have been proposed for detecting idiosyncrasies in speech that might not or even could not be consciously registered by human observers. BTS-E detects correlations between breathing, talking and silence to detect spoofed audio.
-
-Deepfakes often contain subtle anomalies called artifacts, just as image forgeries of the past did \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. These artifacts can be subtle, such as a strange blob of pixels, or overt such as a person having clearly warped eyes. Just as people have differing propensities for detecting phishing attempts and noticing subtle anomalies in spelling and grammar \citep{nicholsonInvestigatingTeenagersAbilityDetectPhishingMessages2020, neupaneDoSocialDisordersFacilitateSocialEngineeringAutismPhishing2018}, so too are people variously adept at spotting these anomalies in deepfakes.
-
-Deepfake detection is based on machine learning and forensic analysis, attempting to identify specific artifacts in the multimedia content \citep{mirskyTheCreationAndDetectionOfDeepfakes2021}. Seven different types of artifacts are identified in two categories. Spatial-type artifacts cover blending, environment and forensics, while temporal-type artifacts cover behavior, physiology, sychnorization and coherence.
+Seven different types of artifacts are identified in main two categories~\citep{mirsky_Creation_Detection_Deepfakes_2021}. Spatial-type artifacts cover blending, environment and forensics, while temporal-type artifacts cover behavior, physiology, synchronization and coherence.
 
 Blending artifacts occur when the generated content is integrated back into a frame (the background), which is detectable with techniques such as edge detection and frequency analysis. Environment artifacts can appear when fake facial content seems inconsistent with the surrounding background frame, often due to mismatches in warping, lighting or fidelity. Forensic-type artifacts are residues from the generative models, such as generative adversarial network fingerprints or sensor noise.
 
-Behavior-type artifacts involve monitoring anomalies in the target's mannerisms, while physiological artifacts focus on inconsistencies in natural biological cues like blinking of the eyes or head movements. Sychnorization artifacts can be observed in mismatched audio-visual elements, and coherence artifacts relate to inconsistencies in logical sequences happening over time.
+Behavior-type artifacts involve monitoring anomalies in the target's mannerisms, while physiological artifacts focus on inconsistencies in natural biological cues like blinking of the eyes or head movements. Synchronization artifacts can be observed in mismatched audio-visual elements, and coherence artifacts relate to inconsistencies in logical sequences happening over time.
 
 
 
@@ -77,8 +82,7 @@ Behavior-type artifacts involve monitoring anomalies in the target's mannerisms,
 \section{Law and use guidelines}
 \begin{comment}
     
-    - The best defense against SE attacks is an educated, conscious user
-    - User education should be continuous and not a one-off event
+
 
 \end{comment}
 
@@ -88,26 +92,22 @@ Text
 \section{User training and company policy}
 \begin{comment}
     
-    - The best defense against SE attacks is an educated, conscious user
-    - User education should be continuous and not a one-off event
+    - VoIP has been defined before 
 
 \end{comment}
 
-Personnel should be shown what to expect from deepfakes and AI-powered social engineering \citep{mirsky_Creation_Detection_Deepfakes_2021}
+    %Personnel should be shown what to expect from deepfakes and AI-powered social engineering~\citep{mirsky_Creation_Detection_Deepfakes_2021}
 
-Human-oriented countermeasures usually fall into four categories: simulated penetration tests with social engineering techniques, employee security awareness training programs, creation and application of corporate cybersecurity policies, and the development of a security-conscious company culture \citep{tsinganosTowardsAnAutomatedRecognitionSystem2018, mitnick_The_Art_of_Deception_2003}.
+Human-oriented countermeasures against social engineering attacks usually fall into four categories: simulated penetration tests with social engineering techniques, employee security awareness training programs, creation and application of corporate cybersecurity policies, and the development of a security-conscious company culture~\citep{tsinganos_Towards_Automated_Recognition_Chat_SE_Enterprise_2018, mitnick_The_Art_of_Deception_2003}.
 
-Regular and comprehensive training programs are vital to educate employees about social engineering tactics. Regularity is stressed by experts in the field as users tend to forget what they have learned \citep{hadnagySocialEngineering2018, mitnick_The_Art_of_Deception_2003}. It is thus suggested that training against social engineering attacks is not something that is done annually, or even bi-annually, but rather that it's something that is baked into the company's culture. The inoculation theory \citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022} suggests that prior exposure could help protect users against future threats.
+Regular and comprehensive training programs are vital to educate employees about social engineering tactics. Regularity is stressed by experts in the field as users tend to forget what they have learned~\citep{hadnagy_Social_Engineering_The_Science_2018, mitnick_The_Art_of_Deception_2003}. It is thus suggested that training against social engineering attacks is not something that is done annually, or even bi-annually, but rather that it's something that is baked into the company's culture. The inoculation theory~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022} suggests that prior exposure to social engineering attacks could help protect users against future threats.
 
-Conducting AI-assisted simulated social engineering and phishing attack campaigns, via numerous channels such as email, SMS and even phone/VoIP, allows organizations to assess the suspectibility of their employees to social engineering tactics. These exercises help identify vulnerabilities in the workforce, enabling further targeted training and reinforcing the importance of scrutinizing unsolicited communication. With the advent of generative AI and deepfakes, this needs to be extended to cover any and all communication.
+Conducting simulated social engineering and phishing attack campaigns, via numerous channels such as email, SMS and even phone/VoIP, allows organizations to assess the susceptibility of their employees to social engineering tactics \citep{hadnagy_Social_Engineering_The_Science_2018}. These exercises help identify vulnerabilities in the workforce, enabling further targeted training and reinforcing the importance of scrutinizing unsolicited communication. With the advent of generative AI and deepfakes, this needs to be extended to cover any and all communication \citep{mirsky_Creation_Detection_Deepfakes_2021}.
 
-Feedback from these simulations can be a powerful tool for personnel development, but employees who fall victim to these simulated attacks should never be punished but re-educated. Along the same lines, it is important that employees should be informed beforehand that such campaigns may be intermittently run, which has the double benefit of keeping them on their guard and also not causing unnecessary bad emotions from "being tricked" by their own company \citep{hadnagySocialEngineering2018, mitnick_The_Art_of_Deception_2003}.
+Feedback from these simulations can significantly aid personnel development. However, employees who fall victim to these simulated attacks should be re-educated rather than punished~\citep{mitnick_The_Art_of_Deception_2003}. Furthermore, it is essential to inform employees in advance that such campaigns may be run occasionally. This approach not only keeps them vigilant but also mitigates negative feelings associated with "being tricked" by their own company~\citep{hadnagy_Social_Engineering_The_Science_2018}.
 
-A company culture that is open about sharing if any of its members fall victim to social engineering attacks is more robust due to employees not having to feel shame or hide the fact that they got tricked \citep{hadnagySocialEngineering2018}. This can be reinforced by executives talking openly about times when they fell victim, to what kind of an attack and why, and what they did about the incident. It's always better that employees report suspected or actualized social engineering attacks rather than trying to hide them for fear of ridicule or punishment \citep{mitnick_The_Art_of_Deception_2003}.
+A company culture that is open about sharing if any of its members fall victim to social engineering attacks is more robust due to employees not having to feel shame or hide the fact that they got tricked~\citep{hadnagy_Social_Engineering_The_Science_2018}. This can be reinforced by executives talking openly about times when they fell victim, to what kind of an attack and why, and what they did about the incident. It's always better that employees report suspected or actualized social engineering attacks rather than trying to hide them for fear of ridicule or punishment~\citep{mitnick_The_Art_of_Deception_2003}.
 
-It's imperative that every user understands that they are the weakest link in the cybersecurity chain \citep{mitnick_The_Art_of_Deception_2003} and that the responsibility of the organization's cybersecurity is in everyone's hands, not just the cybersecurity profesionnal's. They can't do all of the work.
+It's imperative that every user understands that they are the weakest link in the cybersecurity chain~\citep{mitnick_The_Art_of_Deception_2003} and that the responsibility of the organization's cybersecurity is in everyone's hands, not just the cybersecurity professional's.
 
-
-Finally, because AI can source social media sites and the Internet automatically for open-source intelligence, it's imperative for people to know to be careful of what they share, with whom and when \citep{mitnick_The_Art_of_Deception_2003}. Even seemingly private or coincidental information, such as photos indicative that the employee is now on a company picnic, could be used against them and their employer.
-
-Part of the solution regarding deepfake content is to raise population awareness about such technology use \citep{blauthArtificialIntelligenceCrimeOverviewMaliciousUseAbuse2022}. In 2019, the Democratic Party (USA) presented a deepfake video of their own chairman to highlight their concerns about deepfake content \footnote{https://edition.cnn.com/2019/08/09/tech/deepfake-tom-perez-dnc-defcon/index.html (accessed 2024-08-25)}.
+Finally, because AI can source social media sites and the Internet automatically for open-source intelligence, it's imperative for people to know to be careful of what they share, with whom and when~\citep{mitnick_The_Art_of_Deception_2003}. Even seemingly private or coincidental information, such as photos indicative that the employee is now on a company picnic, could be used against them and their employer in a social engineering attack.
