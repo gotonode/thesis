@@ -1,10 +1,9 @@
 
 
 
-\chapter{Discussion\label{chapter:evaluation}}
+\chapter{Discussion\label{chapter:discussion}}
 \begin{comment}
 
-What to cover:
     - OpenAI attempts to control how ChatGPT etc are used
     - Efficacy of EU and other level regulations
     - Instagram flagging content that might've been generated with AI (this is futile in the future?)
@@ -18,9 +17,11 @@ This chapter evaluates current countermeasures and their effectiveness at detect
 
 
 
+According to IBM's 2024 Cost of a Data Breach Report\footnote{https://www.ibm.com/reports/data-breach (accessed 2024-08-11)}, organizations are increasingly leveraging AI and automation in their security operations, with 31\% of studied organizations deploying these technologies extensively, 36\% reported limited use and the remaining 33\% reported no use. Notably, when AI was extensively deployed in prevention workflows, organizations saw an average breach cost reduction of 45\% (\$2.2 million compared to the average of \$4,88 million). The key finding of this year's report is a striking correlation: the more an organization relied on AI, the lower its average breach costs were.
 
+63\% of organizations that had a data breach said they are planning on increasing the prices of their products and services, passing the multimillion dollar costs of data breaches to their customers \citep{ibm_Cost_Data_Breach_Report_2024}.
 
-
+%AI has prowess in analyzing big datasets, insight extraction and discernment of potential threats with remarkable accuracy \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}
 
 
 
@@ -56,7 +57,10 @@ Human-oriented measures remain pivotal in the defense against social engineering
 
 The deployment of simulated social engineering campaigns offers substantial insights into employee vulnerability, yet these must be meticulously crafted to avoid adverse impacts on workplace morale~\citep{mitnick_The_Art_of_Deception_2003}. Utilizing natural language processing to craft highly convincing but simulated phishing messages to be sent to the employees can further aid in the detection of the need for further training.
 
-Certain parts of the population, such as teenagers and young people who haven't yet gained enough experience on the Internet may be more susceptible to social engineering attacks~\citep{nicholson_Investigating_Teenagers_Detect_Phishing_2020}. Certain other demographics, like people on the autism spectrum, a hallmark of which is difficulties in social interaction, may, perhaps contrary to expectations, be more adept at detecting social engineering attacks~\citep{neupane_Social_Disorders_Facilitate_SE_2018}. It is thus suggested that training efforts, while they must be targeted at everyone, would take into account these potential differences in demographics. Chatbots like ChatGPT can help in designing tailored training content.
+%
+% Teenagers, young people and autistic people, susceptibility 
+%
+Certain parts of the population, such as teenagers and young people who haven't yet gained enough experience on the Internet, may be more susceptible to social engineering attacks~\citep{nicholson_Investigating_Teenagers_Detect_Phishing_2020}. People on the autism spectrum, often facing challenges in social interaction, may unexpectedly excel at detecting social engineering attacks~\citep{neupane_Social_Disorders_Facilitate_SE_2018}. It is thus suggested that training efforts, while they must be targeted at everyone, would take into account these potential differences in demographics. Chatbots like ChatGPT can help in designing tailored training content.
 
 
 
@@ -78,19 +82,8 @@ Certain parts of the population, such as teenagers and young people who haven't 
     - Spear phishing detection
 \end{comment}
 
-Building and maintaining guidelines for the ethical use of AI systems has been at the forefront of their development. OpenAI, the organization behind the GPT architecture and its publicly accessible front-end ChatGPT, has made strides in an attempt to prevent the misuse of their AI systems.
+%Naturally, restrictions set on AI systems can only be effective if the system stays within the control of its developer. While today, the feasibility of running one's own version of LLM tools such as ChatGPT, due to prohibily high computational costs and other factors, this might not always be the case.
 
-Spreading information about deepfakes to the public faces the hurdle of the "liar's dividend", a situation where a "liar" discredits a real video claiming it to be a deepfake. The more users are aware of deepfake content and the ability of AI to doctor and create videos, the more skeptical they will be, causing them to question images and videos that are real~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. Deepfakes may thus erode the public's very trust in multimedia content.
-
-The ethical use of AI contributes significantly to mitigating risks~\citep{guptaFromChatGPTtoThreatGPT2023}, with AI developers such as OpenAI implementing guidelines\footnote{https://openai.com/policies/usage-policies (accessed 2024-08-22)} to limit the misuse of their AI systems, such as ChatGPT. Despite these efforts the complete prevention of AI system misuse remains elusive, particularly since older versions without the latest restrictions might still be accessible.
-
-As AI is developed further and the more its availability increases, the risk or malicious or criminal use increases as well, and these risks if not properly addressed may lead to the excessive strict regulation of AI technologies~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
-
-Guidelines are also being developed on national and global levels. For instance, European Union's General Data Protection Regulation (GDPR), and its relationship with AI, including AI-powered social engineering, is a complex and evolving topic. Introduced in 2018, GDPR and its development predates the widespread emergence of technologies such as generative adversarial networks and generative AI~\citep{goodfellowGenerativeAdversarialNetworks2020}, and thus was not superficially designed to address these issues.
-
-EU's European Parliamentary Research Service (EPRS) released a study~\citep{eprsTheImpactofTheGDPR2020} which eventually lead to the formal approvement by the European Parliament on Feb 13, 2024. As of the writing of this thesis, the AI Act is not yet in effect, and once it is published, there will be a transition period before the act is fully enabled. This act is considered a landmark regulation, as it is the first comprehensive AI law in any major jurisdiction around the world, paving the wave for other jurisdictions, such as the US,  to follow suite.
-
-    %Naturally, restrictions set on AI systems can only be effective if the system stays within the control of its developer. While today, the feasibility of running one's own version of LLM tools such as ChatGPT, due to prohibily high computational costs and other factors, this might not always be the case.
 
 It seems evident that the highly dynamic nature of AI technologies fuel a continuous arms race between attackers and defenders, causing many countermeasures to become obsolete quickly~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Thus, protecting against AI-powered attacks requires not a single solution but an integrated approach that is baked in the company culture, that combines technological defenses, comprehensive and continuous user education, and robust organizational policies.
 
@@ -98,4 +91,4 @@ To summarize the evaluation of countermeasures against AI-powered social enginee
 
 In 2024, the state of Tennessee enacted the ELVIS (Ensuring Likeness Voice and Image Security) Act\footnote{https://aibusiness.com/responsible-ai/tennessee-enacts-elvis-act-to-protect-artist-voices-from-ai-misuse (accessed 2024-08-24)}, protecting artists from the use of their voice via deepfake technologies. Further legislation need to address the use of deepfakes in other ways, such as in social engineering. EU's AI Act explicitly prohibits the use of AI for human  manipulation and social engineering.
 
-Because regulatory frameworks and other governance mechanisms might not be developed at the same pace of technological advancements, pro activity is vital to reduce the risks~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. The faster the potential for AI misuse is understood, the earlier potential preventive, mitigative, disincentivizing and redressing policies may be applied~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
+Because regulatory frameworks and other governance mechanisms might not be developed at the same pace of technological advancements, proactivity is vital to reduce the risks~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. The faster the potential for AI misuse is understood, the earlier potential preventive, mitigative, disincentivizing and redressing policies may be applied~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.

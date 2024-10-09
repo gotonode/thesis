@@ -5,20 +5,11 @@
 
 \begin{comment}
 
-TODO:
-    [ ] 
-
-What to cover:
-    - AI monitoring content and informing the user if something they are about to share could be used against them or their organization?
-    - AI generated training content suited to the personality of the user
-    - Policies and EU etc regulations about the development of AI tech
-
 \end{comment}
 
-In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter focuses on two two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as user training programs and company policy, and law and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter~\ref{chapter:evaluation} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
+In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter focuses on two two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as user training programs and company policy, and law and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter~\ref{chapter:discussion} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
 
-
-
+Traditionally, defense against social engineering relied on human education and awareness campaigns \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This reliance, despite its many merits, has revealed its fragility, as even the best trained user can fail to detect a social engineering attack and fall victim amidst the myriad digital threats. Defense against generative AI -based social engineering requires a multifaceted approach, incorporating both technical and human-oriented measures.
 
 
 
@@ -43,7 +34,7 @@ What to cover:
 
 %Early AI models were primarily rule-based systems which were designed with the help of an expert's knowledge~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}
 
-Traditional phishing message detection systems, i.e. those not based on machine learning and AI, are typically rule-based, which are ill-equipped to adapting to and identifying patterns in extensive data streams.\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
+Traditional phishing message detection systems, i.e. those not based on machine learning and AI, are typically rule-based and signature-based, which are ill-equipped to adapting to and identifying patterns in extensive data streams.\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. These defenses often leave systems vulnerable to novel, uncharted attacks.
 
 Using techniques such as natural language processing (NLP), AI systems can be trained to recognize common patterns and especially anomalies in communications to and from the network that are indicative of phishing attempts~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. These systems can flag suspicious emails or messages by analyzing factors such as unusual use of language, unexpected requests for private data, or other inconsistencies.
 
@@ -86,7 +77,19 @@ Behavior-type artifacts involve monitoring anomalies in the target's mannerisms,
 
 \end{comment}
 
-Text
+Building and maintaining guidelines for the ethical use of AI systems has been at the forefront of their development. OpenAI, the organization behind the GPT architecture and its publicly accessible front-end ChatGPT, has made strides in an attempt to prevent the misuse of their AI systems.
+
+Spreading information about deepfakes to the public faces the hurdle of the "liar's dividend", a situation where a "liar" discredits a real video claiming it to be a deepfake. The more users are aware of deepfake content and the ability of AI to doctor and create videos, the more skeptical they will be, causing them to question images and videos that are real~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. Deepfakes may thus erode the public's very trust in multimedia content.
+
+The ethical use of AI contributes significantly to mitigating risks~\citep{guptaFromChatGPTtoThreatGPT2023}, with AI developers such as OpenAI implementing guidelines\footnote{https://openai.com/policies/usage-policies (accessed 2024-08-22)} to limit the misuse of their AI systems, such as ChatGPT. Despite these efforts the complete prevention of AI system misuse remains elusive, particularly since older versions without the latest restrictions might still be accessible.
+
+As AI is developed further and the more its availability increases, the risk or malicious or criminal use increases as well, and these risks if not properly addressed may lead to the excessive strict regulation of AI technologies~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
+
+Guidelines are also being developed on national and global levels. For instance, European Union's General Data Protection Regulation (GDPR), and its relationship with AI, including AI-powered social engineering, is a complex and evolving topic. Introduced in 2018, GDPR and its development predates the widespread emergence of technologies such as generative adversarial networks and generative AI~\citep{goodfellowGenerativeAdversarialNetworks2020}, and thus was not superficially designed to address these issues.
+
+EU's European Parliamentary Research Service (EPRS) released a study~\citep{eprsTheImpactofTheGDPR2020} which eventually lead to the formal approvement by the European Parliament on Feb 13, 2024. As of the writing of this thesis, the AI Act is not yet in effect, and once it is published, there will be a transition period before the act is fully enabled. This act is considered a landmark regulation, as it is the first comprehensive AI law in any major jurisdiction around the world, paving the wave for other jurisdictions, such as the US,  to follow suite.
+
+    
 
 
 \section{User training and company policy}

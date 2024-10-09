@@ -1,0 +1,168 @@
+
+
+
+\chapter{Background\label{chapter:background}}
+\begin{comment}
+
+From study materials:
+    - "Konteksti ja käsitteet, haasteet ja arviointikriteerit, arvot, tutkimuskysymysten analyysi"
+    - Context and terminology (käsitteet), challenges and measurement criteria, values, research question analysis
+    - Tarkentaa tavoiteet ja osakysymykset, vertailukriteerit (jotka jäsentävät muita lukuja)
+
+\end{comment}
+
+
+
+%
+% Generative AI in SE, chapter overview
+%
+In recent years, the integration of generative artificial intelligence (AI) into social engineering offensive practices has emerged as a significant concern within the field of cybersecurity~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022, king_AI_Crime_Interdisciplinary_Analysis_2019, mirsky_Threat_Offensive_AI_Organizations_2023}. This chapter provides an overview of the role of generative AI in social engineering, explaining key concepts and terminologies essential for understanding the evolving threat landscape. After this, Chapter~\ref{chapter:attacks} examines generative AI-powered attack vectors and tools.
+
+
+
+
+
+%
+% Defining social engineering
+%
+A strict consensus regarding the definition of a social engineering attack is lacking in the field~\citep{hatfield_SE_Evolution_Concept_2018}. For the purposes of this thesis, social engineering is defined as "\textit{a type of attack wherein the attacker(s) exploit human vulnerabilities by means of social interaction to breach cybersecurity, with or without the use of technical means and technical vulnerabilities}"~\citep{wang_Defining_Social_Engineering_2020}.
+
+%Current countermeasures against social engineering attacks, while offering a baseline defense, are ill-equipped to deal with the sophistication of AI-powered threats~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
+
+
+
+
+
+
+
+%
+% Cybersecurity threats to organizations
+%
+Organizations today face cybersecurity threats from a range of sources, including cybercriminals, disgruntled employees, script kiddies, hacktivists, competitors, and even state-sponsored cyber terrorists~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. These threat actors may be driven by motives such as financial gain, intellectual property theft, sabotage, fame, or revenge.
+
+%Further, the general and increasing availability of has enabled even novice users to use them, and deepfake creation is now easier than ever with plug and play tools and the availability is expected to increase over time~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+
+
+
+
+
+
+
+%
+% Threat of generative AI
+%
+A total of 32 different AI capabilities have been identified that attackers could use against an organization~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}, with the top three most threatening categories being (1) social engineering, (2) information gathering, and (3) exploit development. Experts from both academia and industry ranked deepfake-based impersonation as the highest threat. Social engineering attacks are ranked the most threatening because these types of attacks are outside of the defender's control, are relatively easy to achieve, have high payoffs, are hard to prevent and cause the most harm.
+
+
+
+Tracking incidents can be accomplished by counting occurrences or calculating the total cost of incidents annually. Not all organizations report their occurred social engineering and other cybercrime-related incidents, but we can get some estimates of the prevalence of these attacks from data that is gathered by various public and private organizations and released in reports such as the FBI's Internet Crime Complaint Center's Internet Crime Reports and IBM's Cost of a Data Breach Reports. Organizations can thus assess the effectiveness and impact of their new policies, software upgrades, and cultural changes by monitoring changes in incident numbers and especially incident-related costs.
+
+    %Chapter~\ref{chapter:conclusions} discusses findings from data-gathering organizations such as IBM.
+
+
+    %In a 2021 survey of 309 organizations, 96\% were investing to defend against AI-based attacks, anticipating that automation would outpace their defenses~\citep{NULL}
+
+    %Experts from academia and industry both agree that an adversary with AI has the greater advantage compared to the defender~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}§
+
+
+
+The dynamic nature of AI-driven social engineering poses a significant challenge for traditional cybersecurity frameworks, which often rely on static defenses and predefined patterns of attack~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. As generative AI technologies advance, their application in crafting more convincing and personalized social engineering attacks becomes increasingly evident~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. This new capability not only enhances the likelihood of success but also complicates the detection and mitigation of such threats~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+
+
+
+%
+% Defense against AI-powered threats
+%
+Defense against AI-enhanced social engineering will thus require a multifaceted approach that combines technological innovation, user education, and a proactive stance and enforcement of cybersecurity policy~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. As the landscape continues to evolve, staying ahead of these threats will necessitate ongoing research and collaboration across the cybersecurity community to develop effective countermeasures and best practices~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
+
+%The ability of generative AI to produce realistic text, voice, and even full-resolution video content, deepfakes, makes it an invaluable tool for cybercriminals, allowing them to impersonate trusted entities and manipulate victims into divulging sensitive information~\citep{mirsky_Creation_Detection_Deepfakes_2021}.
+
+
+
+%In light of these developments, it is also crucial to foster a culture of awareness and education among users, as human factors still remain a critical element in the success of these social engineering attacks. Training programs should emphasize the importance of skepticism and verification in communications, particularly in scenarios where generative AI is likely to be employed. Additionally, organizations should invest in advanced detection systems that utilize AI to identify anomalous behaviors and potential threats in real-time, such as spear phishing attacks~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024} and impersonation with deepfakes~\citep{mirsky_Creation_Detection_Deepfakes_2021}.
+
+
+
+The remainder of this chapter elaborates on essential concepts, specifically open-source intelligence and generative AI, which are essential for further analysis.
+
+
+%Positive tools can also be used for negative purposes, and AI makes no exception, being a double-edged sword meaning that attackers too can use it to empower their malicious attacks and campaigns~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+
+%AI has enabled adversaries to launch attacks that were not possible before~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+
+%AI can be used to scale the attacks both in their strength and quantity, thereby increasing the attacker's returns~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}
+
+
+
+
+
+
+
+
+\section{Open-source intelligence}
+\begin{comment}
+
+        - Sites like archive.org and Google archives
+        - Observing people in real life
+    - Does not include calling the company and asking for information or any other forms of engagement
+    - How modern AI augments OSINT gathering is analyzed in the last chapter
+        - Exploration of how AI tools and techniques used for the automation and enhancement of OSINT processes
+    - Stress the importance of OSINT within SE
+    - Ethical considerations when it comes to OSINT
+    - Some case studies highlighting the use of OSINT in real-world social engineering incidents?
+    - Countermeasures will also be covered later
+        - Strategies for companies to mitigate the risks associated with OSINT-based attacks
+        - Integration of AI algorithms for analyzing and extracting valuable insights from OSINT data
+        - Impact of AI-powered intelligence gathering of SE attacks
+        
+\end{comment}
+
+In social engineering, publicly available information is known as \textbf{open-source intelligence}~\citep{hadnagy_Social_Engineering_The_Science_2018}. This involves collecting intelligence from sources that are publicly accessible, such as a target company's website, individuals' social media profiles, or other public records. Attackers are increasingly utilizing platforms such as LinkedIn, Facebook, and X (formerly Twitter) to gather information about their victims ~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
+
+Various online tools have been created for the purposes of gathering intelligence on an individual or an organization~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. They often offer automated forensic gathering and are able to visualize the found data, making it easier to identify exploitable patterns and connections.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Generative AI}
+\begin{comment}
+    - 
+\end{comment}
+
+Artificial intelligence (AI) encompasses the development of algorithms designed to automate complex tasks ~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Currently, the most prevalent type of AI is machine learning, which enables systems to enhance their performance as they gain experience. Deep learning, a subset of machine learning, employs extensive artificial neural networks as predictive models. The core idea behind AI is to enable machines to mimic human-like decision-making and thinking processes~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
+
+When AI is used to generate content, it is called \textbf{generative AI}~\citep{goodfellow_Generative_Adversarial_Networks_2020}. Unlike traditional AI, which follows programmed rules, generative AI utilizes machine learning to learn patterns from large training datasets to produce new outputs, such as text, images, audio and video.
+
+Perhaps the most prominent example of generative AI is ChatGPT\footnote{https://openai.com/index/chatgpt (accessed 2024-08-19)}, a chatbot released by OpenAI in 2022. While far from being the first~\citep{weizenbaum_ELIZA_1996}, this chatbot revolutionized how people use and interact with generative AI systems, reaching over 100 million users in just two months\footnote{https://explodingtopics.com/blog/chatgpt-users (accessed 2024-08-11)}. Built on the GPT (Generative Pre-trained Transformer) architecture, ChatGPT is designed to understand and generate human-like text by predicting the next word in a sequence.
+
+Another relevant generative AI technology for social engineering is DALL-E\footnote{https://openai.com/index/dall-e-3/ (accessed 2024-09-19)}, also developed by OpenAI. This system generates images from textual descriptions, facilitating digital manipulation and the creation of misleading visuals. It enables the production of hyper-realistic images that can distort or shape public perception.
+
+
+
+%ChatGPT utilizes natural language processing (NLP), and leverages vast amounts of data to achieve contextually relevant responses. The underlying mechanics of ChatGPT involve a transformer model, which excels at capturing the nuances of language and context, allowing it to generate coherent and contextually appropriate text. The model learns not just from static datasets but also from continuous user interactions, improving its performance over time.
+
+
+%While the AI-based attack methods are vast in number, including things like analysis, decision making, generation, prediction and retrieval~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}, defense from a purely social engineering viewpoint remains relatively non-complex while still not falling into the trivial.
+
+%AI use in regards to social engineering can be classified in two categories, the use of AI such as for the generation of deepfakes, and the abuse of AI such as altering a few letters in an email so it would be classified as legitimate or rearranging a few pixels in a picture to evade facial recognition, these attacks are referred to as evasion attacks~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+
+
+
