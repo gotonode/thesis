@@ -7,7 +7,7 @@
 
 \end{comment}
 
-In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter focuses on two two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as user training programs and company policy, and law and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter~\ref{chapter:discussion} then evaluates the effectiveness of these countermeasures in detecting and preventing social engineering attacks.
+In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter focuses on two two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as user training programs and company policy, and law and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter~\ref{chapter:discussion} discusses and evaluates these countermeasures in detecting and preventing social engineering attacks.
 
 Traditionally, defense against social engineering relied on human education and awareness campaigns \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This reliance, despite its many merits, has revealed its fragility, as even the best trained user can fail to detect a social engineering attack and fall victim amidst the myriad digital threats. Defense against generative AI -based social engineering requires a multifaceted approach, incorporating both technical and human-oriented measures.
 
@@ -32,9 +32,13 @@ What to cover:
 \end{comment}
 
 
-%Early AI models were primarily rule-based systems which were designed with the help of an expert's knowledge~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}
+    %Early AI models were primarily rule-based systems which were designed with the help of an expert's knowledge~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
 
-Traditional phishing message detection systems, i.e. those not based on machine learning and AI, are typically rule-based and signature-based, which are ill-equipped to adapting to and identifying patterns in extensive data streams.\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. These defenses often leave systems vulnerable to novel, uncharted attacks.
+AI systems learn, evolve and adapt based on the datasets that they are processing, and thus continuously refining their operational methods and predictions \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}, rather than relying on pre-defined and rigid algorithms. This presents a paradigm shift in how computers perceive, then process and finally respond to data. 
+
+Machine learning models are trained with vast datasets containing both safe and malicious samples of e.g. phishing attempts and phishing URL's. Given time and further training, these models learn to identify patterns, behaviors and anomalies, which means they are very capable of detecting threats, including the novel and unseen \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Including AI in cybersecurity measures thus doesn't mean just adding another tool for cybersecurity, but fundamentally defining anew the foundations of our digital defenses. Thus, AI systems are more attuned to the constantly evolving threat landscape.
+
+Traditional phishing message detection systems, i.e. those not based on machine learning and AI, are typically rule-based and signature-based, which often falter when faced with novel or evolved threats like those enhanced by AI.\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. These defenses often leave systems vulnerable to novel, uncharted attacks.
 
 Using techniques such as natural language processing (NLP), AI systems can be trained to recognize common patterns and especially anomalies in communications to and from the network that are indicative of phishing attempts~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. These systems can flag suspicious emails or messages by analyzing factors such as unusual use of language, unexpected requests for private data, or other inconsistencies.
 
@@ -65,7 +69,7 @@ Blending artifacts occur when the generated content is integrated back into a fr
 
 Behavior-type artifacts involve monitoring anomalies in the target's mannerisms, while physiological artifacts focus on inconsistencies in natural biological cues like blinking of the eyes or head movements. Synchronization artifacts can be observed in mismatched audio-visual elements, and coherence artifacts relate to inconsistencies in logical sequences happening over time.
 
-
+In regards to cybersecurity, machine learning models are trained with vast datasets that encompass both benign and malicious activities \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Over time, the models "learn" to notice patterns, anomalies and behavior which makes them exceptionally good at detecting threats, even completely novel ones.
 
 
 
