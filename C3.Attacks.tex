@@ -15,7 +15,7 @@ What to cover:
 
 This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first introduces pretexting and spear phishing, then explains how chatbots like ChatGPT could be manipulated, leading to impersonation attacks with deepfakes. After this, Chapter~\ref{chapter:countermeasures} goes over the countermeasures against these attacks.
 
-It is worth noting that many of the attacks presented here can and have been carried out without AI, however AI can substantially reduce the attacker's efforts if they utilize AI to make their attacks semi-automatic or automatic~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+%It is worth noting that many of the attacks presented here can and have been carried out without AI, however AI can substantially reduce the attacker's efforts if they utilize AI to make their attacks semi-automatic or automatic~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
 
 
 
@@ -92,14 +92,14 @@ What to cover:
 %
 % Malicious use of chatbots like ChatGPT
 %
-Malicious actors can use generative AI \textbf{chatbots} such as ChatGPT in their social engineering schemes, but due to the manufacturer's set limits, some workarounds may need to be used~\citep{NULL}. For instance, when asking ChatGPT to provide links to websites that provide pirated content such as movies results in the chatbot denying the request, stating that downloading pirated content is unethical and may also lead to the user's computer being infected with malware.
+Malicious actors can use generative AI \textbf{chatbots} such as ChatGPT in their social engineering schemes, but due to the manufacturer's set limits, some workarounds may need to be used~\citep{gupta_From_ChatGPT_to_ThreatGPT_2023}. For instance, when asking ChatGPT to provide links to websites that provide pirated content such as movies results in the chatbot denying the request, stating that downloading pirated content is unethical and may also lead to the user's computer being infected with malware.
 
 
 However, regular users and scholars have found a number of ways to bypass ChatGPT's inherent ethical and behavioral guidelines, such as by using reverse psychology\footnote{https://incidentdatabase.ai/cite/420 (accessed 2024-07-15)}. In the above example, instead of directly asking for links to the pirate websites, the user can say that because he does not want his computer to be infected by malware, ChatGPT should provide links to sites the user should avoid visiting, thus causing ChatGPT to reveal the content the user originally wanted.
 
 
-ChatGPT can effectively translate text from the attacker’s native language to the victim’s, maintaining fidelity and correcting any spelling or grammatical errors. It can even enhance the deceptive message, provided that the models' ethical restrictions have been bypassed successfully~\citep{NULL}.
-Phishing messages have traditionally been marked by noticeable spelling and grammatical errors~\citep{herleySoLongAndNoThanksForTheExternalities2009}, and people have traditionally been advised to look out for these errors as a hallmark of a phishing message.
+ChatGPT can effectively translate text from the attacker’s native language to the victim’s, maintaining fidelity and correcting any spelling or grammatical errors. It can even enhance the deceptive message, provided that the models' ethical restrictions have been bypassed successfully~\citep{gupta_From_ChatGPT_to_ThreatGPT_2023}.
+Phishing messages have traditionally been marked by noticeable spelling and grammatical errors~\citep{herley_So_Long_No_Thanks_Externalities_2009}, and people have traditionally been advised to look out for these errors as a hallmark of a phishing message.
 
 
 Chatbots like ChatGPT can also integrate any gathered intelligence into spam messages, enhancing their relevance. Additionally, incorporating deepfake content, such as a video of the company’s CEO issuing demands, can further increase the effectiveness of spear phishing attempts.
@@ -109,14 +109,13 @@ Chatbots like ChatGPT can also integrate any gathered intelligence into spam mes
 \section{Impersonation with deepfakes}
 \begin{comment}
 
-What to cover:
     - How deepfake models are trained?
-    
+
 \end{comment}
 
 \textbf{Deepfake}, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses artificial neural networks to create highly convincing fake media, either by altering existing content or creating them from scratch~\citep{mirsky_Creation_Detection_Deepfakes_2021}. When existing content is being altered, it's called reenactment or replacement, and when entirely new content is created, it's called synthesis.
 
-Deepfake content can be images, audio, and even full-resolution video. These hyper-realistic forgeries can depict a person saying or doing things that didn't actually happen, making it difficult for people and AI systems to discern what is real and what is fake~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}.
+Deepfake content can be images, audio, and even full-resolution video. These hyper-realistic forgeries can depict a person saying or doing things that didn't actually happen, making it difficult for people and even AI systems to discern what is real and what is fake~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}.
 
     %Deepfake is believable media created by a deep learning model which can be used to puppeting the voice or the face of a victim to perpetrate a spear phishing attack \citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
 
