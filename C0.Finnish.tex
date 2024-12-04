@@ -1,13 +1,7 @@
 
 
-\chapter*{Generatiivinen tekoäly käyttäjän manipulointihyökkäysten apuna\label{chapter:finnish}}
+\chapter*{Tekoälyavusteinen käyttäjän\\manipulointi\label{chapter:finnish}}
 \begin{comment}
-
-Tekoälyä hyödyntävä käyttäjän manipulointi
-Teokälypohjainen käyttäjän manipulointi
-Tekoälyavusteinen käyttäjän manipulointi
-
-Pyydä Riinalta ym palautetta kieliopin tarkistuksessa! Opin samalla itse. Riinahan voi tarkistaa esim tätä .tex tiedostoa GitHubista? Tai PDF kumpi vaan hänelle parempi, mutta PDF:n kassa pitää muistaa aina päivittää se Overleafiin ja sitten GitHubiin.
 
 Ohjeet:
     - 4 or 5 sivua
@@ -25,9 +19,9 @@ Kappaleet:
 \end{comment}
 
 
-Käyttäjän manipuloinnilla (\textit{social engineering}) tarkoitetaan tietoturvan kontekstissa tietojärjestelmän loppukäyttäjään eli ihmiseen kohdistuvaa tietoturvahyökkäystä \citep{mitnick_The_Art_of_Deception_2003}. Sen sijaan, että hyökkääjät etsisivät tietojärjestelmistä teknisiä haavoittuvuuksia, he kohdistavat hyökkäykset ihmiseen käyttäen hyväksi psykologisia menetelmiä \citep{wang_Defining_Social_Engineering_2020}.
+Käyttäjän manipuloinnilla (\textit{social engineering}) tarkoitetaan tietoturvan yhteydessä tietojärjestelmän loppukäyttäjään eli ihmiseen kohdistuvaa tietoturvahyökkäystä \citep{mitnick_The_Art_of_Deception_2003}. Sen sijaan, että hyökkääjät etsisivät tietojärjestelmistä teknisiä haavoittuvuuksia, he kohdistavatkin hyökkäykset ihmiseen käyttäen hyväksi psykologisia menetelmiä \citep{wang_Defining_Social_Engineering_2020}.
 
-Historiallisesti käyttäjän manipulointi on ollut riippuvainen ihmisen intuitiosta ja manuaalisesta työstä, mutta moderni tekoäly (\textit{artificial intelligence, AI}) on nyt muuttamassa koko kenttää uusiksi. Tekoälyn avulla hyökkääjät pystyvät luomaan uskottavia tietojenkalasteluviestejä (\textit{phishing}) sekä imitoimaan virallisia tahoja ja toimijoita realististen syväväärennösten (\textit{deepfake}), kuten kuvien, äänen ja jopa videoiden avulla.
+Historiallisesti käyttäjän manipulointi on ollut riippuvainen ihmisen intuitiosta ja manuaalisesta työstä, mutta nyt moderni tekoäly (\textit{artificial intelligence, AI}) on muuttamassa koko kenttää uusiksi. Tekoälyn avulla hyökkääjät pystyvät luomaan uskottavia tietojenkalasteluviestejä (\textit{phishing}) sekä imitoimaan virallisia tahoja ja toimijoita realististen syväväärennösten (\textit{deepfake}), kuten kuvien, äänen ja jopa videoiden, avulla.
 
 Tässä kandidaatintutkielman suomenkielisessä lyhennelmässä käydään läpi tärkeimmät käyttäjän manipulointihyökkäykset sekä puolustuskeinot niihin.
 
@@ -37,7 +31,7 @@ Tunnetuin käyttäjän manipulointihyökkäys on tietojenkalastelu (\textit{phis
 
 OpenAI julkaisi vuonna 2022 ChatGPT:n joka mullisti tavan, jolla ihmiset käyttävät tekoälyäpalveluita. Se keräsi yli 100 miljoonaa käyttäjää ensimmäisen kahden kuukauden aikana\footnote{https://explodingtopics.com/blog/chatgpt-users (luettu 2024-07-21)}. ChatGPT on ns. generatiivinen tekoäly (\textit{generative AI}) joka on koulutettu suurella määrällä tietoa ja joka pystyy tämän pohjalta luomaan uutta sisältöä, kuten tekstiä tai kuvia.
 
-OpenAI ja muut tekoälypalveluita varmistavat yritykset ovat asettaneet käyttöehtoja, joiden puitteissa palvelun käyttö on sallittua. Rajoituksia käytölle on asetettu myös tekoälytoiminnallisuuksien sisälle. Hyökkääjät ovat kuitenkin onnistuneet valjastamaan ChatGPT:n kaltaiset suuret kielimallit (\textit{large language model}) omiin tarkoituksiinsa ohittamalla nämä rajoitukset.
+OpenAI ja muut tekoälypalveluita varmistavat yritykset ovat asettaneet käyttöehtoja, joiden puitteissa palvelun käyttö on sallittua ja mahdollista. Rajoituksia käytölle on asetettu myös tekoälytoiminnallisuuksien sisälle. Hyökkääjät ovat kuitenkin onnistuneet valjastamaan ChatGPT:n kaltaiset suuret kielimallit (\textit{large language model}) omiin tarkoituksiinsa ohittamalla nämä rajoitukset käyttäen esimerkiksi käänteistä psykologiaa.
 
 ChatGPT ei esimerkiksi suoraan anna listaa sivustoista joilta voisi ladata laittomasti elokuvia, vaan sanoo että tämä toiminta on epäeettistä ja voi aiheuttaa käyttäjän tietokoneen saastumisen haittaohjelmilla (\textit{malware}). Tällaiset rajoitukset on pystynyt ohittamaan useilla eri keinoilla, esimerkiksi sanomalla että suojellakseen käyttäjää haittaohjelmilta ChatGPT:n pitäisi kertoa sivustoista joille käyttäjän ei tule mennä. Näin käyttäjä saa haluamansa tiedot käyttäen käänteistä psykologiaa.
 
