@@ -7,9 +7,9 @@
     - 
 \end{comment}
 
-In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter focuses on two two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and human-oriented countermeasures such as user training programs and company policy, and law and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter~\ref{chapter:discussion} discusses and evaluates these countermeasures in detecting and preventing social engineering attacks.
+In this chapter, countermeasures against the attacks covered in the previous chapter are examined. This chapter focuses on two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and user-oriented countermeasures such as personnel training programs, company policies, and laws and guidelines. Technology-oriented countermeasures are examined first since the human-oriented measures rely and build upon them. Chapter~\ref{chapter:discussion} discusses and evaluates these countermeasures in detecting and preventing social engineering attacks.
 
-Traditionally, defense against social engineering relied on human education and awareness campaigns \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This reliance, despite its many merits, has revealed its fragility, as even the best trained user can fail to detect a social engineering attack and fall victim amidst the myriad digital threats. Defense against generative AI -based social engineering requires a multifaceted approach, incorporating both technical and human-oriented measures.
+Traditionally, defense against social engineering relied on human education and awareness campaigns \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This reliance, despite its many merits, has revealed its fragility, as even the best trained user can fail to detect a social engineering attack and fall victim amidst the myriad digital threats. Defense against generative AI -based social engineering thus requires a multifaceted approach, incorporating both technical and human-oriented measures.
 
 
 
@@ -59,7 +59,7 @@ Where once experts in the field could recommend that a caller be authenticated b
   -
 \end{comment}
 
-Deepfakes often contain subtle anomalies called artifacts, just as image forgeries of the past did, and deepfake detection is based on machine learning and forensic analysis, attempting to identify these specific artifacts in the multimedia content~\citep{mirsky_Creation_Detection_Deepfakes_2021}. The artifacts can be subtle, such as a strange blob of pixels, or overt such as a person having clearly warped eyes.
+Deepfakes often contain subtle anomalies called artifacts, just as image forgeries of the past did. Deepfake detection procedures are primarily based on machine learning and forensic analysis, attempting to identify these specific artifacts in the multimedia content~\citep{mirsky_Creation_Detection_Deepfakes_2021}. The artifacts can be subtle, such as a strange blob of pixels, or overt such as a person having clearly warped eyes.
 
 Seven different types of artifacts have been identified in two main categories~\citep{mirsky_Creation_Detection_Deepfakes_2021}: spatial-type artifacts cover blending, environment and forensics, while temporal-type artifacts cover behavior, physiology, synchronization and coherence.
 
@@ -72,7 +72,7 @@ In regards to cybersecurity, machine learning models are trained with vast datas
 
 
 
-\section{Law and use guidelines}
+\section{Laws and usage guidelines}
 \begin{comment}
     
 
@@ -81,33 +81,32 @@ In regards to cybersecurity, machine learning models are trained with vast datas
 
 Building and maintaining guidelines for the ethical use of AI systems has been at the forefront of their development. OpenAI, the organization behind the GPT architecture and its publicly accessible front-end ChatGPT, has made strides in an attempt to prevent the misuse of their AI systems.
 
-Spreading information about deepfakes to the public faces the hurdle of the "liar's dividend", a situation where a "liar" discredits a real video claiming it to be a deepfake. The more users are aware of deepfake content and the ability of AI to doctor and create videos, the more skeptical they will be, causing them to question images and videos that are real~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. Deepfakes may thus erode the public's very trust in multimedia content.
 
-The ethical use of AI contributes significantly to mitigating risks~\citep{guptaFromChatGPTtoThreatGPT2023}, with AI developers such as OpenAI implementing guidelines\footnote{https://openai.com/policies/usage-policies (accessed 2024-08-22)} to limit the misuse of their AI systems, such as ChatGPT. Despite these efforts the complete prevention of AI system misuse remains elusive, particularly since older versions without the latest restrictions might still be accessible.
+The ethical use of AI contributes significantly to mitigating risks~\citep{gupta_From_ChatGPT_to_ThreatGPT_2023}, with AI developers such as OpenAI implementing guidelines\footnote{https://openai.com/policies/usage-policies (accessed 2024-08-22)} to limit the misuse of their AI systems, such as ChatGPT. Despite these efforts the complete prevention of AI system misuse remains elusive, particularly since older versions without the latest restrictions might still be accessible.
 
-As AI is developed further and the more its availability increases, the risk or malicious or criminal use increases as well, and these risks if not properly addressed may lead to the excessive strict regulation of AI technologies~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
 
-Guidelines are also being developed on national and global levels. For instance, European Union's General Data Protection Regulation (GDPR), and its relationship with AI, including AI-powered social engineering, is a complex and evolving topic. Introduced in 2018, GDPR and its development predates the widespread emergence of technologies such as generative adversarial networks and generative AI~\citep{goodfellowGenerativeAdversarialNetworks2020}, and thus was not superficially designed to address these issues.
 
-EU's European Parliamentary Research Service (EPRS) released a study~\citep{eprsTheImpactofTheGDPR2020} which eventually lead to the formal approvement by the European Parliament on Feb 13, 2024. As of the writing of this thesis, the AI Act is not yet in effect, and once it is published, there will be a transition period before the act is fully enabled. This act is considered a landmark regulation, as it is the first comprehensive AI law in any major jurisdiction around the world, paving the wave for other jurisdictions, such as the US,  to follow suite.
+Guidelines are also being developed at national and global levels, where they can take the form of a law. For instance, the European Union's General Data Protection Regulation (GDPR), and its relationship with AI, including AI-powered social engineering, is a complex and evolving topic. Introduced in 2018, GDPR and its development predates the widespread emergence of technologies such as generative adversarial networks and generative AI~\citep{goodfellow_Generative_Adversarial_Networks_2020}, and thus was not specially designed to address these issues.
+
+EU's European Parliamentary Research Service (EPRS) released a study~\citep{european_parliamentary_research_service_impact_2020} which eventually lead to the formal approvement by the European Parliament on Feb 13, 2024. As of the writing of this thesis, the AI Act is not yet in effect, and once it is published, there will be a transition period before the act is fully enabled. This act is considered a landmark regulation, as it is the first comprehensive AI law in any major jurisdiction around the world, paving the wave for other jurisdictions, such as the US,  to follow suite.
 
     
 
 
 \section{User training and company policy}
 \begin{comment}
-    
     - VoIP has been defined before 
-
 \end{comment}
 
     %Personnel should be shown what to expect from deepfakes and AI-powered social engineering~\citep{mirsky_Creation_Detection_Deepfakes_2021}
 
-Human-oriented countermeasures against social engineering attacks usually fall into four categories: simulated penetration tests with social engineering techniques, employee security awareness training programs, creation and application of corporate cybersecurity policies, and the development of a security-conscious company culture~\citep{tsinganos_Towards_Automated_Recognition_Chat_SE_Enterprise_2018, mitnick_The_Art_of_Deception_2003}.
+User-oriented countermeasures against social engineering attacks usually fall into four broader categories~\citep{tsinganos_Towards_Automated_Recognition_Chat_SE_Enterprise_2018, mitnick_The_Art_of_Deception_2003}. These categories are simulated penetration tests with social engineering techniques, employee security awareness training programs, creation and application of corporate cybersecurity policies, and the development of a security-conscious company culture.
 
 Regular and comprehensive training programs are vital to educate employees about social engineering tactics. Regularity is stressed by experts in the field as users tend to forget what they have learned~\citep{hadnagy_Social_Engineering_The_Science_2018, mitnick_The_Art_of_Deception_2003}. It is thus suggested that training against social engineering attacks is not something that is done annually, or even bi-annually, but rather that it's something that is baked into the company's culture. The inoculation theory~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022} suggests that prior exposure to social engineering attacks could help protect users against future threats.
 
 Conducting simulated social engineering and phishing attack campaigns, via numerous channels such as email, SMS and even phone/VoIP, allows organizations to assess the susceptibility of their employees to social engineering tactics \citep{hadnagy_Social_Engineering_The_Science_2018}. These exercises help identify vulnerabilities in the workforce, enabling further targeted training and reinforcing the importance of scrutinizing unsolicited communication. With the advent of generative AI and deepfakes, this needs to be extended to cover any and all communication \citep{mirsky_Creation_Detection_Deepfakes_2021}.
+
+Employees should be shown what different varieties of deepfake content look like, as well as how easy it is to doctor them.
 
 Feedback from these simulations can significantly aid personnel development. However, employees who fall victim to these simulated attacks should be re-educated rather than punished~\citep{mitnick_The_Art_of_Deception_2003}. Furthermore, it is essential to inform employees in advance that such campaigns may be run occasionally. This approach not only keeps them vigilant but also mitigates negative feelings associated with "being tricked" by their own company~\citep{hadnagy_Social_Engineering_The_Science_2018}.
 
