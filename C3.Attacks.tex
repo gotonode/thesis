@@ -1,41 +1,29 @@
-
-
-
-\chapter{Attack vectors and tools \label{chapter:attacks}}
+\chapter{Attack vectors and tools\label{chapter:attacks}}
 \begin{comment}
-
-Guides:
-    - About 3-4 pages
-
-What to cover:
-    - Attacks
-        - Deepfake generated synthetic media
-
 \end{comment}
 
 This chapter reviews key social engineering attack vectors and tools relevant to the modern threat of generative AI. It first introduces pretexting and spear phishing, then explains how chatbots like ChatGPT could be manipulated, leading to impersonation attacks with deepfakes. After this, Chapter~\ref{chapter:countermeasures} goes over the countermeasures against these attacks.
-
-%It is worth noting that many of the attacks presented here can and have been carried out without AI, however AI can substantially reduce the attacker's efforts if they utilize AI to make their attacks semi-automatic or automatic~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
-
 
 
 
 \section{Pretexting}
 \begin{comment}
-
-    - How AI powers up pretexting?
-        - How AI tech can be utilized to create more sophisticated and convincing pretexts
-        - Examples of successful pretexting attacks and their impacts
-        - Analysis of pretexting evolving landscape with AI
-    - Ethical considerations?
-        
 \end{comment}
 
+%
+% Social engineering attacks begin with a pretext
+%
 Social engineering attacks typically begin with the gathering of open-source intelligence, which is subsequently used in conjunction with pretexting to attack an individual or an organization~\citep{hadnagy_Social_Engineering_The_Science_2018}. Pretexting involves fabricating a story or a scenario, a \textbf{pretext}, that is plausible but fraudulent, to engage the target with~\citep{wang_Defining_Social_Engineering_2020}. With this story, the attacker hopes to gain the victim's trust by appearing legitimate. 
 
-Pretexting uses psychological manipulation, trust and relationship building, making it a potent tool for attackers~\citep{mitnick_The_Art_of_Deception_2003}. The attacker, often assuming the likeness and character of a legitimate entity such as a trusted colleague, an IT service worker, a government official, or a 3rd party service provider, creates a believable narrative story tailored to the target victim's context.
+%
+% Pretexting uses psychological manipulation etc
+%
+Pretexting uses psychological manipulation, trust, and relationship building, making it a potent tool for attackers~\citep{mitnick_The_Art_of_Deception_2003}. The attacker, often assuming the likeness and character of a legitimate entity such as a trusted colleague, an IT service worker, a government official, or a 3rd party service provider, creates a believable narrative story tailored to the target victim's context.
 
-Humans possess advanced perceptual and decision-making capabilities shaped by lifelong experiences. Attackers can exploit these mental models by presenting deceptive information via pretexting~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+%
+% Why humans fall victim to pretexts
+%
+Humans possess advanced perceptual and decision-making capabilities shaped by lifelong experiences. Attackers can exploit these mental models by presenting deceptive information via pretexting~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Information gathered from target A can potentially be used to pretext target B via techniques as simple as utilizing “insider” information.
 
 
 
@@ -45,20 +33,17 @@ Humans possess advanced perceptual and decision-making capabilities shaped by li
 
 \section{Spear phishing}
 \begin{comment}
-
 \end{comment}
 
 
 %
-% What is phishing plus brief history
+% What is phishing plus a brief history
 %
-As the quintessential social engineering attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, traditionally via email and by using spoofed websites that look like their authentic counterparts~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. Phishing has been around since 1996, when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from unsuspecting users~\citep{wang_Defining_Social_Engineering_2020}.
-
-    %Verizon's 2015 Data Breach Investigation Report presents the results of a study where 150,000 phishing emails were sent, in which within an hour 50 \% of the recipients had opened the email and clicked on the phishing links, with the first user clicking the link in only 82 seconds.
+As the quintessential social engineering attack, \textbf{phishing} is characterized by malicious attempts to gain sensitive information from unaware users, traditionally via email and by using spoofed websites that look like their authentic counterparts~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. Phishing has been around since 1996 when cybercriminals began using deceptive emails and websites to steal AOL (America Online) account information from unsuspecting users~\citep{wang_Defining_Social_Engineering_2020}.
 
 
 %
-% Spear phishing and whaling, what they are
+% Spear phishing and whaling, what are they
 %
 \textbf{Spear phishing}, on the other hand, is a more targeted version of phishing, where attackers customize their deceptive messages to a target individual or organization~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Spear phishing that is targeted at high-profile individuals is called \textbf{whaling}.
 
@@ -66,27 +51,15 @@ As the quintessential social engineering attack, \textbf{phishing} is characteri
 %
 % Spear phishing as a more labor-intensive form of phishing
 %
-Unlike generic phishing attempts, spear phishing involves gathering detailed information about the victim, via open-source intelligence or otherwise, such as their name, position, and contacts to craft a convincing and personalized message~\citep{hadnagy_Social_Engineering_The_Science_2018}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but has traditionally been a lot more time and energy consuming~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+Unlike generic phishing attempts, spear phishing involves gathering detailed information about the victim, via open-source intelligence or otherwise, such as their name, position, and contacts to craft a convincing and personalized message~\citep{hadnagy_Social_Engineering_The_Science_2018}. This tailored approach increases the likelihood of the victim falling for the phishing attempt, but has traditionally been a lot more time- and energy-consuming~\cite {mirsky_Threat_Offensive_AI_Organizations_2023}.
 
 
 
 
 
 
-
-
-
-
-\section{Chatbots like ChatGPT}
+\section{Abuse of chatbots like ChatGPT}
 \begin{comment}
-
-What to cover:
-    - How Generative AI can be used by both cybersecurity professionals and threat actors
-    - Circumventing ChatGPT's ethical restrictions with, for example prompt injections attacks or reverse psychology (with at least 1-2 examples)
-    - How scholars and regular users have found ways to bypass ChatGPT's ethical restrictions??
-    - Pyydetään tekoälyä roolipelaamaan social engineering skenaarioita
-    - Kielioppi ja kirjoitusvirheiden korjaus scam viesteissä
-    
 \end{comment}
 
 %
@@ -94,82 +67,79 @@ What to cover:
 %
 Malicious actors can use generative AI \textbf{chatbots} such as ChatGPT in their social engineering schemes, but due to the manufacturer's set limits, some workarounds may need to be used~\citep{gupta_From_ChatGPT_to_ThreatGPT_2023}. For instance, when asking ChatGPT to provide links to websites that provide pirated content such as movies results in the chatbot denying the request, stating that downloading pirated content is unethical and may also lead to the user's computer being infected with malware.
 
+&
+& Bypassing ethical and behavioral restrictions
+&
+However, regular users and scholars have found a number of ways to bypass ChatGPT's inherent ethical and behavioral guidelines, such as by using reverse psychology\footnote{https://incidentdatabase.ai/cite/420 (visited on 2024-07-15)}. In the above example, instead of directly asking for links to the pirate websites, the user can say that because he does not want his computer to be infected by malware, ChatGPT should provide links to these sites so that the user can avoid visiting them. This technique has been known to cause ChatGPT to reveal the content the user originally wanted.
 
-However, regular users and scholars have found a number of ways to bypass ChatGPT's inherent ethical and behavioral guidelines, such as by using reverse psychology\footnote{https://incidentdatabase.ai/cite/420 (accessed 2024-07-15)}. In the above example, instead of directly asking for links to the pirate websites, the user can say that because he does not want his computer to be infected by malware, ChatGPT should provide links to sites the user should avoid visiting, thus causing ChatGPT to reveal the content the user originally wanted.
-
-
+%
+% ChatGPT can translate spam messages
+%
 ChatGPT can effectively translate text from the attacker’s native language to the victim’s, maintaining fidelity and correcting any spelling or grammatical errors. It can even enhance the deceptive message, provided that the models' ethical restrictions have been bypassed successfully~\citep{gupta_From_ChatGPT_to_ThreatGPT_2023}.
-Phishing messages have historically been marked by noticeable spelling and grammatical errors~\citep{herley_So_Long_No_Thanks_Externalities_2009}, and people have traditionally been advised to look out for these errors as a hallmark of a phishing message.
+Phishing messages have historically been marked by noticeable spelling and grammatical errors~\citep{herley_So_Long_No_Thanks_Externalities_2009}, and people have traditionally been advised to look out for these errors as a hallmark of a phishing message. Increasing the message's fidelity will increase the likelihood the target will fall for the phishing attempt.
 
-
+%
+% ChatGPT can integrate OS-INT data into spam messages
+%
 Chatbots like ChatGPT can also integrate any gathered intelligence into spam messages, enhancing their relevance. Additionally, incorporating deepfake content, such as a video of the company’s CEO issuing demands, can further increase the effectiveness of spear phishing attempts.
 
 
 
 \section{Impersonation with deepfakes}
 \begin{comment}
-
-    - How deepfake models are trained?
-
+Listaa mitä hyviä puolia GenAI tue, kuten realistic dubbig of foreign films, reanimation of historical characters for education, video games, virtually trying on clothes 
+Deepfake = believable media generated by a deep neural network
 \end{comment}
 
-\textbf{Deepfake}, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology which uses artificial neural networks to create highly convincing fake media, either by altering existing content or creating them from scratch~\citep{mirsky_Creation_Detection_Deepfakes_2021}. When existing content is being altered, it's called reenactment or replacement, and when entirely new content is created, it's called synthesis.
+%
+% What are deepfakes
+%
+\textbf{Deepfake}, a portmanteau of "deep learning", a type of machine learning, and "fake", is technology that uses artificial neural networks to create highly convincing fake media, either by altering existing content or creating them from scratch~\citep{mirsky_Creation_Detection_Deepfakes_2021}. When existing content is being altered, it's called reenactment or replacement, and when entirely new content is created, it's called synthesis.
 
-Deepfake content can be images, audio, and even full-resolution video. These hyper-realistic forgeries can depict a person saying or doing things that didn't actually happen, making it difficult for people and even AI systems to discern what is real and what is fake~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}.
+&
+& What deepfakes can be; depicting a person saying or doing things
+&
+Deepfake content can be images, audio, and even full-resolution video~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. These hyper-realistic forgeries can depict a person saying or doing things that didn't actually happen, making it difficult for people and even AI systems to discern what is real and what is fake.
 
-    %Deepfake is believable media created by a deep learning model which can be used to puppeting the voice or the face of a victim to perpetrate a spear phishing attack \citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+%
+% Deepfakes used for impersonation
+%
+By utilizing deepfakes, attackers can convincingly impersonate trusted individuals or organizations, enhancing the credibility and even the emotional impact of their deceptive social engineering strategies~\citep{mirsky_Creation_Detection_Deepfakes_2021}. In 2021, complete facial reenactment, such as pose, gaze, blinking, and movements, was achieved with only a minute of training video, suggesting that if a malicious actor wants to reenact an individual, they do not need to gather a lot of video material for this. If video material is not available, attackers might be able to resort to filming the target person exiting the company's premises.
 
-By utilizing deepfake-generated content, deepfakes, attackers can convincingly impersonate trusted individuals or organizations, enhancing the credibility and even the emotional impact of their deceptive social engineering strategies~\citep{mirsky_Creation_Detection_Deepfakes_2021}. In 2021, complete facial reenactment, such as pose, gaze, blinking, mouth, and movements, was achieved with only a minute of training video, suggesting that if a malicious actor wants to reenact an individual, they do not need to gather a lot of video material for this. If video material is not available, attackers might be able to resort to filming the target person exiting the company's premises.
-
-
-
-
-Deepfake technology has advanced within just two years to the point where reenactment can be done in real-time with training requiring only a few images or seconds of audio from the victim~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}, while higher quality deepfakes still require more audio/video data. This was evident in a 2024 incident where deepfake technology was used in a live video conference to successfully scam an organization for~\$25 million\footnote{https://incidentdatabase.ai/cite/634 (accessed 2024-08-24)}.
-
-
-
-
-
-
-
-
-
-
+%
+% Advancements in deepfake technologies
+% - case example
+%
+Deepfake technology has advanced within just two years to the point where reenactment can be done in real-time with training requiring only a few images or seconds of audio from the victim, while higher quality deepfakes still require more audio/video data~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. This was evident in a 2024 incident where deepfake technology was used in a live video conference to successfully scam an organization for~\$25 million\footnote{https://incidentdatabase.ai/cite/634 (visited on 2024-08-24)}.
 
 
 
-
-
-
-
-\section{Phishing with voice, vishing}
+\section{Vishing (voice phishing)}
 \begin{comment}
-What to cover:
-    - Including spear phishing with video in this section?
-    
-
 \end{comment}
 
-Phishing that is done using voice is called \textbf{vishing}~\citep{doan_BTSE_Audio_Deepfake_Detection_2023}. By utilizing traditional phone systems or VoIP (Voice-over-IP), the attacker calls the victim with a pretext to manipulate them into revealing sensitive information or performing actions that may or may not be in their best interests~\citep{hadnagy_Social_Engineering_The_Science_2018}.
+%
+% What is vishing
+%
+Phishing that is done using voice is called \textbf{vishing}~\citep{doan_BTSE_Audio_Deepfake_Detection_2023}. By utilizing traditional telephone systems or VoIP (Voice-over-IP), the attacker calls the victim with a pretext to manipulate them into revealing sensitive information or performing actions that may or may not be in their best interests~\citep{hadnagy_Social_Engineering_The_Science_2018}.
+
+
+%
+% Real-time voice morphing for vishing attacks
+%
+With real-time voice morphing, a type of deepfake natural speech synthesis, the attacker can effectively and realistically impersonate someone else~\citep{doan_BTSE_Audio_Deepfake_Detection_2023}. This technology converts the attacker's voice, as input, to the chosen person's voice, as output, automatically during the call. It's hard for the human auditory system to distinguish between real and fake voice samples, especially through voice calls which tend to have lower audio fidelity.
 
 
 
-With real-time voice morphing, a type of deepfake natural speech synthesis, the attacker can effectively and realistically impersonate someone else~\citep{doan_BTSE_Audio_Deepfake_Detection_2023}. This technology converts the attacker's own voice (as input) to the chosen person's voice (as output) automatically during the call. It's hard for the human auditory system to distinguish between real and fake voice samples, especially through voice calls.
-
-The deepfake model has to be trained before it can be used. This is done using audio, which can be sourced from places like YouTube, a company website, or by calling the person the attacker wants to mimic the voice of and recording the conversation.
-
-    %Some organizations rely on automatic speaker verification technology, which can be tricked via deepfake content \citep{doanBTSEAudioDeepfakeDetectiong2023}.
-
-Social engineering with real-time voice morphing of employees' voices has been found to be one of the top threats posed by AI to organizations~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. The first significant incident occurred back in 2019, where attackers successfully used deepfake-generated voice during a call to impersonate an authentic entity for monetary gains exceeding 200,000~€\footnote{https://incidentdatabase.ai/cite/200 (accessed 2024-05-13)}.
-
-    %Deepfakes being easy to generate yet hard to detect and this holds true especially for phone calls \citep{mirsky_Threat_Offensive_AI_Organizations_2023}
+%
+% Training deepfake models
+%
+Like all deepfake models, the audio model has to be trained before it can be used. This is done using audio, which can be sourced from places like YouTube, a company website, or by calling the person the attacker wants to mimic the voice of and recording the conversation.
 
 
 
-
-
-
-
-
-
-
+%
+% Vishing with deepfakes a significant concern
+% - case example
+%
+Social engineering with real-time voice morphing of employees' voices has been found to be one of the top threats posed by AI to organizations~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. The first significant and famous incident occurred back in 2019, where attackers successfully used deepfake-generated voice during a call to impersonate an authentic entity for monetary gains exceeding 200,000~€\footnote{https://incidentdatabase.ai/cite/200 (visited on 2024-05-13)}.

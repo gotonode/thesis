@@ -1,52 +1,18 @@
-
-
-
 \chapter{Conclusions\label{chapter:conclusions}}
 \begin{comment}
-
-From course material:
-    - "Yhteenveto vaatimattomimmillaan on vain lyhyt kertaus kirjoituksen keskeisistä asioista. Arvokkaamman yhteenvedon saa aikaan kommentoimalla työn tulosten arvoa, työn liittymistä ympäristöön ja tulevaisuudennäkymiä. Tällaiset arviot huolellisesti perusteltava."
-    - "Yhteenvetoluku kuvaa teknisten johtopäätösten tuomaa impaktia."
-
 \end{comment}
 
-The subfield of social engineering within cybersecurity is undergoing a significant transformation with the advent of generative AI \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This thesis explored how generative AI empowers malicious actors in this space and how current countermeasures in an organizational environment need to be updated to reflect this evolving threat landscape.
+The subfield of social engineering within cybersecurity is undergoing a significant transformation with the advent of generative AI~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This thesis explored how generative AI empowers malicious actors in this space and how current countermeasures in an organizational environment need to be updated to reflect this evolving threat landscape.
 
-Generative AI is revolutionizing social engineering attacks, enabling attackers to use sophisticated tactics like spear phishing \citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}, impersonation with deepfake content \citep{mirsky_Creation_Detection_Deepfakes_2021} and voice phishing, vishing, with real-time voice morphing \citep{doan_BTSE_Audio_Deepfake_Detection_2023}. These advancements reveal that traditional countermeasures are becoming increasingly ineffective, requiring a comprehensive re-evaluation of current strategies and tactics.
+Generative AI is revolutionizing social engineering attacks, enabling attackers to use sophisticated tactics like spear phishing~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}, impersonation with deepfake content~\citep{mirsky_Creation_Detection_Deepfakes_2021} and voice phishing, vishing, with real-time voice morphing~\citep{doan_BTSE_Audio_Deepfake_Detection_2023}. These advancements reveal that traditional countermeasures are becoming increasingly ineffective, requiring a comprehensive re-evaluation of current strategies and tactics.
 
-    %One of the most notable contributions of AI is its ability to automate and enhance deceptive practices. Machine learning facilitates the crafting of personalized phishing messages that closely mimic legitimate communications, while deepfake technologies alter or produce synthetic media that convincingly impersonate authentic images, audio and videos. Such advancements enable attackers to deceive targets more efficiently into disclosing sensitive information or taking actions that compromise security.
+Previously an employee could authenticate a caller by recognizing their voice, intonations, and accent~\citep{mitnick_The_Art_of_Deception_2003}, today this is no longer enough. User training and awareness programs must be updated to address the novel threat of AI in social engineering. Historically users have been trained to spot spelling errors in emails, and today they must be trained to broaden their scope of skepticism to include images, audio and videos as well.
 
-    %AI has potential to increase the scale and reach of social engineering \citep{king_AI_Crime_Interdisciplinary_Analysis_2019}
-    %Dual use of AI, applications that are designed for legitimate use cases may also be implemented to commit criminal offences \citep{king_AI_Crime_Interdisciplinary_Analysis_2019}
+AI can help detect social engineering attacks, but it does not eliminate the necessity for user training and awareness programs. On the contrary, as AI-powered attacks proliferate, the need for awareness and vigilance will grow even higher~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Chatbots like ChatGPT can help develop more robust security guidelines and design more engaging social engineering awareness programs. And image-generation technologies like DALL-E can help create memorable and funny images for posters and campaigns.
 
-Where previously, an employee could authenticate a caller by recognizing their voice, intonations, and accent \citep{mitnick_The_Art_of_Deception_2003}, today, this is not enough. User training and awareness programs must be updated to address the novel threat of AI in social engineering.
-
-    %In their article, \cite{guptaFromChatGPTtoThreatGPT2023}, claim that "\textit{through continued efforts and cooperation among various stakeholders, it’s possible to prevent the misuse of AI systems and ensure their continued benefit to society}", but this can only be true if advanced AI systems remain in the hands of their developers and that they retract older versions of their AI systems from use, since the older versions have already been used by malicious actors. And since with social engineering an attacker can ask ChatGPT to roleplay a certain scenario that the attacker will later enact in a live call, misuse of AI systems can never be fully prevented. AI is a tool, and like any tool it can be used for its intended purpose or in ways the original manufacturer did not intend or would not want.
-
-    
-AI can help detect social engineering attacks, but it does not eliminate the necessity for user training and awareness programs. On the contrary, as AI-powered attacks proliferate, the need for awareness and vigilance will grow even higher \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Chatbots like ChatGPT can help develop more robust security guidelines and design more engaging social engineering awareness programs.
-
-    %Dual use property of AI, software created for defense can also be utilized for offensive purposes \citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}
-
-    %The benefits of AI for society and individuals may be significantly compromised due to ongoing constraints on its development \citep{king_AI_Crime_Interdisciplinary_Analysis_2019}. A notable example is the restriction on releasing source code and data from a study that demonstrated how visual discriminators could identify a person's sexual orientation with accuracies far higher than those of human judges, which undermines scientific reproducibility \citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
-
-    %Adobe embedded watermarks into their voice reproducing technology, however malevolent developers might still reproduce the technology in the future \citep{king_AI_Crime_Interdisciplinary_Analysis_2019}
-
-    %AI technologies such as IBM's Watson fo Cyber Security, goes over the organizations organized and unorganized security intel, and things like blog posts, released articles, reports etc with the goal of better threat identification, response and mitigation \citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
-
-    %AI social bots can be used to engage millions of users in one-to-one conversations with malicious intents \citep{king_AI_Crime_Interdisciplinary_Analysis_2019}
+One area not addressed in this thesis, but deserving of future research, is the potential for AI to automate social engineering attacks, either in part or even completely~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Currently, however, AI technology lacks the sophistication needed to develop fully autonomous agents capable of executing such attacks without human oversight, but as the field is evolving rapidly organizations must take this possibility into consideration as well.
 
 
-One area not addressed in this thesis, but deserving of future research, is the potential for AI to automate social engineering attacks~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Currently, AI technology lacks the sophistication needed to develop fully autonomous agents capable of executing such attacks without human oversight.
+The Cost of a Data Breach report~\citep{ibm_Cost_Data_Breach_Report_2024} revealed that organizations using AI to address cybersecurity threats experienced an average of 45\% reduction in annual incident-related costs compared to those that did not. Further, IBM found that increased reliance on AI corresponded with lower incident costs. Organizations need to utilize AI to combat generative AI -powered social engineering, primarily because the user is the weakest link in the cybersecurity chain.
 
-
-Experts from both academia and industry should concentrate their efforts on deterring the top threats organizations face from AI, namely social engineering powered by AI and impersonation with deepfakes \citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
-
-IBM's 2023 Cost of a Data Breach report revealed that organizations using AI to address cybersecurity threats experienced an average of 45\% reduction in annual incident-related costs compared to those that did not. Further, they found that a correlation exists, indicating that increased reliance on AI corresponded with lower incident costs.
-
-What seems certain is that we can count on the rapid development of AI technologies continuing, generative AI -powered social engineering attacks evolving with them, and the need for continuous, innovative user training growing in the future as well as the need for the development of AI-based mitigation and prevention technologies. Organizations need to utilize AI to combat generative AI -powered social engineering.
-
-    %Attackers and defenders are playing a never-ending game of "cat \& mouse" where nobody can rest.
-
-    %It is likely that deepfake phishing incidents will become ever more prevalent \citep{mirsky_Threat_Offensive_AI_Organizations_2023} due to the technology being mature, harder to mitigate than regular phishing attacks, is more effective at trust exploitation, can expedite attacks and deepfakes is a new type of phishing tactic that not all cyber defenders are aware of.
-
+What seems certain is that we can count on the rapid development of AI technologies continuing and generative AI -powered social engineering attacks evolving with them. The need for continuous, innovative user training will be growing in the future as well as the need for the development of AI-based mitigation and prevention technologies~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Cybersecurity experts must concentrate their efforts on deterring the top threats organizations face from AI, namely social engineering powered by generative AI and impersonation with deepfakes.

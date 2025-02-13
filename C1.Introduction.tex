@@ -1,46 +1,6 @@
-
-
-
 \chapter{Introduction\label{chapter:intro}}
 \begin{comment}
-
-Guides:
-    - Page limit 2 pages
-    - Context, who needs, what is needed, why is it a problem
-    - Research question and research methodologies
-    - Summary of results
-    - What roles each section will have
-    - No subsections
-    - Second to last paragraph contains the research question (RQ) and the results?
-    - Include primary references most related to this thesis (AI, social engineering etc)
-
-TODO:
-    [x] What is the research question
-    [ ] How is the research question answered
-    [x] How is this thesis organized, what is covered
-    [x] Social engineering before
-    [x] Social engineering today
-
-What to cover:
-    - What is SE?
-    - Modern AI
-        - Emergence of ChatGPT and the like
-    - Attacks
-        - Deepfake synthetic content
-        - Highly personalized phishing content (natural language processing)
-    - Countermeasures
-        - User awareness & training programs
-        - Company policy & company culture
-        - Law and AI use guidelines, restrictions
-
-
-Info from lecture materials:
-    - "Johdannon tarkoituksena on kertoa yleiskielisesti työn tavoite. Kerrotaan (kuten tiivistelmässäkin, mutta laveammin), mitä on tutkittu, miten on tutkittu ja mitä tuloksia on saatu. Jotta kysymyksenasettelu ja tulokset on lukijan helppo oikein tulkita on syytä aloittaa johdanto asettelemalla tutkimus asiayhteyteensä, esimerkiksi kertomalla aluksi, minkälaisessa yhteydessä tarkasteluun otettavat haasteet esiintyvät ja keiden on ratkaisuista tarkoitus hyötyä."
-    - "Johdannon pituus määräytyy suhteessa koko kirjoitelman pituuteen. Parisivuinen kirjoitus ei erikseen otsikoitua johdantoa kaipaa, sillä se itsessään on laajennettu tiivistelmä. Kymmensivuisen kirjoituksen johdanto voi olla vaikkapa sivun tai puolentoista mittainen. Pro gradu -tutkielman 50-70-sivuiseen kokonaisuuteen tuntuu 2-4-sivuinen johdanto kohtuulliselta."
-    - "Johdanto kertoo siis lyhyessä, yleistajuisessa muodossa koko kirjoitelman kysymyksenasettelun, juonen sekä tulokset ja johtopäätelmät. Tämän luettuaan lukija voi päätellä, haluaako syventyä asiaan tarkemmin lukemalla koko kirjoituksen." 
-
 \end{comment}
-
 
 
 %
@@ -55,9 +15,7 @@ Social engineering has emerged as a significant threat in the digital age, impac
 %
 % Social engineering before and now
 %
-Traditionally, social engineering depended heavily on human intuition and manual effort to deceive its targets~\citep{mitnick_The_Art_of_Deception_2003, mirsky_Threat_Offensive_AI_Organizations_2023}. However, with the advent of generative artificial intelligence (AI), the landscape of social engineering is undergoing a significant transformation, augmenting the sophistication and effectiveness of current and emerging attack methods~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
-
-    %Experts from both industry and academia unanimously ranked impersonation via deepfakes as the most significant threat among 32 distinct AI capabilities that can be used against organizations~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
+Traditionally, social engineering depended heavily on human intuition and manual effort to deceive its targets~\citep{mitnick_The_Art_of_Deception_2003, mirsky_Threat_Offensive_AI_Organizations_2023}. However, with the advent of generative artificial intelligence (AI), the landscape of social engineering is undergoing a significant transformation, augmenting the sophistication and effectiveness of current and emerging attack methods~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Experts from both industry and academia have unanimously ranked impersonation via deepfakes as the most significant threat among 32 distinct AI capabilities that can be used against organizations~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}.
 
 
 
@@ -67,7 +25,7 @@ Traditionally, social engineering depended heavily on human intuition and manual
 %
 % What this thesis addresses
 %
-This thesis addresses how contemporary social engineering defensive countermeasures must be updated for the novel threats of generative AI in an organizational environment. To achieve this, the thesis examines the intersection of generative AI and social engineering, detailing how advanced AI tools amplify the execution and impact of these attacks while discussing and evaluating the necessary countermeasures.
+This thesis addresses how contemporary social engineering defensive countermeasures must be updated for the novel threats of generative AI in an organizational environment, whether public sector or private. To achieve this, the thesis examines the intersection of generative AI and social engineering based on released literature and incident examples, detailing how advanced AI tools amplify the execution and impact of these attacks while discussing and evaluating the necessary countermeasures.
 
 
 
@@ -79,11 +37,11 @@ This thesis addresses how contemporary social engineering defensive countermeasu
 Relevant social engineering attack vectors and tools are examined, including spear phishing with the help of chatbots like ChatGPT and impersonation using deepfake-generated content. Countermeasures discussed include AI-driven detection of spear phishing and deepfakes, user training, and relevant company policies, laws, and AI development and usage guidelines.
 
 
-
+\newpage
 
 
 %
-% Countermeasures are insufficient
+% Countermeasures are insufficient; SUMMARY OF RESULTS (2nd to last paragraph)
 %
 Contemporary countermeasures against social engineering attacks are ill-equipped to deal with the sophistication of AI-powered threats~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022, king_AI_Crime_Interdisciplinary_Analysis_2019}. Cybersecurity professionals must thus update their tools and strategies, and AI can play a valuable role in this area as well.~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024, tsinganos_Towards_Automated_Recognition_Chat_SE_Enterprise_2018}.
 
@@ -94,10 +52,4 @@ Contemporary countermeasures against social engineering attacks are ill-equipped
 %
 % How is this thesis organized
 %
-The rest of the thesis is structured as follows: Chapter~\ref{chapter:background} introduces social engineering, generative AI, and other essential concepts for further analysis. Chapter~\ref{chapter:attacks} examines relevant attack vectors and tools, including spear phishing and deepfake impersonation. Chapter~\ref{chapter:countermeasures} discusses both technological and human-oriented countermeasures against these attacks. The effectiveness and viability of these measures are assessed in Chapter~\ref{chapter:discussion}. Chapter~\ref{chapter:conclusions} summarizes key findings and implications for the future of social engineering defense.
-
-
-
-
-
-
+The rest of the thesis is structured as follows: Chapter~\ref{chapter:background} introduces social engineering, generative AI, and other essential concepts for further analysis. Chapter~\ref{chapter:attacks} examines relevant attack vectors and tools, including spear phishing and impersonation with deepfakes. Chapter~\ref{chapter:countermeasures} discusses both technological and user-oriented countermeasures against these attacks. The effectiveness and viability of these measures are assessed in Chapter~\ref{chapter:discussion}. Chapter~\ref{chapter:conclusions} summarizes key findings and implications for the future of social engineering defense.

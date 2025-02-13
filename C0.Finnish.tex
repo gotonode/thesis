@@ -1,67 +1,51 @@
-
-
 \chapter*{Tekoälyavusteinen käyttäjän\\manipulointi\label{chapter:finnish}}
 \begin{comment}
-
-Ohjeet:
-    - 4 or 5 sivua
-    - TOC ja Chapter 1 Introduction väliin
-
-Kappaleet:
-    - (ilman nimeä sisältää Introduction ja Definition kappaleet)
-    - Hyökkäykset ja työkalut
-    - Puolustuskeinot
-    - Puolustuskeinojen arviointia
-    - Yhteenveto
-    - EI Overleaf kappalenumerointia? Kappale "0"?
-    
-
 \end{comment}
 
 
 Käyttäjän manipuloinnilla (\textit{social engineering}) tarkoitetaan tietoturvan yhteydessä tietojärjestelmän loppukäyttäjään eli ihmiseen kohdistuvaa tietoturvahyökkäystä \citep{mitnick_The_Art_of_Deception_2003}. Sen sijaan, että hyökkääjät etsisivät tietojärjestelmistä teknisiä haavoittuvuuksia, he kohdistavatkin hyökkäykset ihmiseen käyttäen hyväksi psykologisia menetelmiä \citep{wang_Defining_Social_Engineering_2020}.
 
-Historiallisesti käyttäjän manipulointi on ollut riippuvainen ihmisen intuitiosta ja manuaalisesta työstä, mutta nyt moderni tekoäly (\textit{artificial intelligence, AI}) on muuttamassa koko kenttää uusiksi. Tekoälyn avulla hyökkääjät pystyvät luomaan uskottavia tietojenkalasteluviestejä (\textit{phishing}) sekä imitoimaan virallisia tahoja ja toimijoita realististen syväväärennösten (\textit{deepfake}), kuten kuvien, äänen ja jopa videoiden, avulla.
+Historiallisesti käyttäjän manipulointi on ollut riippuvainen ihmisen intuitiosta ja manuaalisesta työstä, mutta nyt moderni tekoäly (\textit{artificial intelligence, AI}) on muuttamassa kenttää. Tekoälyn avulla hyökkääjät pystyvät luomaan uskottavia tietojenkalasteluviestejä (\textit{phishing}) sekä imitoimaan virallisia tahoja ja toimijoita realististen syväväärennösten (\textit{deepfake}), kuten kuvien, äänen ja jopa videoiden, avulla.
 
-Tässä kandidaatintutkielman suomenkielisessä lyhennelmässä käydään läpi tärkeimmät käyttäjän manipulointihyökkäykset sekä puolustuskeinot niihin.
+Tässä kandidaatintutkielman suomenkielisessä lyhennelmässä esitellään tärkeimmät käyttäjän manipulointihyökkäykset sekä puolustuskeinot niihin.
 
 \section*{Hyökkäykset ja työkalut}
 
-Tunnetuin käyttäjän manipulointihyökkäys on tietojenkalastelu (\textit{phishing)}. Tietojenkalastelu on petollista toimintaa missä hyökkääjä esiintyy luotettavana tahona tavoitteenaan saada käyttäjältä luottamuksellisia tietoja kuten hänen salasanansa tai luottokorttinsa numeron. Kohdennettu tietojenkalastelu (\textit{spear phishing}) on kohdennettu tietylle käyttäjälle tai yritykselle, sisältäen jotain relevanttia tietoa kuten esimerkiksi käyttäjän nimen tai roolin yrityksessä.
+Tunnetuin käyttäjän manipulointihyökkäys on tietojenkalastelu. Tietojenkalastelu on petollista toimintaa, jossa hyökkääjä esiintyy luotettavana tahona tavoitteenaan saada käyttäjältä luottamuksellisia tietoja, kuten salasanan tai luottokortin numeron. Kohdennettu tietojenkalastelu (\textit{spear phishing}) kohdistuu tiettyyn käyttäjään tai yritykseen sisältäen jotain olennaista tietoa, kuten käyttäjän nimen tai roolin yrityksessä.
 
-OpenAI julkaisi vuonna 2022 ChatGPT:n joka mullisti tavan, jolla ihmiset käyttävät tekoälyäpalveluita. Se keräsi yli 100 miljoonaa käyttäjää ensimmäisen kahden kuukauden aikana\footnote{https://explodingtopics.com/blog/chatgpt-users (luettu 2024-07-21)}. ChatGPT on ns. generatiivinen tekoäly (\textit{generative AI}) joka on koulutettu suurella määrällä tietoa ja joka pystyy tämän pohjalta luomaan uutta sisältöä, kuten tekstiä tai kuvia.
+OpenAI julkaisi vuonna 2022 ChatGPT:n, joka mullisti tavan, jolla ihmiset käyttävät tekoälyäpalveluita. Se keräsi yli 100 miljoonaa käyttäjää ensimmäisen kahden kuukauden aikana\footnote{https://explodingtopics.com/blog/chatgpt-users (luettu 2024-07-21)}. ChatGPT on ns. generatiivinen tekoäly (\textit{generative AI}), joka on koulutettu suurella määrällä tietoa ja joka pystyy tämän pohjalta luomaan uutta sisältöä, kuten tekstiä tai kuvia.
 
-OpenAI ja muut tekoälypalveluita varmistavat yritykset ovat asettaneet käyttöehtoja, joiden puitteissa palvelun käyttö on sallittua ja mahdollista. Rajoituksia käytölle on asetettu myös tekoälytoiminnallisuuksien sisälle. Hyökkääjät ovat kuitenkin onnistuneet valjastamaan ChatGPT:n kaltaiset suuret kielimallit (\textit{large language model}) omiin tarkoituksiinsa ohittamalla nämä rajoitukset käyttäen esimerkiksi käänteistä psykologiaa.
+OpenAI ja muut tekoälypalveluita varmistavat yritykset ovat asettaneet käyttöehtoja, joiden puitteissa palvelun käyttö on sallittua ja mahdollista. Rajoituksia on asetettu myös tekoälytoiminnallisuuksien sisälle. Hyökkääjät ovat kuitenkin onnistuneet valjastamaan ChatGPT:n kaltaiset suuret kielimallit (\textit{large language model}) omiin tarkoituksiinsa ohittamalla nämä rajoitukset käyttäen esimerkiksi käänteistä psykologiaa.
 
-ChatGPT ei esimerkiksi suoraan anna listaa sivustoista joilta voisi ladata laittomasti elokuvia, vaan sanoo että tämä toiminta on epäeettistä ja voi aiheuttaa käyttäjän tietokoneen saastumisen haittaohjelmilla (\textit{malware}). Tällaiset rajoitukset on pystynyt ohittamaan useilla eri keinoilla, esimerkiksi sanomalla että suojellakseen käyttäjää haittaohjelmilta ChatGPT:n pitäisi kertoa sivustoista joille käyttäjän ei tule mennä. Näin käyttäjä saa haluamansa tiedot käyttäen käänteistä psykologiaa.
+ChatGPT ei esimerkiksi suoraan anna listaa sivustoista, joilta voisi ladata laittomasti elokuvia, vaan sanoo, että tämä toiminta on epäeettistä ja voi aiheuttaa käyttäjän tietokoneen saastumisen haittaohjelmilla (\textit{malware}). Tällaiset rajoitukset on pystytty ohittamaan useilla eri keinoilla, esimerkiksi sanomalla, että suojellakseen käyttäjää haittaohjelmilta ChatGPT:n pitäisi kertoa sivustoista, joille käyttäjän ei tule mennä. Näin käyttäjä saa haluamansa tiedot käänteisen psykologian avulla.
 
-Näin hyökkääjät ovat pystyneet käyttämään suurten kielimallien tekoälytyökaluja tietojenkalasteluviestien laatimisessa, mikä on huomattaavasti parantanut niiden uskottavuutta.
+Näin hyökkääjät ovat pystyneet käyttämään suurten kielimallien tekoälytyökaluja tietojenkalasteluviestien laatimisessa, mikä on huomattavasti parantanut niiden uskottavuutta.
 
-Syväväärennökset (\textit{deepfake}) ovat aidolta vaikuttavaa sisältöä kuten kuvia, ääntä tai videota, joka on luotu generatiivisen tekoälyn avulla. Syväväärennöksiä voidaan käyttää esimerkiksi opetusmateriaalina, mutta niitä voidaan käyttää myös petollisiin tarkoituksiin. Syväväärennöksiä on jo onnistuneesti käytetty käyttäjän manipulointihyökkäysten perustana.
+Syväväärennökset ovat aidolta vaikuttavaa sisältöä, kuten kuvia, ääntä tai videoita, jotka on luotu generatiivisen tekoälyn avulla. Syväväärennöksiä voidaan käyttää esimerkiksi opetusmateriaalina, mutta niitä voidaan käyttää myös petollisiin tarkoituksiin. Syväväärennöksiä on jo onnistuneesti käytetty käyttäjän manipulointihyökkäysten perustana (link).
 
 \section*{Puolustuskeinot}
 
-Puolustautuminen tekoälyavusteisia käyttäjän manipulointihyökkäyksiä vastaan on pitkälti samankaltaista kuin tavallisiakin (ei-tekoäly) hyökkäyksiä vastaan, muutamilla muutoksilla. Puolustautumiskeinot voidaan jakaa karkeasti kahteen, ihmislähtöisiin ja tekniikkalähtöisiin.
+Puolustautuminen tekoälyavusteisia käyttäjän manipulointihyökkäyksiä vastaan on pitkälti samankaltaista kuin muitakin hyökkäyksiä vastaan, muutamilla muutoksilla. Puolustautumiskeinot voidaan karkeasti jakaa käyttäjä- ja tekniikkalähtöisiin.
 
-Perinteinen tapa suojata käyttäjää tietojenkalasteluviesteitlä on ollut sääntöpohjainen suodattaminen (\textit{rule-based filtering}). Yksinkertaistettuna se vain tarkoittaa joukkoa loogisia sääntöjä joita seuraamalla voidaan päätellö onko viesti jollain todennäköisyydellä tietojenkalasteluviesti vai ei.
+Perinteinen tapa suojata käyttäjää tietojenkalasteluviesteiltä on ollut sääntöpohjainen suodattaminen (\textit{rule-based filtering}). Yksinkertaistettuna se tarkoittaa joukkoa loogisia sääntöjä, joita seuraamalla voidaan jollakin todennäköisyydellä päätellä, onko viesti tietojenkalasteluviesti vai ei.
 
 Sääntöpohjainen suodattaminen ei kuitenkaan toimi kovin hyvin tekoälyavusteista tietojenkalastelua vastaan. Tässä kohtaa tekoäly on valjastettu myös suojaamaan käyttäjää, eli siinä missä hyökkääjät käyttävät tekoälyä luodakseen kalasteluviestejä, puolustajat käyttävät sitä tunnistamaan näitä viestejä.
 
-Historiallisesti ei ole ollut tarvetta tarkistaa saatujen kuvien tai videoiden aitoutta, mutta nyt syväväärennösten aikakautena käyttäjä ei voi luottaa näkemänsä materiaalin aitouteen vaan lisävarmistuksia on tehtävä. Yksi tapa on käyttää tekoälypohjaisia palveluita syväväärennösten tunnistamiseen, samaan tapaan kuin sähköpostiviestienkin tarkistaminen.
+Historiallisesti ei ole ollut tarvetta tarkistaa saatujen kuvien tai videoiden aitoutta, mutta nyt syväväärennösten aikakautena käyttäjä ei voi luottaa näkemänsä materiaalin aitouteen, vaan lisävarmistuksia on tehtävä. Yksi tapa on käyttää tekoälypohjaisia palveluita syväväärennösten tunnistamiseen, samaan tapaan kuin sähköpostiviestienkin tarkistamiseen.
 
 Käyttäjälähtöiset tavat ovat tyypillisesti olleet käyttäjien kouluttaminen, simuloidut käyttäjän manipulointihyökkäykset, yrityksen tietoturva- ja tietosuojaohjeistusten laatiminen ja käytön valvonta, sekä tietoturva- ja tietosuojatietoisen yrityskulttuurin rakentaminen.
 
-Tekoälypohjainen käyttäjän manipulointi tuo joitain muutoksia käyttäjälähtöisille puolustuskeinoille. Ensinnäkin käyttäjät eivät enää voi luottaa siihen, että hyvinkään kirjoitettu viesti ei olisi tietojenkalasteluviesti. Toiseksi kaikki saatu materiaali, kuten kuvat, äänitiedostot ja videot, saattavat olla syväväärennöksiä, vaikka käyttäjä ei itse pystyisi huomaamaan niissä mitään epätavallista.
+Tekoälypohjainen käyttäjän manipulointi tuo joitakin muutoksia käyttäjälähtöisille puolustuskeinoille. Ensinnäkin käyttäjät eivät enää voi luottaa siihen, että hyvinkään kirjoitettu viesti ei olisi tietojenkalasteluviesti. Toiseksi kaikki saatu materiaali, kuten kuvat, äänitiedostot ja videot, saattavat olla syväväärennöksiä, vaikka käyttäjä ei itse pystyisi huomaamaan niissä mitään epätavallista.
 
-Koska tekoälyohjelmat pystyvät automaattisesti etsimään Internetistä tietoa joita voisi käyttää osana käyttäjän manipulointihyökkäyksiä, myöskään viestit joissa on maininta joistain käyttäjälle relevanteista, ehkä jopa henkilökohtaisista asioista, ei voida enää varmuudella sanoa olevan aitoja.
+Koska tekoälyohjelmat pystyvät automaattisesti etsimään Internetistä tietoa, jota voisi käyttää osana käyttäjän manipulointihyökkäyksiä, myöskään viestit, joissa on maininta joistain käyttäjälle oleellista, ehkä jopa henkilökohtaisista asioista, ei voida enää varmuudella sanoa olevan aitoja.
 
 \section*{Puolustuskeinojen arviointia}
 
-Tässä luvussa käydään arvointia puolustuskeinojen tehokkuudesta.
+Tässä luvussa arvioidaan puolustuskeinojen tehokkuutta.
 
-Tekoälyavusteisten hyökkäysten torjuminen pohjautuu hyvin paljon samoille tekniikoille jotka ovat jo käytössä: sisääntulevan viestinnän tarkistaminen, käyttäjien kouluttaminen, simuloidut hyökkäykset, yrityskulttuurin rakentaminen ja tietoturvaohjeistusten ylläito. Jokaiseen näihin kuitenkin on tehtävä muutoksia generatiivisen tekoälyn luoman uuden uhan vuoksi.
+Tekoälyavusteisten hyökkäysten torjuminen pohjautuu pitkälti jo käytössä oleville tekniikoille: sisääntulevan viestinnän tarkistaminen, käyttäjien kouluttaminen, simuloidut hyökkäykset, yrityskulttuurin rakentaminen ja tietoturvaohjeistusten ylläito. Jokaiseen näihin kuitenkin on tehtävä muutoksia generatiivisen tekoälyn luoman uuden uhan vuoksi.
 
 
 \section*{Yhteenveto}
 
-Vaikuttaa siis siltä että voimme olettaa tekoälyjärjestelmien nopean kehittymisen jatkuvan, tietoturvauhkien kehittymisen niiden mukana, ja tarpeen jatkuvalle käyttäjien kouluttamiselle ja uusien puolustuskeinojen löytämiselle kasvavan.
+Vaikuttaa siis siltä, että voimme olettaa tekoälyjärjestelmien nopean kehittymisen jatkuvan, tietoturvauhkien kehittymisen niiden mukana sekä tarpeen jatkuvalle käyttäjien kouluttamiselle ja uusien puolustuskeinojen löytämiselle kasvavan.

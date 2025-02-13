@@ -1,64 +1,42 @@
-
-
-
 \chapter{Discussion\label{chapter:discussion}}
 \begin{comment}
-
-    - OpenAI attempts to control how ChatGPT etc are used
-    - Efficacy of EU and other level regulations
-    - Instagram flagging content that might've been generated with AI (this is futile in the future?)
-
 \end{comment}
 
 This chapter evaluates current countermeasures and their effectiveness at detecting and preventing social engineering attacks, particularly those enhanced by generative AI technologies. The landscape of cybersecurity is continuously evolving, and traditional countermeasures such as email filtering and user awareness programs, although still crucial, are increasingly insufficient against the sophistication of AI-powered threats~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. While current countermeasures provide a baseline defense against social engineering attacks, this evaluation reveals a critical gap between existing strategies and the rapidly evolving sophistication of generative AI -powered attacks. After this, Chapter~\ref{chapter:conclusions} concludes the thesis.
 
+According to the Cost of a Data Breach report~\citep{ibm_Cost_Data_Breach_Report_2024}, organizations are increasingly leveraging AI and automation in their security operations. 31\% of the studied organizations deploy these technologies extensively, 36\% reported limited use and the remaining 33\% reported no use. Notably, when AI was extensively deployed in prevention workflows, organizations saw an average breach cost reduction of 45\% (\$2.2 million compared to the average of \$4,88 million). The key finding of last year's report is a striking correlation: the more an organization relied on AI, the lower its average breach costs were.
 
-
-
-
-
-According to IBM's 2024 Cost of a Data Breach Report, organizations are increasingly leveraging AI and automation in their security operations, with 31\% of studied organizations deploying these technologies extensively, 36\% reporting limited use and the remaining 33\% reporting no use~\citep{ibm_Cost_Data_Breach_Report_2024}. Notably, when AI was extensively deployed in prevention workflows, organizations saw an average breach cost reduction of 45\% (\$2.2 million compared to the average of \$4,88 million). The key finding of this year's report is a striking correlation: the more an organization relied on AI, the lower its average breach costs were.
-
-    %63\% of organizations that had a data breach said they are planning on increasing the prices of their products and services, passing the multimillion dollar costs of data breaches to their customers~\citep{ibm_Cost_Data_Breach_Report_2024}.
-
-    %AI has prowess in analyzing big datasets, insight extraction and discernment of potential threats with remarkable accuracy \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}
-
-
-
+It seems evident that the highly dynamic nature of AI technologies fuels a continuous arms race between attackers and defenders, causing many countermeasures to become obsolete quickly~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Thus, protecting against AI-powered attacks requires not a single solution but an integrated approach that is baked in the company culture, that combines technological defenses, comprehensive and continuous user education, and robust organizational policies.
 
 \section{Generative AI and deepfakes}
-\begin{comment}    
-    - Deepfake content detection
-    - Spear phishing detection
+\begin{comment}
 \end{comment}
 
-Where previously an employee could authenticate a caller by recognizing their voice, intonations, and accents~\citep{mitnick_The_Art_of_Deception_2003}, today this is not enough due to the prevalence of deepfake-generated content.
-
-
-    %The uncanny valley is a phenomenal feeling that something is not quite right, deepfake video looks almost real but not quite
-
-
-Just as spam filters are inclined to report false positives~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}, so too are deepfake detection systems~\citep{mirsky_Creation_Detection_Deepfakes_2021}, filtering legitimate communications causing operational hiccups and perhaps lost business engagements.
+Just as spam filters are inclined to report false positives~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}, so too are deepfake detection systems~\citep{mirsky_Creation_Detection_Deepfakes_2021}. Filtering legitimate communications out may cause operational disturbances and perhaps even lost business engagements.
 
 Technological solutions like phishing detection systems that utilize natural language processing and machine learning show potential in identifying anomalous communications~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}. However, these systems are being challenged by the ever-improving quality of AI-generated content such as spear phishing messages, which often mimic human interaction and presentation with higher and higher fidelity. Similarly, tools designed to detect deepfakes are in their early stages~\citep{mirsky_Creation_Detection_Deepfakes_2021}, and face significant hurdles in keeping up with the rapid advancements in AI technologies that create such content.
 
-Just as people have differing propensities for detecting phishing attempts and noticing subtle anomalies in spelling and grammar~\citep{nicholson_Investigating_Teenagers_Detect_Phishing_2020, neupane_Social_Disorders_Facilitate_SE_2018}, so too are people variously adept at spotting these anomalies in deepfakes. Part of the solution regarding deepfake content is to raise population awareness about such technology use~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. In 2019, the Democratic Party (USA) presented a deepfake video of their own chairman to highlight their concerns about deepfake content\footnote{https://edition.cnn.com/2019/08/09/tech/deepfake-tom-perez-dnc-defcon/index.html (accessed 2024-08-25)}.
-
-virus detection signatures are developed by their respective companies, and cybersecurity personnel must be trained regularly. However, AI makes a difference here because AI systems can learn from other AI systems. Where one network is the target of a novel type of cybersecurity threat, and once its detected, this AI system can inform other systems in the same "network", thus bolstering defenses on a possibly global scale?
-
-Spreading information about deepfakes to the public faces the hurdle of the "liar's dividend", a situation where a "liar" discredits a real video claiming it to be a deepfake. The more users are aware of deepfake content and the ability of AI to doctor and create videos, the more skeptical they will be, causing them to question images and videos that are real~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. Deepfakes may thus erode the public's very trust in multimedia content.
 
 
+Part of the solution regarding deepfake content is to raise population awareness about such technology use~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. For instance, in 2019, the Democratic Party (USA) presented a deepfake video of their own chairman to highlight their concerns about deepfake content\footnote{https://edition.cnn.com/2019/08/09/tech/deepfake-tom-perez-dnc-defcon/index.html (visited on 2024-08-25)}.
 
-\section{User-centric}
-\begin{comment}    
-    - Deepfake content detection
-    - Spear phishing detection
+Virus detection signatures are developed by their respective companies, and cybersecurity personnel must be trained regularly. However, AI makes a difference here because AI systems can learn from other AI systems. Where one network is the target of a novel type of cybersecurity threat, and once its detected, this AI system can inform other systems in the same "network", thus bolstering defenses on a possibly global scale?
+
+Spreading information about deepfakes to the public faces the hurdle of the "liar's dividend", a situation where a "liar" discredits a real video claiming it to be a deepfake. The more users are aware of deepfake content and the ability of AI to doctor and create videos, the more skeptical they will be, causing them to question images and videos that are real~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. Deepfakes may thus erode the public's very trust in multimedia content, and the press in general.
+
+AI excels in detecting subtle patterns and anomalies which might elude more conventional systems \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This capability exceeds mere threat recognition and covers concepts such as anticipation of future potential vulnerabilities based on real-time and also historical data, which helps ensure defensive measures are not just reactive but predictive (proactive).
+
+\section{On defending users and employees}
+\begin{comment}
 \end{comment}
 
-Human-oriented measures remain pivotal in the defense against social engineering. Regular training programs are crucial for equipping end-users with the knowledge to recognize potential threats~\citep{hadnagy_Social_Engineering_The_Science_2018}. This holds true especially because AI technologies are evolving rapidly on both the offensive and defensive sides, leading to a situation where the attackers are one step ahead of the defenders and automated AI-based social engineering detection and prevention systems fail to protect the user~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Thus comprehensive, regular and innovative user training and awareness programs can never be outlooked, as the human is the weakest link in the cybersecurity chain~\citep{mitnick_The_Art_of_Deception_2003}.
+User-oriented measures remain pivotal in the defense against social engineering. Regular training programs are crucial for equipping end-users with the knowledge to recognize potential threats~\citep{hadnagy_Social_Engineering_The_Science_2018}. This holds true especially because AI technologies are evolving rapidly on both the offensive and defensive sides, leading to a situation where the attackers are one step ahead of the defenders and automated AI-based social engineering detection and prevention systems fail to protect the user~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Thus comprehensive, regular and innovative user training and awareness programs can never be overlooked, as the user remains the weakest link in the cybersecurity chain~\citep{mitnick_The_Art_of_Deception_2003}.
 
 The deployment of simulated social engineering campaigns offers substantial insights into employee vulnerability, yet these must be meticulously crafted to avoid adverse impacts on workplace morale~\citep{mitnick_The_Art_of_Deception_2003}. Utilizing natural language processing to craft highly convincing but simulated phishing messages to be sent to the employees can further aid in the detection of the need for further training, with open-source intelligence being incorporated also.
+
+Feedback from these simulations can significantly aid personnel development. However, employees who fall victim to these simulated attacks should be re-educated rather than punished~\citep{mitnick_The_Art_of_Deception_2003}. Furthermore, it is essential to inform employees in advance that such campaigns may be run occasionally. This approach not only keeps them vigilant but also mitigates negative feelings associated with "being tricked" by their own company~\citep{hadnagy_Social_Engineering_The_Science_2018}. 
+
+Just as people have differing propensities for detecting phishing attempts and noticing subtle anomalies in spelling and grammar~\citep{nicholson_Investigating_Teenagers_Detect_Phishing_2020, neupane_Social_Disorders_Facilitate_SE_2018}, so too are people variously adept at spotting these anomalies in deepfakes.
 
 %
 % Teenagers, young people and autistic people, susceptibility 
@@ -69,32 +47,15 @@ Certain parts of the population, such as teenagers and young people who haven't 
 
 
 
-
-
-
-
-
-
-
-
-
-
-\section{Law and ethics}
-\begin{comment}    
-    - Deepfake content detection
-    - Spear phishing detection
+\section{Societal and scientific impact}
+\begin{comment}
 \end{comment}
+As AI is developed further and the more its availability increases, the risk or malicious or criminal use increases as well, and these risks, if not properly addressed, may lead to the excessive strict regulation of AI technologies~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
 
-    %Naturally, restrictions set on AI systems can only be effective if the system stays within the control of its developer. While today, the feasibility of running one's own version of LLM tools such as ChatGPT, due to prohibily high computational costs and other factors, this might not always be the case.
+The benefits of AI for society and individuals may be significantly compromised due to ongoing constraints on its development~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}. A notable example is the restriction on releasing source code and data from a study that demonstrated how visual discriminators could identify a person's sexual orientation with accuracies far higher than those of human judges, which undermines scientific reproducibility. In the end, it comes to societal values. Science is done all around the globe, and if one nation rejects to release their source code and data due to ethical considerations, some other nation with different values and value systems may elect to do so on their comparable studies.
 
-    AI excels in detecting subtle patterns and anomalies which might elude more conventional systems \citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This capability exceeds mere threat recognition and covers concepts such as anticipation of future potential vulnerabilities based on real-time and also historical data, which helps ensure defensive measures are not just reactive but predictive (proactive).
+In 2024, the state of Tennessee enacted the ELVIS Act\footnote{https://aibusiness.com/responsible-ai/tennessee-enacts-elvis-act-to-protect-artist-voices-from-ai-misuse (visited on 2024-08-24)} (Ensuring Likeness Voice and Image Security), protecting artists from the use of their voice and likeness via deepfake technologies. Further legislation in the United States needs to address the use of deepfakes in other ways, such as in social engineering.
 
-It seems evident that the highly dynamic nature of AI technologies fuel a continuous arms race between attackers and defenders, causing many countermeasures to become obsolete quickly~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Thus, protecting against AI-powered attacks requires not a single solution but an integrated approach that is baked in the company culture, that combines technological defenses, comprehensive and continuous user education, and robust organizational policies.
+Because regulatory frameworks and other governance mechanisms might not be developed at the same pace as technological advancements, proactivity is vital to reduce the risks~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. The faster the potential for AI misuse is understood, the earlier potential preventive and mitigative policies may be applied~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}. Some regulatory limitations may, however, be hampering cybersecurity defensive measures.
 
-As AI is developed further and the more its availability increases, the risk or malicious or criminal use increases as well, and these risks if not properly addressed may lead to the excessive strict regulation of AI technologies~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
-
-To summarize the evaluation of countermeasures against AI-powered social engineering, while they currently provide a fundamental level of defense, they struggle to keep up with the rapidly evolving AI-powered social engineering tactics. The limited effectiveness of these measures is attributable to both the fast-paced development in AI and the inherent human factor, being the weakest link within cybersecurity~\citep{mitnick_The_Art_of_Deception_2003}. Therefore, continuous innovation in both technological solutions, such as AI-based phishing and deepfake detection algorithms~\citep{mirsky_Creation_Detection_Deepfakes_2021}, and human-centric strategies, such as awareness programs and simulated spear phishing campaigns~\citep{hadnagy_Social_Engineering_The_Science_2018}, is truly imperative for an organization to adapt to and counteract the advancing generative AI -powered threat landscape.
-
-In 2024, the state of Tennessee enacted the ELVIS (Ensuring Likeness Voice and Image Security) Act\footnote{https://aibusiness.com/responsible-ai/tennessee-enacts-elvis-act-to-protect-artist-voices-from-ai-misuse (accessed 2024-08-24)}, protecting artists from the use of their voice via deepfake technologies. Further legislation need to address the use of deepfakes in other ways, such as in social engineering. EU's AI Act explicitly prohibits the use of AI for human  manipulation and social engineering.
-
-Because regulatory frameworks and other governance mechanisms might not be developed at the same pace of technological advancements, proactivity is vital to reduce the risks~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. The faster the potential for AI misuse is understood, the earlier potential preventive, mitigative, disincentivizing and redressing policies may be applied~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}.
+The European Union’s AI Act explicitly prohibits the use of AI for human manipulation and social engineering, but questions arise when social engineering tactics and techniques are used for simulated phishing campaigns. Can AI be developed to be a better social engineer than any human, for the purposes of bolstering organizational defenses? If so, what prevents the same AI from being used for malicious purposes against an organization who has not consented on such simulated attacks? It seems that wherever strict regulatory lines are drawn, it will always be a compromise.
