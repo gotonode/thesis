@@ -6,7 +6,7 @@
 %
 % Generative AI in SE, chapter overview
 %
-In recent years, the integration of generative artificial intelligence (AI) into social engineering offensive practices has emerged as a significant concern within the field of cybersecurity~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022, king_AI_Crime_Interdisciplinary_Analysis_2019, mirsky_Threat_Offensive_AI_Organizations_2023}. This chapter provides an overview of the role of generative AI in social engineering, explaining key concepts and terminologies essential for understanding the evolving threat landscape. After this, Chapter~\ref{chapter:attacks} examines generative AI -powered attack vectors and tools.
+In recent years, the integration of generative artificial intelligence (AI) into social engineering offensive practices has emerged as a significant concern within the field of cybersecurity~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022, king_AI_Crime_Interdisciplinary_Analysis_2019, mirsky_Threat_Offensive_AI_Organizations_2023}. This chapter provides an overview of the role of generative AI in social engineering and explains the key concepts of open-source intelligence, AI, and generative AI. After this, Chapter~\ref{chapter:attacks} examines generative AI -powered social engineering attack vectors and tools.
 
 
 
@@ -20,8 +20,13 @@ A strict consensus regarding the definition of a social engineering attack is la
 %
 % Cybersecurity threats to organizations
 %
-Organizations today face cybersecurity threats from a range of sources, including cybercriminals, disgruntled employees, "script kiddies" (amateur hackers), hacktivists, competitors, and even state-sponsored cyber terrorists~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. These threat actors may be driven by motives such as financial gain, intellectual property theft, sabotage, fame, or revenge. Organizations face public scrutiny, loss of customer trust and relations, governmental fines, and loss of productivity, among other things, due to data breaches.
+Organizations today face cybersecurity threats from a range of sources, including cybercriminals, disgruntled employees, amateur hackers, hacktivists, competitors, and even state-sponsored cyber terrorists~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. These threat actors may be driven by motives such as financial gain, intellectual property theft, sabotage, fame, or revenge. Organizations face public scrutiny, loss of customer trust and relations, governmental fines, and loss of productivity, among other things, due to data breaches.
 
+
+%
+% Why these attack vectors were chosen and not some others
+%
+While the field of social engineering contains many attack vectors, not all of them are amiable to be enhanced by AI technologies. Research literature has identified and primarily focused on three distinct, but closely related, attack vectors: spear phishing, deepfake impersonation, and real-time voice morphing~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}. Other popular social engineering attack methods that do not seem to gain much from the advancement of AI technologies, and which are thus not addressed in this thesis, include dumpster diving, the act of rummaging through the victim’s trash, and shoulder surfing, the act of observing people entering sensitive information to devices~\citep{hatfield_SE_Evolution_Concept_2018}.
 
 %
 % Threat of generative AI
@@ -45,17 +50,10 @@ The dynamic nature of AI-driven social engineering poses a significant challenge
 
 
 
-%
-% Defense against AI-powered threats
-%
-Defense against AI-enhanced social engineering will thus require a multifaceted approach that combines technological innovation, user education, and a proactive stance and strict enforcement of cybersecurity policy~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. As the landscape continues to evolve, staying ahead of these threats will necessitate ongoing research and collaboration across the cybersecurity community to develop effective countermeasures and best practices~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}.
 
 
 
-%
-% How this thesis is organized
-%
-The remainder of this chapter elaborates on essential concepts, specifically open-source intelligence and generative AI, which are essential for further analysis.
+
 
 
 
@@ -83,7 +81,7 @@ Lastly, open-source intelligence, as the name implies, does not contain intellig
 
 Artificial intelligence (AI) encompasses the development of algorithms designed to automate complex tasks ~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Currently, the most prevalent type of AI is machine learning, which enables systems to enhance their performance as they gain experience. Deep learning, a subset of machine learning, employs extensive artificial neural networks as predictive models~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. The core idea behind AI is to enable machines to mimic human-like decision-making and thinking processes.
 
-When AI is used to generate content, it is called \textbf{generative AI}~\citep{goodfellow_Generative_Adversarial_Networks_2020}. Unlike traditional AI, which follows programmed rules, generative AI utilizes machine learning to learn patterns from large training datasets to produce new outputs, such as text, images, audio and video.
+When AI is used to generate content, it is called \textbf{generative AI}~\citep{goodfellow_Generative_Adversarial_Networks_2020}. Unlike traditional AI, which follows programmed rules, generative AI utilizes machine learning to learn patterns from large training datasets to produce new outputs, such as text, images, audio, and video.
 
 Perhaps the most prominent example of generative AI is ChatGPT\footnote{https://openai.com/index/chatgpt (visited on 2024-08-19)}, a chatbot released by OpenAI in 2022. While far from being the first~\citep{weizenbaum_ELIZA_1996}, this chatbot revolutionized how people use and interact with generative AI systems, reaching over 100 million users in just two months\footnote{https://explodingtopics.com/blog/chatgpt-users (visited on 2024-08-11)}. Built on the GPT (Generative Pre-trained Transformer) architecture, ChatGPT is designed to understand and generate human-like text by predicting the next word in a sequence.
 
