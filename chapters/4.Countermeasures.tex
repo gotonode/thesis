@@ -32,11 +32,32 @@ Just as incoming and outgoing email messages are analyzed for phishing attacks, 
 
 Where once experts in the field could recommend that a caller be authenticated by recognizing their voice, accent, and intonations~\citep{mitnick_The_Art_of_Deception_2003}, with the advent of generative AI and especially deepfakes, this no longer holds true~\citep{doan_BTSE_Audio_Deepfake_Detection_2023}. Technologies such as the BTS-E encoder have been proposed for spotting idiosyncrasies in speech that might not or even could not be consciously registered by human observers, by detecting correlations between breathing, talking, and silence.
 
-Seven different types of artifacts related to image and especially video deepfakes have been identified in two main categories~\citep{mirsky_Creation_Detection_Deepfakes_2021}: spatial-type artifacts which cover blending, environment, and forensics, while temporal-type artifacts cover behavior, physiology, synchronization, and coherence.
+Seven different types of artifacts related to image and especially video deepfakes have been identified in two main categories~\citep{mirsky_Creation_Detection_Deepfakes_2021}: spatial-type artifacts which cover blending, environment, and forensics, while temporal-type artifacts cover behavior, physiology, synchronization, and coherence. Table \ref{table:deepfake_artifacts} explains these artifacts briefly.
 
-Blending artifacts occur when the generated content is integrated back into a frame (the background), which is detectable with techniques such as edge detection and frequency analysis. Environment artifacts can appear when fake facial content seems inconsistent with the surrounding background frame, often due to mismatches in warping, lighting, or fidelity. Forensic-type artifacts are residues from the generative models, such as generative adversarial network fingerprints or sensor noise.
+\begin{table}[h!]  
 
-Behavior-type artifacts involve monitoring anomalies in the target's mannerisms, while physiological artifacts focus on inconsistencies in natural biological cues like blinking of the eyes or head movements. Synchronization artifacts can be observed in mismatched audio-visual elements, and coherence artifacts relate to inconsistencies in logical sequences happening over time.
+\renewcommand{\arraystretch}{1.5} % Adjust row height for better readability  
+\setlength{\tabcolsep}{5pt} % Adjust column spacing  
+\begin{tabularx}{\textwidth}{|l|l|X|} % X column for text wrapping  
+\hline  
+\textbf{Type} & \textbf{Mechanism} & \textbf{Description} \\ \hline  
+S & Blending & Generated content is integrated back into a frame (the background), which is detectable with techniques such as edge detection and frequency analysis. \\ \hline  
+S & Environment & ppear when fake facial content seems inconsistent
+with the surrounding background frame, often due to mismatches in warping, lighting, or
+fidelity. \\ \hline  
+S & Forensics & sidues from the generative models, such as generative
+adversarial network fingerprints or sensor noise \\ \hline  
+T & Behavior & monitoring anomalies in the target’s mannerisms \\ \hline  
+T & Coherence & elate to inconsistencies in logical sequences
+happening over time\\ \hline  
+T & Physiology & focus on inconsistencies in natural biological cues like blinking of
+the eyes or head movements \\ \hline  
+T & Synchronization & ismatched
+audio-visual elements \\ \hline  
+\end{tabularx}  
+\caption{Deepfake detection mechanisms: S = spatial, T = temporal~\citep{mirsky_Creation_Detection_Deepfakes_2021}}  
+\label{table:deepfake_artifacts}  
+\end{table}  
 
 
 
@@ -76,3 +97,5 @@ Employees should be shown what different varieties of deepfake content look like
 It's imperative that every user understands that they are the weakest link in the cybersecurity chain and that the responsibility of the organization's cybersecurity is in everyone's hands, not just the cybersecurity professional's~\citep{mitnick_The_Art_of_Deception_2003}. If an employee has a user account into the organization’s systems, that is a potential entryway for attackers.
 
 Finally, because AI can source social media sites and the Internet automatically for open-source intelligence, it's imperative for people to know to be careful of what they share, with whom and when~\citep{mitnick_The_Art_of_Deception_2003}. Even seemingly private or coincidental information, such as photos indicative that the employee is now on a company picnic, could be used against them and their employer in a social engineering attack.
+
+
