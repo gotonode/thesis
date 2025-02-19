@@ -31,16 +31,16 @@ Organizations today confront cybersecurity threats from a range of sources, incl
 %
 While the field of social engineering contains many attack vectors, not all of them are amiable to be enhanced by AI technologies. Research literature has identified and primarily focused on three distinct, but closely related, attack vectors: spear phishing, deepfake impersonation, and real-time voice morphing~\citep{king_AI_Crime_Interdisciplinary_Analysis_2019}. Other popular social engineering attack methods, which do not seem to directly gain much from the advancement of AI technologies, and which are thus not addressed in this thesis, include dumpster diving and shoulder surfing~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Table \ref{table:attacks} briefly explains some of the most common social engineering attack vectors. Ransomware attacks are listed as an example of a social engineering attack which can be amplified by AI directly but which isn’t, due to its different nature, examined in this thesis.
 
-\begin{table}[h!]  
+\begin{table}[ht!]  
 \centering  
 \renewcommand{\arraystretch}{1.5} % Adjust row height for better readability  
 \setlength{\tabcolsep}{5pt} % Adjust column spacing  
 \begin{tabularx}{\textwidth}{|l|X|l|l|} % X column for text wrapping  
 \hline  
 \textbf{Attack vector} & \textbf{Brief description} & \textbf{Relevance} & \textbf{Included} \\ \hline  
-Dumpster diving & Going through the organization's trash for sensitive information & No & No \\ \hline  
+Dumpster diving & Going through someone's trash for sensitive information & No & No \\ \hline  
 Impersonation & Claiming to be someone else & Yes & Yes \\ \hline  
-Phishing & Scamming the user for details & Yes & Yes \\ \hline  
+Phishing & Deceptive attempts to steal sensitive information & Yes & Yes \\ \hline  
 Ransomware & Locking the victim's data against a ransom payment or other action & Yes & No \\ \hline  
 Shoulder surfing & Covertly observing people enter sensitive information such as login details & No & No \\ \hline  
 Spear phishing & A targeted variety of phishing & No & Yes \\ \hline  
@@ -60,7 +60,7 @@ A total of 32 different AI capabilities have been identified that attackers coul
 %
 % Tracking incidents
 %
-Tracking social engineering incidents can be accomplished by counting incident occurrences or by calculating the total cost of all incidents annually~\citep{ibm_Cost_Data_Breach_Report_2024}. Not all organizations report their social engineering and other cybercrime-related incidents, but very good estimates of the prevalence of these attacks can be gained from data that is gathered by various public and private organizations and released in reports such as the Internet Crime Report~\citep{fbi_Internet_Crime_Report_2023}, the Cost of a Data Breach Report~\citep{ibm_Cost_Data_Breach_Report_2024}, the Data Breach Investigations Report~\citep{verizon_Data_Breach_Investigations_Report_2024} and the Threat Landscape~\citep{eniza_Threat_Landscape_2024}. 
+Tracking social engineering incidents can be accomplished by counting incident occurrences or by calculating the total cost of all incidents annually~\citep{ibm_Cost_Data_Breach_Report_2024}. Not all organizations report their social engineering and other cybercrime-related incidents, but very good estimates of the prevalence of these attacks can be gained from data that is gathered by various cybercrime-specialized public and private organizations. Their research is published in reports such as the Internet Crime Report~\citep{fbi_Internet_Crime_Report_2023}, the Cost of a Data Breach Report~\citep{ibm_Cost_Data_Breach_Report_2024}, the Data Breach Investigations Report~\citep{verizon_Data_Breach_Investigations_Report_2024} and the Threat Landscape~\citep{eniza_Threat_Landscape_2024}. 
 
 Organizations can thus assess the effectiveness and impact of their new policies, software upgrades, and cultural changes by monitoring incident statistics, particularly incident-related annual costs. These costs include detection, investigation and recovery, and any loss of customers and data. %The annual cybersecurity costs related to social engineering are the primary metric examined in this thesis.
 
