@@ -756,7 +756,7 @@
 
 %Put the content texts there
 \put(5, 634){\makebox(200, 8)[l]{\abst@small \faculty}}
-\put(233, 634){\makebox(200, 8)[l]{\abst@small \getSubject}}  
+\put(236, 634){\makebox(200, 8)[l]{\abst@small \getSubject}}  
 
 \put(5,  601){\makebox(100, 8)[l]{\abst@small \@author}}
 \put(5,  564)%
@@ -767,7 +767,10 @@
  
 \put(5, 490){\makebox(100, 8)[l]{\abst@small \level}}
 \put(160, 490){\makebox(100, 8)[l]{\abst@small \today}}
-\put(301, 490){\makebox(100, 8)[l]{\abst@small \getPageInfo}}
+
+\put(296, 490){\makebox(100, 8)[l]{\abst@small \getPageInfo}}
+
+%\put(303,509){\makebox(100,5)[l] {\abst@tiny Sivum\"a\"ar\"a --- Sidoantal ---    Number of pages}}
 
 \put(5, 85) {\makebox(100, 8)[l]{\abst@small \@keywords}}
 \put(5, 55) {\makebox(100, 8)[l]{\abst@small \depositeplace}}

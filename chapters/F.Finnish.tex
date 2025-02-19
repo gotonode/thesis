@@ -11,11 +11,16 @@
 \end{comment}
 
 
-Tässä kandidaatintutkielman suomenkielisessä lyhennelmässä esitellään tärkeimmät tekoälyavustetut käyttäjän manipulointihyökkäykset sekä puolustuskeinot niihin. Käyttäjän manipuloinnilla (\textit{social engineering}) tarkoitetaan tietoturvan yhteydessä tietojärjestelmän loppukäyttäjään eli ihmiseen kohdistuvaa tietoturvahyökkäystä~\citep{hatfield_SE_Evolution_Concept_2018}. Sen sijaan, että hyökkääjät etsisivät tietojärjestelmistä teknisiä haavoittuvuuksia, he kohdistavatkin hyökkäykset käyttäjään käyttäen hyväksi psykologisia menetelmiä~\citep{wang_Defining_Social_Engineering_2020}.
+Tässä kandidaatintutkielman suomenkielisessä lyhennelmässä esitellään tärkeimmät tekoälyavustetut käyttäjän manipulointihyökkäykset jotka kohdistuvat organisaatioihin sekä puolustuskeinot niihin. Käyttäjän manipuloinnilla (\textit{social engineering}) tarkoitetaan tietoturvan yhteydessä tietojärjestelmän loppukäyttäjään eli ihmiseen kohdistuvaa tietoturvahyökkäystä~\citep{hatfield_SE_Evolution_Concept_2018}. Sen sijaan, että hyökkääjät etsisivät tietojärjestelmistä teknisiä haavoittuvuuksia, he kohdistavatkin hyökkäykset käyttäjään käyttäen hyväksi psykologisia menetelmiä~\citep{wang_Defining_Social_Engineering_2020}.
 
 Historiallisesti käyttäjän manipulointi on ollut riippuvainen ihmisen intuitiosta ja manuaalisesta työstä, mutta nyt moderni tekoäly (\textit{artificial intelligence, AI}) on muuttamassa kenttää~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022, king_AI_Crime_Interdisciplinary_Analysis_2019, mirsky_Threat_Offensive_AI_Organizations_2023}. Tekoälyn avulla hyökkääjät pystyvät luomaan erittäin uskottavia ja uhrille kohdennettuja tietojenkalasteluviestejä (\textit{spear phishing}) sekä imitoimaan virallisia tahoja ja toimijoita totuudenmukaisten syväväärennösten (\textit{deepfake}), kuten kuvien, äänen ja jopa videoiden, avulla~\citep{mirsky_Creation_Detection_Deepfakes_2021}.
 
-Yritykset kohtaavat tietoturvauhkia monilta eri tahoilta, kuten esimerkiksi hakkereilta, närkästyneiltä työntekijöiltä ja kilpailijoilta~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Tietomurto voi johtaa yrityksen maineen kärsimiseen, asiakkaiden menetyksiin, tuotannollisiin tappioihin, sekä muihin rahallisiin menetyksiin.
+Tänä päivänä organisaatiot kohtaavat tietoturvauhkia monilta eri tahoilta, kuten esimerkiksi hakkereilta, närkästyneiltä tai pahantahtoisilta työntekijöiltä, kilpailijoilta ja jopa valtioiden rahoittamilta kyberterroristeilta~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Onnistunut tietomurto voi johtaa organisaation maineen kärsimiseen, asiakkaiden menetyksiin, tuotannollisiin tappioihin, sekä sanktioihin.
+
+Tutkijat ovat löytäneet 32 erilaista tapaa joilla tekoälyä voidaan hyödyntää osana organisaatioon kohdistettavaa tietoturvahyökkäystä ~\citep{mirsky_Threat_Offensive_AI_Organizations_2023}. Sekä tutkimusyhteisö että kaupallisen alan tietoturva-asiantuntijat valitsivat yksimielisesti syväväärennöksillä tehtävän imitoinnin kaikista vakavimmaksi uhkaksi. 
+
+On orgnisaation taloudellistenkin etujen mukaista varautua generatiivisen tekoälyn tehostamiin käyttäjän manipulointihyökkäyksiin, jotka tulevat vain yleistymään~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022}. Organisaatiot voivat siis arvioida työntekijöidensä koulutuksen, organisaatiokulttuurinsa muutoksien ja tietoturvaohjelmistojensa tuomaa hyötyä tarkastelemalla heihin kohdistuneiden onnistuneiden tietomurtojen yhteiskustannuksia vuositasolla.
+
 
 %Taloudelliset tappiot
 %Kaikki yritykset eivät julkaise tietoja tietomurroista
@@ -42,7 +47,7 @@ OpenAI julkaisi vuonna 2022 ChatGPT:n, joka mullisti tavan, jolla ihmiset käytt
 
 OpenAI ja muut tekoälypalveluita varmistavat yritykset ovat asettaneet käyttöehtoja- ja rajoituksia, joiden puitteissa palvelun käyttö on sallittua ja mahdollista. Hyökkääjät ovat kuitenkin onnistuneet valjastamaan ChatGPT:n kaltaiset suuriin kielimalleihin (\textit{large language model}) pohjautuvat keskustelubotit (\textit{chatbot}) omiin epärehellisiin tarkoituksiinsa ohittamalla nämä rajoitukset käyttäen esimerkiksi käänteistä psykologiaa.
 
-ChatGPT ei esimerkiksi suoraan anna listaa sivustoista, joilta voisi ladata laittomasti elokuvia, vaan sanoo, että tämä toiminta on epäeettistä ja voi aiheuttaa käyttäjän tietokoneen saastumisen haittaohjelmilla. Tällaiset rajoitukset on pystytty ohittamaan useilla eri keinoilla, esimerkiksi sanomalla, että suojellakseen käyttäjää haittaohjelmilta ChatGPT:n pitäisi kertoa sivustoista, joille käyttäjän ei tule mennä. Näin käyttäjä saa haluamansa tiedot käänteisen psykologian avulla~\citep{gupta_From_ChatGPT_to_ThreatGPT_2023}.
+ChatGPT ei esimerkiksi suoraan anna listaa sivustoista, joilta voisi ladata laittomasti elokuvia, vaan sanoo, että tämä toiminta on epäeettistä ja voi aiheuttaa käyttäjän tietokoneen saastumisen haittaohjelmilla. Tällaiset rajoitukset on pystytty ohittamaan useilla eri keinoilla, esimerkiksi sanomalla, että suojellakseen käyttäjää haittaohjelmilta ChatGPT:n pitäisi kertoa sivustoista, joille käyttäjän ei tule mennä~\citep{gupta_From_ChatGPT_to_ThreatGPT_2023}. Näin käyttäjä saa haluamansa tiedot käänteisen psykologian avulla~.
 
 %Näin hyökkääjät ovat pystyneet käyttämään suurten kielimallien tekoälytyökaluja tietojenkalasteluviestien laatimisessa, mikä on huomattavasti parantanut niiden uskottavuutta.
 
@@ -68,16 +73,16 @@ Käyttäjälähtöiset tavat ovat käyttäjien kouluttaminen, simuloidut käytt�
 
 %Koska tekoälyohjelmat pystyvät automaattisesti etsimään Internetistä tietoa, jota voisi käyttää osana käyttäjän manipulointihyökkäyksiä, myöskään viestit, joissa on maininta joistain käyttäjälle oleellista, ehkä jopa henkilökohtaisista asioista, ei voida enää varmuudella sanoa olevan aitoja.
 
-\section*{Puolustuskeinojen arviointia}
+\section*{Johtopäätökset}
 
-Tässä luvussa arvioidaan puolustuskeinojen tehokkuutta.
+Tekoälyavusteisten käyttäjän manipulointihyökkäysten torjuminen pohjautuu siis pitkälti jo käytössä oleville tekniikoille: sisääntulevan viestinnän tarkistamiseelle, käyttäjien kouluttamiselle, simuloiduiduille hyökkäyksille, tietoturva- ja tietosuojatietoisen organisaatiokulttuurin rakentamiselle ja tietoturvaohjeistusten ylläpidolle sekä sen niiden valvonnalle~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Jokaiseen näihin on kuitenkin tehtävä muutoksia generatiivisen tekoälyn luoman uuden uhan vuoksi jotta organisaatiot säästyisivät jopa useisiin miljooniin euroihin nousevilta kustannuksilta~\citep{eniza_Threat_Landscape_2024, verizon_Data_Breach_Investigations_Report_2024}.
 
-Tekoälyavusteisten hyökkäysten torjuminen pohjautuu pitkälti jo käytössä oleville tekniikoille: sisääntulevan viestinnän tarkistaminen, käyttäjien kouluttaminen, simuloidut hyökkäykset, yrityskulttuurin rakentaminen ja tietoturvaohjeistusten ylläpito. Jokaiseen näihin kuitenkin on tehtävä muutoksia generatiivisen tekoälyn luoman uuden uhan vuoksi.
+Cost of a Data Breach Report -raportin~\citep{ibm_Cost_Data_Breach_Report_2024} mukaam käyttäjien koulutukseen panostaminen alensi keskimääräisestä tietoturvahyökkäyksestä koituneita kustannuksia eniten, 258,629 dollaria. Vertailun vuoksi tietoturvaohjelmistoihin panostamalla keskimääräiset kustannukset olivat 166,600 dollaria pienemmät.
 
 
-\section*{Yhteenveto}
+%\section*{Lopuksi}
 
-Vaikuttaa siis siltä, että voimme olettaa tekoälyjärjestelmien nopean kehittymisen jatkuvan, tietoturvauhkien kehittymisen niiden mukana sekä tarpeen jatkuvalle käyttäjien kouluttamiselle ja uusien puolustuskeinojen löytämiselle kasvavan.
+Vaikuttaa siis siltä, että voimme olettaa tekoälyjärjestelmien nopean kehittymisen jatkuvan, tietoturvauhkien kehittymisen niiden mukana sekä tarpeen jatkuvalle käyttäjien kouluttamiselle ja uusien puolustuskeinojen löytämiselle kasvavan. Organisaatioiden on huomioitava generatiivisen tekoälyn käyttäjän manipulointihyökkäyksiin mukanaan tuomat uudet erityispiirteet panostamalla ensisijaisesti käyttäjien koulutukseen ja toissijaisesti myös uusiin tekoälypohjaisiin tietoturvaohjelmistoihin.
 
 
 
