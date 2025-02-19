@@ -27,9 +27,18 @@ These machine learning models are trained with vast datasets containing both saf
 \section{Identifying deepfakes}
 \begin{comment}
 \end{comment}
-Deepfakes often contain subtle anomalies called artifacts, just as image and audio forgeries of the past did. Deepfake detection procedures are primarily based on machine learning and forensic analysis, attempting to identify these specific artifacts in the multimedia content~\citep{mirsky_Creation_Detection_Deepfakes_2021}. The artifacts can be subtle, such as a strange blob of pixels, or overt, such as a person having clearly warped eyes.
+Deepfakes often contain subtle anomalies called artifacts, just as image and audio forgeries of the past did. Deepfake detection procedures are primarily based on machine learning and forensic analysis, attempting to identify these specific artifacts in the multimedia content~\citep{mirsky_Creation_Detection_Deepfakes_2021}. The artifacts can be subtle, such as a strange blob of pixels, or overt, such as a person having clearly warped eyes. Figure \ref{figure:artifacts} represents a few sample artifacts.
 
-Just as incoming email messages are analyzed for phishing attacks, and the attachments are scanned for viruses, images, audio, and videos may need to be scanned as well to aid the user in detecting if they are genuine or deepfakes~\citep{mirsky_Creation_Detection_Deepfakes_2021}. Detecting deepfakes is a lot more computationally intensive than email phishing detection, so organizations may opt for giving users the possibility of initiating a scan on material they suspect isn’t genuine.
+\begin{figure}[h]  
+    \centering  
+    \includegraphics[width=0.9\textwidth]{images/rId14_image5.png}  
+    \caption{Potential artifacts in a deepfake image or video (source: gao.gov)}  
+    \label{figure:artifacts}  
+\end{figure}  
+
+Just as incoming email messages are analyzed for phishing attacks, and the attachments are scanned for viruses, images, audio, and videos may need to be scanned as well to aid the user in detecting if they are genuine or deepfakes~\citep{mirsky_Creation_Detection_Deepfakes_2021}. Detecting deepfakes is a lot more computationally intensive than email phishing detection, so organizations may opt for giving employees the possibility of initiating a scan on material they suspect isn’t genuine.
+
+
 
 Where once experts in the field could recommend that a caller be authenticated by recognizing their voice, accent, and intonations~\citep{mitnick_The_Art_of_Deception_2003}, with the advent of generative AI and especially deepfakes, this no longer holds true~\citep{doan_BTSE_Audio_Deepfake_Detection_2023}. Technologies such as the BTS-E encoder have been proposed for spotting idiosyncrasies in speech that might not or even could not be consciously registered by human observers, by detecting correlations between breathing, talking, and silence in calls and other audio.
 
