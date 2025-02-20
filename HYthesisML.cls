@@ -569,7 +569,8 @@
         \warnText{!! Run three times to appear !!}
      } {
         \ifnumcomp{\appendixCount}{>}{0}{%
-            \pagesCount\space\pp,\space\appendixCount\space\appno
+            \pagesCount\space\pp, 1 appendix page  
+
         }{
             \pagesCount\space\pp
         }
@@ -768,7 +769,7 @@
 \put(5, 490){\makebox(100, 8)[l]{\abst@small \level}}
 \put(160, 490){\makebox(100, 8)[l]{\abst@small \today}}
 
-\put(296, 490){\makebox(100, 8)[l]{\abst@small \getPageInfo}}
+\put(300, 490){\makebox(100, 8)[l]{\abst@small \getPageInfo}}
 
 %\put(303,509){\makebox(100,5)[l] {\abst@tiny Sivum\"a\"ar\"a --- Sidoantal ---    Number of pages}}
 

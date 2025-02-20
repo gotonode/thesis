@@ -1,3 +1,5 @@
+
+
 \chapter{Countermeasures\label{chapter:countermeasures}}
 \begin{comment}
 - ero company culture ja company policy
@@ -7,9 +9,9 @@
 
 \end{comment}
 
-Countermeasures against the attacks covered in the previous chapter are examined in this chapter. It focuses on two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and user-oriented countermeasures such as personnel training programs and company policy updates. Technology-oriented countermeasures are examined first since human-oriented measures rely on and build upon them. After this, Chapter~\ref{chapter:discussion} discusses and evaluates these countermeasures in detecting and preventing social engineering attacks.
-
 Traditionally, defense against social engineering relied on human education and awareness campaigns~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This reliance, despite its many merits, has revealed its fragility, as even the best-trained user can fail to detect a social engineering attack and fall victim to it. Defense against generative AI -based social engineering thus requires a multifaceted approach, incorporating both technical and user-oriented measures.
+
+Countermeasures against the attacks covered in the previous chapter are examined in this chapter. It focuses on two parts: technology-oriented countermeasures such as phishing and deepfake detection mechanisms, and user-oriented countermeasures such as personnel training programs and company policy updates. Technology-oriented countermeasures are examined first since human-oriented measures rely on and build upon them. After this, Chapter~\ref{chapter:discussion} discusses and evaluates these countermeasures in detecting and preventing social engineering attacks.
 
 
 \section{Phishing detection with AI}
@@ -19,12 +21,12 @@ Traditional phishing message detection systems, i.e. those not based on machine 
 
 AI systems learn, evolve, and adapt based on the datasets that they are processing, thus continuously refining their operational methods and predictions, rather than relying on predefined and rigid algorithms~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. This presents a paradigm shift in how computers perceive, then process and finally respond to data.
 
-These machine learning models are trained with vast datasets containing both safe and malicious samples of e.g. phishing messages and phishing URL's. Given time and further training, these models learn to identify patterns, behaviors, and anomalies, meaning they are very capable of detecting threats, including the novel and perhaps even the yet unseen~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Including AI in cybersecurity measures thus doesn't mean just adding another tool for cybersecurity, but fundamentally defining anew the foundations of the organization’s digital defenses. More specifically, AI-based methods have shown great promise in identifying phishing attempts with high accuracy, often surpassing traditional detection methods~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}.
+These machine learning models are trained with vast datasets containing both safe and malicious samples of e.g. phishing messages and phishing URL's. Given time and further training, these models learn to identify patterns, behaviors, and anomalies, meaning they are very capable of detecting threats, including the novel and perhaps even the yet unseen~\citep{fakhouri_AI_Driven_Solutions_SE_Attacks_2024}. Including AI in cybersecurity measures thus does not mean just adding another tool for cybersecurity, but fundamentally defining anew the foundations of the organization’s digital defenses. More specifically, AI-based methods have shown great promise in identifying phishing attempts with high accuracy, often surpassing traditional detection methods~\citep{basit_Comprehensive_Survey_AI_Phishing_Detection_2021}.
 
 
 
 
-\section{Identifying deepfakes}
+\section{Deepfake identification via artifacts}
 \begin{comment}
 \end{comment}
 Deepfakes often contain subtle anomalies called artifacts, just as image and audio forgeries of the past did. Deepfake detection procedures are primarily based on machine learning and forensic analysis, attempting to identify these specific artifacts in the multimedia content~\citep{mirsky_Creation_Detection_Deepfakes_2021}. The artifacts can be subtle, such as a strange blob of pixels, or overt, such as a person having clearly warped eyes. Figure \ref{figure:artifacts} represents a few sample artifacts.
@@ -75,15 +77,15 @@ audio-visual elements \\ \hline
 
 
 
-\section{Employee education, simulated attacks, and organizational changes}
+\section{Education, pentests, and organizational changes}
 
 User-oriented countermeasures against social engineering attacks usually fall into four broader categories~\citep{tsinganos_Towards_Automated_Recognition_Chat_SE_Enterprise_2018, mitnick_The_Art_of_Deception_2003}. These categories are simulated penetration tests with social engineering techniques, employee security awareness training programs, the creation and application of corporate cybersecurity policies, and the development of a security-conscious company culture.
 
 Regular and comprehensive training programs are vital to educate employees about social engineering tactics. Regularity is stressed by experts in the field as users tend to forget what they have learned~\citep{hadnagy_Social_Engineering_The_Science_2018, mitnick_The_Art_of_Deception_2003}. It is thus suggested that training against social engineering attacks is not something that is done annually, or even bi-annually, but rather that it's something that is baked into the company's culture. 
 
-The inoculation theory~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022} suggests that prior exposure to social engineering attacks could help protect users against future threats, whether these attacks are genuine or simulated. Conducting simulated social engineering and phishing attack campaigns, via numerous channels such as email, SMS, and even phone/VoIP, allows organizations to assess the susceptibility of their employees to social engineering tactics~\citep{hadnagy_Social_Engineering_The_Science_2018}. These exercises help identify vulnerabilities in the workforce, enabling further targeted training and reinforcing the importance of scrutinizing unsolicited communication, and with the advent of generative AI and deepfakes, this needs to be extended to received images, videos, and calls~\citep{mirsky_Creation_Detection_Deepfakes_2021}.
+The inoculation theory~\citep{blauth_AI_Crime_Overview_Malicious_Use_Abuse_2022} suggests that prior exposure to social engineering attacks could help protect users against future threats, whether these attacks are genuine or simulated. Conducting simulated social engineering and phishing attack campaigns (pentests, short for penetration testing), via numerous channels such as email, SMS, and even phone/VoIP, allows organizations to assess the susceptibility of their employees to social engineering tactics~\citep{hadnagy_Social_Engineering_The_Science_2018}. These exercises help identify vulnerabilities in the workforce, enabling further targeted training and reinforcing the importance of scrutinizing unsolicited communication, and with the advent of generative AI and deepfakes, this needs to be extended to received images, videos, and calls~\citep{mirsky_Creation_Detection_Deepfakes_2021}.
 
-Employees should be shown what different varieties of deepfake content look like, as well as how easy it is to doctor them~\citep{mirsky_Creation_Detection_Deepfakes_2021}. With the permission of the organization’s CEO or other top executives, their likeness could be used for this training material.
+Employees should be shown what different varieties of deepfake content look like, as well as how easy it is to generate them~\citep{mirsky_Creation_Detection_Deepfakes_2021}. With the permission of the organization’s CEO or other top executives, their likeness could be used for this training material.
 
 It's imperative that every user understands that they are the weakest link in the cybersecurity chain and that the responsibility of the organization's cybersecurity is in everyone's hands, not just the cybersecurity professional's~\citep{mitnick_The_Art_of_Deception_2003}. If an employee has a user account in the organization’s systems, that is a potential entryway for threat actors.
 
