@@ -680,7 +680,7 @@
 \vspace{14pt}
 
 \begin{large}
-\today
+\thesisdate
 
 \vspace{2.5cm}
 %{\bf \@seminar}
@@ -767,7 +767,7 @@
     {\parbox{450pt}{\abst@small \@supervisors}}
  
 \put(5, 490){\makebox(100, 8)[l]{\abst@small \level}}
-\put(160, 490){\makebox(100, 8)[l]{\abst@small \today}}
+\put(160, 490){\makebox(100, 8)[l]{\abst@small \thesisdate}}
 
 \put(300, 490){\makebox(100, 8)[l]{\abst@small \getPageInfo}}
 
