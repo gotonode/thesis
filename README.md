@@ -1,3 +1,3 @@
-#AI-powered Social Engineering
+#AI-powered social engineering
 
-Work is being done on Overleaf, so this repository might sometimes be out-of-date. Especially the thesis itself (PDF).
+Work is being done on Overleaf and only occasionally pushed to GitHub.
